@@ -551,10 +551,24 @@ client.on('messageCreate', async message => {
     }
 
     if (VOUCH_CHANNEL_ID && String(message.channel.id) === String(VOUCH_CHANNEL_ID)) {
-        console.log(`[VOUCH] Message received from ${message.author.tag} in vouch channel ${message.channel.id}`);
         let linked_ticket = find_open_ticket(message.guild, message.author.id) || find_recent_user_ticket(message.guild, message.author.id);
 
-        let meta = parse_ticket_topic(linked_ticket ? linked_ticket.topic : "");
+        if (!linked_ticket) {
+            try { await message.delete(); } catch (e) { console.error('[VOUCH] Failed to delete message:', e.message); }
+            try {
+                let warn = await message.channel.send(`⚠️ <@${message.author.id}>, do not post in this channel unless you are vouching for an active activation!`);
+                setTimeout(() => warn.delete().catch(() => {}), 5000);
+            } catch (e) {}
+            return;
+        }
+
+        const botPinged = message.mentions.has(client.user);
+        if (!botPinged) {
+            return;
+        }
+
+        console.log(`[VOUCH] Bot pinged. Message received from ${message.author.tag} in vouch channel ${message.channel.id}`);
+        let meta = parse_ticket_topic(linked_ticket.topic);
         let game = get_game_by_id(meta.game);
         let screenshotAttachment = message.attachments.find(att => att.contentType?.startsWith('image/') || /\.(png|jpe?g|webp|gif)$/i.test(att.name));
 
@@ -572,12 +586,8 @@ client.on('messageCreate', async message => {
             console.error(`[VOUCH] Main vouch channel ${MAIN_VOUCH_CHANNEL_ID} was not found or is not sendable in guild ${message.guild.id}.`);
         }
 
-        if (linked_ticket) {
-            console.log(`[VOUCH] Closing linked ticket ${linked_ticket.id} for ${message.author.tag}`);
-            await close_ticket_channel(linked_ticket, true, "Your vouch was received and forwarded. This ticket will now be closed.");
-        } else {
-            console.log(`[VOUCH] No linked ticket found for ${message.author.tag}, but the vouch was still forwarded.`);
-        }
+        console.log(`[VOUCH] Closing linked ticket ${linked_ticket.id} for ${message.author.tag}`);
+        await close_ticket_channel(linked_ticket, true, "Your vouch was received and forwarded. This ticket will now be closed.");
         return;
     }
 
