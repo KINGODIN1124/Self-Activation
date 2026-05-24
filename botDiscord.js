@@ -23,7 +23,20 @@ let verification_queue = {};
 
 function readJson(p, def) { try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return def; } }
 function writeJson(p, data) { fs.writeFileSync(p + '.tmp', JSON.stringify(data, null, 2), 'utf-8'); fs.renameSync(p + '.tmp', p); }
-const CFG = readJson(path.join(BASE, 'config.json'), {});
+const fileCFG = readJson(path.join(BASE, 'config.json'), {});
+function parseEnvJson(val, fallback) {
+    if (!val) return fallback;
+    try { return JSON.parse(val); } catch { return fallback; }
+}
+const CFG = {
+    bot_token: process.env.BOT_TOKEN || fileCFG.bot_token,
+    guild_id: process.env.GUILD_ID || fileCFG.guild_id,
+    vouchChannelId: process.env.VOUCH_CHANNEL_ID || fileCFG.vouchChannelId,
+    mainVouchChannelId: process.env.MAIN_VOUCH_CHANNEL_ID || fileCFG.mainVouchChannelId,
+    roles: parseEnvJson(process.env.ROLES, fileCFG.roles || {}),
+    categories: parseEnvJson(process.env.CATEGORIES, fileCFG.categories || {}),
+    cooldowns: parseEnvJson(process.env.COOLDOWNS, fileCFG.cooldowns || { free: 604800000 })
+};
 
 function load_games() { return readJson(path.join(DATA, 'games.json'), { games: [] }).games; }
 function save_games(g) { writeJson(path.join(DATA, 'games.json'), { games: g }); }
