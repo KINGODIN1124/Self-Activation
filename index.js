@@ -18,6 +18,24 @@ app.listen(PORT, () => {
     console.log(`[MASTER LAUNCHER] Web server bound to port ${PORT} (Keep-alive ready)`);
 });
 
+// Initialize empty persistent directories and files if they are blank (common in container volume mounts)
+const DATA_DIR = path.join(__dirname, 'data');
+const GAMES_FILE = path.join(DATA_DIR, 'games.json');
+const GAMES_DEFAULT = path.join(__dirname, 'games.default.json');
+
+if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+}
+
+if (!fs.existsSync(GAMES_FILE) && fs.existsSync(GAMES_DEFAULT)) {
+    console.log('[MASTER LAUNCHER] Initializing games.json from default template...');
+    try {
+        fs.copyFileSync(GAMES_DEFAULT, GAMES_FILE);
+    } catch (e) {
+        console.error('[MASTER LAUNCHER] Failed to copy default games list:', e.message);
+    }
+}
+
 console.log('[MASTER LAUNCHER] Starting services...');
 
 // Launch Discord Bot
