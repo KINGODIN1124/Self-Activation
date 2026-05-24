@@ -461,10 +461,33 @@ async function trigger_worker(interaction, game, original_user) {
         await send_vouch_prompt(interaction.channel, original_user.id, game.name);
         try { fs.unlinkSync(expected_file); } catch { }
     } else if (failed) {
-        try { fs.unlinkSync(failed_file); } catch { }
+        let reason = "unknown";
+        try {
+            if (fs.existsSync(failed_file)) {
+                reason = fs.readFileSync(failed_file, 'utf-8').trim();
+                fs.unlinkSync(failed_file);
+            }
+        } catch (e) {
+            console.error('[DISCORD] Failed to read failed_file:', e);
+        }
+
+        let desc = `Failed to generate activation for **${game.name}**.\n\n`;
+        if (reason === 'no account found') {
+            desc += "❌ **No active worker account owns this game, or the account password is incorrect / invalid.**";
+        } else if (reason === 'template missing or empty') {
+            desc += "❌ **The server-side game template is missing or empty.**";
+        } else if (reason === 'steam_settings folder missing') {
+            desc += "❌ **The bot could not locate the `steam_settings` or `steamsettings` folder inside the game template.**";
+        } else if (reason === 'ticket generation failed') {
+            desc += "❌ **Steam ticket generation failed (the account might be rate-limited, locked, or requires a security code).**";
+        } else {
+            desc += `❌ **Reason:** ${reason}`;
+        }
+        desc += "\n\nPlease contact activation staff for assistance.";
+
         await status_msg.edit({
             content: `${staff_ping()} <@${original_user.id}>`,
-            embeds: [new EmbedBuilder().setTitle("❌ ACCOUNT NOT FOUND").setColor(CLR.RED).setDescription(`No usable account was found for **${game.name}** because the bot could not place the token inside **steamsettings**.\n\nPlease contact activation staff for assistance.`)]
+            embeds: [new EmbedBuilder().setTitle("❌ ACTIVATION FAILED").setColor(CLR.RED).setDescription(desc)]
         });
     } else {
         await status_msg.edit({

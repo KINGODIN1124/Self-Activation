@@ -374,12 +374,17 @@ async function processSteamQueue() {
 
             if (sPath) {
                 let oldFile = path.join(sPath, 'configs.user');
+                let oldIni = path.join(sPath, 'configs.user.ini');
                 if (fs.existsSync(oldFile)) {
                     try { fs.unlinkSync(oldFile); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user: ${e.message}`); }
                 }
+                if (fs.existsSync(oldIni)) {
+                    try { fs.unlinkSync(oldIni); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user.ini: ${e.message}`); }
+                }
 
-                let content = `[user::general]\naccount_steamid=${c.steamID.getSteamID64()}\naccount_name=${u}\nticket=${resp.ticket}\n`;
-                fs.writeFileSync(path.join(sPath, 'configs.user'), content, 'utf-8');
+                let content = `[user::general]\naccount_steamid=${c.steamID.getSteamID64()}\naccount_name=${u}\nticket=${resp.ticket}\ntoken=${resp.ticket}\n`;
+                fs.writeFileSync(oldFile, content, 'utf-8');
+                fs.writeFileSync(oldIni, content, 'utf-8');
 
                 let finalZip = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}.zip`);
                 await zipDirectory(tempDir, finalZip);
@@ -388,7 +393,7 @@ async function processSteamQueue() {
             } else {
                 console.log(`[STEAM ENGINE] ⚠️ No steamsettings folder found for ${appId}. Not placing configs.user and failing the request.`);
                 let failFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}_failed.txt`);
-                fs.writeFileSync(failFile, 'account not found', 'utf-8');
+                fs.writeFileSync(failFile, 'steam_settings folder missing', 'utf-8');
                 success = true;
             }
             fs.rmSync(tempDir, { recursive: true, force: true });
