@@ -1,0 +1,92 @@
+{
+  "games": [
+    {
+      "id": "steam_1941540",
+      "name": "Mafia: The Old Country",
+      "app_id": "1941540",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "steam_2680010",
+      "name": "The First Berserker: Khazan",
+      "app_id": "2680010",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free"
+      ]
+    },
+    {
+      "id": "steam_2358720",
+      "name": "Black Myth Wukong",
+      "app_id": "2358720",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "steam_1244460",
+      "name": "Jurassic World Evolution 2",
+      "app_id": "1244460",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "steam_3321460",
+      "name": "Crimson Desert",
+      "app_id": "3321460",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "steam_3472040",
+      "name": "NBA 2k26",
+      "app_id": "3472040",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    },
+    {
+      "id": "steam_3357650",
+      "name": "Pragmagta",
+      "app_id": "3357650",
+      "platform": "steam",
+      "emoji": "🎮",
+      "tiers": [
+        "free",
+        "bronze",
+        "silver",
+        "gold"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "games": [
+    {
+      "id": "steam_2357820",
+      "name": "Black Myth Wukong",
+      "app_id": "2357820",
+      "platform": "steam",
+      "emoji": "\ud83c\udfae"
+    },
+    {
+      "id": "steam_1941540",
+      "name": "Mafia The Old Country",
+      "app_id": "1941540",
+      "platform": "steam",
+      "emoji": "\ud83c\udfae"
+    },
+    {
+      "id": "steam_2680010",
+      "name": "The First Berserker: Khazan",
+      "app_id": "2680010",
+      "platform": "steam",
+      "emoji": "\ud83c\udfae"
+    }
+  ]
+}

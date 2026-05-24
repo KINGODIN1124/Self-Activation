@@ -1,0 +1,9 @@
+english
+german
+french
+italian
+koreana
+spanish
+schinese
+tchinese
+japanese

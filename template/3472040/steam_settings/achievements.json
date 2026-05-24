@@ -1,0 +1,1442 @@
+[
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Steal Worker",
+      "token": "NEW_ACHIEVEMENT_1_0_NAME",
+      "german": "Steal-Bruch",
+      "french": "Intercepteur",
+      "italian": "Furto aggravato",
+      "koreana": "\uc2a4\ud2f8 \uc6cc\ucee4",
+      "spanish": "Currante de los robos",
+      "schinese": "\u6881\u4e0a\u541b\u5b50",
+      "tchinese": "\u6284\u622a\u9769\u547d",
+      "japanese": "\u30b9\u30c6\u30a3\u30fc\u30eb\u5de7\u8005"
+    },
+    "description": {
+      "english": "Defeat Sovereign of Steal on Pivot Point in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_0_DESC",
+      "german": "Besiege in Street Kings den Sovereign of Steal in Pivot Point.",
+      "french": "Terminez Empereur des voleurs \u00e0 Pivot Point en mode Rois de la rue.",
+      "italian": "Sconfiggi il Re della rubata a Pivot Point in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9 \ud53c\ubc97 \ud3ec\uc778\ud2b8\uc5d0\uc11c \uc18c\ubc84\ub9b0 \uc624\ube0c \uc2a4\ud2f8\uc744 \uaebe\uc73c\uc138\uc694.",
+      "spanish": "Derrota a Sovereign of Steal en Punto clave de Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u7684\u67a2\u7ebd\u70b9\u4e2d\u51fb\u8d25Sovereign of Steal\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u7684\u7c43\u7403\u8ef8\u5fc3\u4e2d\u64ca\u6557Sovereign of Steal\u3002",
+      "japanese": "Street Kings \u306e Pivot Point \u3067 Sovereign of Steal \u3092\u5012\u3059\u3002"
+    },
+    "icon_gray": "img/ce9065d96a68ed7fd0e80d45f39424e6651f7e10.jpg",
+    "icon": "img/bd6a1c0fd28b0ae18c64ee5a64c85990dbebc6f2.jpg",
+    "name": "1"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Baron Breaker",
+      "token": "NEW_ACHIEVEMENT_1_1_NAME",
+      "german": "Baron-Bezwinger",
+      "french": "Baron de la ficelle",
+      "italian": "Il barone spodestato",
+      "koreana": "\ubc30\ub7f0 \ube0c\ub808\uc774\ucee4",
+      "spanish": "Rompebarones",
+      "schinese": "\u5f11\u6740\u7537\u7235",
+      "tchinese": "\u7537\u7235\u7834\u58de\u8005",
+      "japanese": "\u7537\u7235\u3092\u5012\u3059\u8005"
+    },
+    "description": {
+      "english": "Defeat Baron Buckets on Jardin Jams in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_1_DESC",
+      "german": "Besiege in Street Kings Baron Buckets in Jardin Jams.",
+      "french": "Terminez Baron Buckets aux Jardin Jams en mode Rois de la rue.",
+      "italian": "Sconfiggi Baron Buckets a Jardin Jams in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9 \uc7c8\ub385 \uc7bc\uc2a4\uc5d0\uc11c \ubc30\ub7f0 \ubc84\ud0b7\uc744 \uaebe\uc73c\uc138\uc694.",
+      "spanish": "Derrota a Baron Buckets en Jard\u00edn de partidillos de Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u7684\u7bee\u7403\u82b1\u56ed\u4e2d\u51fb\u8d25Baron Buckets\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u7684\u82b1\u5712\u7403\u5834\u4e2d\u64ca\u6557Baron Buckets\u3002",
+      "japanese": "Street Kings \u306e Jardin Jams \u3067 Baron Buckets \u3092\u5012\u3059\u3002"
+    },
+    "icon_gray": "img/d81f765f3d316a1001ed3c09309bbb64b1741eea.jpg",
+    "icon": "img/634160d6c6fd90a534471b5358aca9450a04296b.jpg",
+    "name": "2"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Hardwood Hero",
+      "token": "NEW_ACHIEVEMENT_1_2_NAME",
+      "german": "Hardwood-Held",
+      "french": "H\u00e9ros de Hardwood",
+      "italian": "Eroe del parquet",
+      "koreana": "\ud558\ub4dc\uc6b0\ub4dc \ud788\uc5b4\ub85c",
+      "spanish": "H\u00e9roe de Hardwood",
+      "schinese": "\u786c\u6728\u82f1\u96c4",
+      "tchinese": "\u786c\u6728\u82f1\u96c4",
+      "japanese": "Hardwood \u30d2\u30fc\u30ed\u30fc"
+    },
+    "description": {
+      "english": "Win the Tournament at Hardwood Hall in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_2_DESC",
+      "german": "Gewinne in Street Kings das Turnier in Hardwood Hall.",
+      "french": "Remportez un tournoi \u00e0 Hardwood Hall en mode Rois de la rue.",
+      "italian": "Vinci il torneo alla Hardwood Hall in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9 \ud558\ub4dc\uc6b0\ub4dc \ud640\uc5d0\uc11c \ud1a0\ub108\uba3c\ud2b8 \uc6b0\uc2b9\uc744 \ub2ec\uc131\ud558\uc138\uc694.",
+      "spanish": "Gana el torneo de Hardwood Hall en Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u7684\u786c\u6728\u5927\u5385\u4e2d\u8d62\u5f97\u9526\u6807\u8d5b\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u7684\u786c\u6728\u5802\u4e2d\u8d0f\u5f97\u9326\u6a19\u8cfd\u3002",
+      "japanese": "Street Kings \u306e Hardwood Hall \u3067\u30c8\u30fc\u30ca\u30e1\u30f3\u30c8\u306b\u52dd\u5229\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/cb7652b9fba3264b4a682ef10e33e2247e0e0abc.jpg",
+    "icon": "img/06249cc80198cf5f4555c7fea9c32ec9db8c744c.jpg",
+    "name": "3"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Can't Stop, Won't Stop",
+      "token": "NEW_ACHIEVEMENT_1_3_NAME",
+      "german": "Weiter, immer weiter",
+      "french": "Personne peut m'arr\u00eater",
+      "italian": "Nessuna intenzione di fermarsi",
+      "koreana": "\ube0c\ub808\uc774\ud06c \uace0\uc7a5",
+      "spanish": "No puedo ni quiero parar",
+      "schinese": "\u6839\u672c\u505c\u4e0d\u4e0b\u6765",
+      "tchinese": "\u6839\u672c\u505c\u4e0d\u4e0b\u4f86",
+      "japanese": "\u3082\u3046\u6b62\u307e\u3089\u306a\u3044"
+    },
+    "description": {
+      "english": "Get a 15-game Winning Streak in King of the Court in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_3_DESC",
+      "german": "Erreiche in Street Kings in King of the Court eine Siegesserie von 15 Siegen in Folge.",
+      "french": "Remportez une s\u00e9rie de 15\u00a0matchs de Roi du terrain en mode Rois de la rue.",
+      "italian": "Ottieni 15 vittorie di fila a Re del campo in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9\uc758 \ud0b9 \uc624\ube0c \ub354 \ucf54\ud2b8\uc5d0\uc11c 15\uc5f0\uc2b9\uc744 \ub2ec\uc131\ud558\uc138\uc694.",
+      "spanish": "Consigue una racha de 15 victorias en Rey de la cancha de Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u7684\u7403\u573a\u4e4b\u738b\u4e2d\u83b7\u5f9715\u8fde\u80dc\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u7684\u5834\u4e0a\u738b\u8005\u4e2d\u7372\u5f9715\u5834\u9023\u52dd\u3002",
+      "japanese": "Street Kings \u306e\u30ad\u30f3\u30b0 \u30aa\u30d6 \u30b6 \u30b3\u30fc\u30c8\u306715\u9023\u52dd\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/7bac371edc7c3d3e666c57ee060428b3ad7c5251.jpg",
+    "icon": "img/3ebb66df0ec9dfaafd2c3b1297c43bbf3d6008ca.jpg",
+    "name": "4"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Co-Op Completionist",
+      "token": "NEW_ACHIEVEMENT_1_4_NAME",
+      "german": "Co-Op-King",
+      "french": "Fan de la Co-op",
+      "italian": "Completista co-op",
+      "koreana": "Co-op \uc885\uacb0\uc790",
+      "spanish": "Coleccionista del cooperativo",
+      "schinese": "\u5408\u4f5c\u4e13\u4e1a\u6237",
+      "tchinese": "\u5408\u4f5c\u901a\u95dc\u9054\u4eba",
+      "japanese": "\u5354\u529b\u30d7\u30ec\u30a4\u5b8c\u5168\u4e3b\u7fa9\u8005"
+    },
+    "description": {
+      "english": "Defeat 10 Co-Op Bosses in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_4_DESC",
+      "german": "Besiege in Street Kings 10 Co-Op-Bosse.",
+      "french": "Battez 10\u00a0boss Co-op en mode Rois de la rue.",
+      "italian": "Sconfiggi 10 boss co-op in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9\uc5d0\uc11c Co-op \ubcf4\uc2a4 10\uba85\uc744 \uaebe\uc73c\uc138\uc694.",
+      "spanish": "Derrota a 10 jefes cooperativos en Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u5408\u4f5c\u4e2d\u51fb\u8d2510\u540dBoss\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u7684\u5408\u4f5c\u6a21\u5f0f\u4e2d\u64ca\u655710\u500b\u9b54\u738b\u3002",
+      "japanese": "Street Kings \u3067\u5354\u529b\u30d7\u30ec\u30a4\u306e\u30dc\u30b9\u309210\u4eba\u5012\u3059\u3002"
+    },
+    "icon_gray": "img/d78209dc8ae3f7d56e3ff90876a4f59b36953b4e.jpg",
+    "icon": "img/4b59dc317d036f905ea2e161e3a4325f017a08ba.jpg",
+    "name": "5"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Trial Terror",
+      "token": "NEW_ACHIEVEMENT_1_5_NAME",
+      "german": "Pr\u00fcfungsprofi",
+      "french": "Essai transform\u00e9",
+      "italian": "Prova da paura",
+      "koreana": "\ud2b8\ub77c\uc774\uc5bc \ud14c\ub7ec",
+      "spanish": "Terror de las pruebas",
+      "schinese": "\u6050\u6016\u8bd5\u70bc",
+      "tchinese": "\u6050\u6016\u8a66\u7149",
+      "japanese": "\u30c8\u30e9\u30a4\u30a2\u30eb\u306e\u602a\u7269"
+    },
+    "description": {
+      "english": "Complete a Teammate Trial in Street Kings.",
+      "token": "NEW_ACHIEVEMENT_1_5_DESC",
+      "german": "Schlie\u00dfe in Street Kings eine Mitspielerpr\u00fcfung ab.",
+      "french": "Terminez un essai de co\u00e9quipier en mode Rois de la rue.",
+      "italian": "Completa una prova compagno in Street Kings.",
+      "koreana": "\uc2a4\ud2b8\ub9ac\ud2b8 \ud0b9\uc5d0\uc11c \ud300 \ub3d9\ub8cc \ud2b8\ub77c\uc774\uc5bc\uc744 \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa una prueba de compa\u00f1ero en Reyes de la calle.",
+      "schinese": "\u5728\u8857\u5934\u4e4b\u738b\u4e2d\u5b8c\u6210\u4e00\u6b21\u961f\u53cb\u8bd5\u70bc\u3002",
+      "tchinese": "\u5728\u8857\u982d\u738b\u8005\u4e2d\u5b8c\u6210\u4e00\u9805\u968a\u53cb\u8a66\u7149\u3002",
+      "japanese": "Street Kings \u3067\u30c1\u30fc\u30e0\u30e1\u30a4\u30c8 \u30c8\u30e9\u30a4\u30a2\u30eb\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/9468ae169131861cd1452c7b5866b3b45816b49e.jpg",
+    "icon": "img/26735b9dacf29eda169fd05797c8829466c4809d.jpg",
+    "name": "6"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "A Successful Beginning",
+      "token": "NEW_ACHIEVEMENT_1_6_NAME",
+      "german": "Guter Start",
+      "french": "D\u00e9buts prometteurs",
+      "italian": "Inizio promettente",
+      "koreana": "\uc131\uacf5\uc801\uc778 \uc2dc\uc791",
+      "spanish": "Un gran comienzo",
+      "schinese": "\u6210\u529f\u5f00\u7aef",
+      "tchinese": "\u6210\u529f\u7684\u958b\u59cb",
+      "japanese": "\u597d\u8abf\u306a\u5e55\u958b\u3051"
+    },
+    "description": {
+      "english": "Get 3 Stars in an Out of Bounds Story Game in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_6_DESC",
+      "german": "Hole 3 Sterne in einem Spiel der \"Out of Bounds\"-Story in Meine KARRIERE.",
+      "french": "Obtenez 3\u00a0\u00e9toiles dans un match de l'histoire Hors des sentiers battus dans Ma CARRI\u00c8RE.",
+      "italian": "Ottieni 3 stelle in una partita Storia Oltre i limiti ne La mia CARRIERA.",
+      "koreana": "MyCAREER \uc544\uc6c3 \uc624\ube0c \ubc14\uc6b4\uc988 \uc2a4\ud1a0\ub9ac \uacbd\uae30\uc5d0\uc11c \ubcc4 3\uac1c\ub97c \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue 3 estrellas en un partido del modo Historia Sin l\u00edmites en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u7684\u4e00\u573a\u8d85\u8d8a\u8fb9\u754c\u6545\u4e8b\u6bd4\u8d5b\u4e2d\u83b7\u5f973\u661f",
+      "tchinese": "\u5728MyCAREER\u8d85\u8d8a\u754c\u9650\u6545\u4e8b\u7684\u4efb\u4e00\u6bd4\u8cfd\u4e2d\u7372\u5f973\u9846\u661f",
+      "japanese": "MyCAREER \u306e\u300c\u30a2\u30a6\u30c8\u30aa\u30d6\u30d0\u30a6\u30f3\u30ba\u300d\u306e1\u8a66\u5408\u3067\u30b9\u30bf\u30fc\u30923\u500b\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/ea6b9f5bcf5df34acb2aee00fa4a2089f52503b1.jpg",
+    "icon": "img/43d87917f711ab0966722644a61753bf11cc47ed.jpg",
+    "name": "7"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Young and Hungry",
+      "token": "NEW_ACHIEVEMENT_1_7_NAME",
+      "german": "Jung und hungrig",
+      "french": "Jeune et affam\u00e9",
+      "italian": "Giovane e affamato",
+      "koreana": "\uc601 \uc564 \ud5dd\uadf8\ub9ac",
+      "spanish": "Joven y hambriento",
+      "schinese": "\u521d\u751f\u725b\u728a",
+      "tchinese": "\u521d\u751f\u725b\u72a2",
+      "japanese": "\u82e5\u304f\u3066\u8179\u30da\u30b3"
+    },
+    "description": {
+      "english": "Win Player of the Game in the Club Championship in Out of Bounds in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_7_DESC",
+      "german": "Werde in der Club Championship in \"Out of Bounds\" in Meine KARRIERE zum besten Spieler gew\u00e4hlt.",
+      "french": "Terminez Joueur du match en finale de ligue des clubs dans Hors des sentiers battus (Ma CARRI\u00c8RE).",
+      "italian": "Vinci il premio di migliore in campo nel Titolo per club in Oltre i limiti ne La mia CARRIERA.",
+      "koreana": "MyCAREER \uc544\uc6c3 \uc624\ube0c \ubc14\uc6b4\uc988\uc758 \ud074\ub7fd \ucc54\ud53c\uc5b8\uc2ed\uc5d0\uc11c \uacbd\uae30 \ucd5c\uc6b0\uc218 \uc120\uc218\ub85c \uc120\uc815\ub418\uc138\uc694.",
+      "spanish": "Gana el Jugador del partido en el campeonato del club en Sin l\u00edmites en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u7684\u8d85\u8d8a\u8fb9\u754c\u4e2d\uff0c\u8d62\u5f97\u4ff1\u4e50\u90e8\u51a0\u519b\u8d5b\u6700\u4f73\u7403\u5458\u3002",
+      "tchinese": "\u5728MyCAREER\u7684\u8d85\u8d8a\u754c\u9650\u4e2d\uff0c\u8d0f\u5f97\u4ff1\u6a02\u90e8\u51a0\u8ecd\u8cfd\u7684\u672c\u5834\u6700\u4f73\u7403\u54e1\u3002",
+      "japanese": "\u300c\u30a2\u30a6\u30c8\u30aa\u30d6\u30d0\u30a6\u30f3\u30ba\u300d\u306e\u30af\u30e9\u30d6\u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30b7\u30c3\u30d7\u3067\u30d7\u30ec\u30a4\u30e4\u30fc\u30fb\u30aa\u30d6\u30fb\u30b6\u30fb\u30b2\u30fc\u30e0\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/5200cdd4c474f265e33125346eacc861e578de70.jpg",
+    "icon": "img/d0409f12dd7a1ffc1c8bd8e344e3b743bd06e339.jpg",
+    "name": "8"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Championship Material",
+      "token": "NEW_ACHIEVEMENT_1_8_NAME",
+      "german": "Meisterschaftsmaterial",
+      "french": "Graine de champion",
+      "italian": "Conquista del campionato",
+      "koreana": "\ucc54\ud53c\uc5b8\uc2ed \uc7ac\ub2a5",
+      "spanish": "Material de campeonato",
+      "schinese": "\u51a0\u519b\u6c14\u8d28",
+      "tchinese": "\u51a0\u8ecd\u59ff\u614b",
+      "japanese": "\u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u306e\u8cc7\u8cea"
+    },
+    "description": {
+      "english": "Win the EBA Championship in Out of Bounds in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_8_DESC",
+      "german": "Gewinne in \"Out of Bounds\" in Meine KARRIERE die EBA Championship.",
+      "french": "Remportez le championnat EBA dans Hors des sentiers battus dans Ma CARRI\u00c8RE.",
+      "italian": "Vinci il campionato EBA in Oltre i limiti ne La mia CARRIERA.",
+      "koreana": "MyCAREER \uc544\uc6c3 \uc624\ube0c \ubc14\uc6b4\uc988\uc758 EBA \ucc54\ud53c\uc5b8\uc2ed\uc5d0\uc11c \uc6b0\uc2b9\ud558\uc138\uc694.",
+      "spanish": "Gana el campeonato de la EBA en Sin l\u00edmites en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u7684\u8d85\u8d8a\u8fb9\u754c\u4e2d\uff0c\u8d62\u5f97EBA\u51a0\u519b\u8d5b\u3002",
+      "tchinese": "\u5728MyCAREER\u7684\u8d85\u8d8a\u754c\u9650\u4e2d\uff0c\u8d0f\u5f97EBA\u51a0\u8ecd\u8cfd\u3002",
+      "japanese": "MyCAREER \u306e\u300c\u30a2\u30a6\u30c8\u30aa\u30d6\u30d0\u30a6\u30f3\u30ba\u300d\u3067 EBA \u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30b7\u30c3\u30d7\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/b51cc62e16d030cc1eac923382a3bdbe6d532a9c.jpg",
+    "icon": "img/6d439d10dc3c746b4700184d11b5a6de43de895e.jpg",
+    "name": "9"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Proving Myself",
+      "token": "NEW_ACHIEVEMENT_1_9_NAME",
+      "german": "Bew\u00e4hrungsprobe",
+      "french": "Je fais mes preuves",
+      "italian": "Prova di forza",
+      "koreana": "\uc2e4\ub825 \uc99d\uba85",
+      "spanish": "Prueba lo que vales",
+      "schinese": "\u8bc1\u660e\u81ea\u5df1",
+      "tchinese": "\u8b49\u660e\u81ea\u5df1",
+      "japanese": "\u5b9f\u529b\u306e\u8a3c\u660e"
+    },
+    "description": {
+      "english": "Successfully Tryout for and get Drafted by an NBA Team in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_9_DESC",
+      "german": "Schlie\u00dfe in Meine KARRIERE ein Tryout bei einem NBA-Team erfolgreich ab und werde gedraftet.",
+      "french": "R\u00e9ussissez un essai et faites-vous drafter par une \u00e9quipe de NBA dans Ma CARRI\u00c8RE.",
+      "italian": "Fai un provino per una squadra NBA e ottieni la sua chiamata al draft ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c \uc131\uacf5\uc801\uc73c\ub85c \ud2b8\ub77c\uc774\uc544\uc6c3\uc744 \ub05d\ub0b4\uace0 \ub4dc\ub798\ud504\ud2b8\uc5d0\uc11c NBA \ud300 \uc9c0\uba85\uc744 \ubc1b\uc73c\uc138\uc694.",
+      "spanish": "Haz una prueba y consigue que te elija en el draft un equipo de la NBA en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u8bd5\u8bad\u6210\u529f\u5e76\u88abNBA\u7403\u961f\u9009\u4e2d\u3002",
+      "tchinese": "\u5728MyCAREER\u4e2d\u6210\u529f\u8a66\u8a13\u4e26\u88abNBA\u7403\u968a\u9078\u4e2d\u3002",
+      "japanese": "MyCAREER \u3067 NBA \u30c1\u30fc\u30e0\u306e\u30c8\u30e9\u30a4\u30a2\u30a6\u30c8\u306b\u6210\u529f\u3057\u3001\u30c9\u30e9\u30d5\u30c8\u6307\u540d\u3092\u53d7\u3051\u308b\u3002"
+    },
+    "icon_gray": "img/0d4316aea1e9a64f2741a069bcf15e988bef0670.jpg",
+    "icon": "img/120b0078771dcec8227f0c4216fa394fcc2e2d15.jpg",
+    "name": "10"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Prelude Perfection",
+      "token": "NEW_ACHIEVEMENT_1_10_NAME",
+      "german": "Perfekter Auftakt",
+      "french": "Pr\u00e9lude parfait",
+      "italian": "Preludio perfetto",
+      "koreana": "\uc644\ubcbd\ud55c Prelude",
+      "spanish": "Pr\u00f3logo perfecto",
+      "schinese": "\u5b8c\u7f8e\u5e8f\u66f2",
+      "tchinese": "\u5b8c\u7f8e\u5e8f\u66f2",
+      "japanese": "\u5b8c\u74a7\u306a\u30d7\u30ec\u30ea\u30e5\u30fc\u30c9"
+    },
+    "description": {
+      "english": "Get 27 Stars in the Out of Bounds Story in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_10_DESC",
+      "german": "Hole in der \"Out of Bounds\"-Story in Meine KARRIERE 27 Sterne.",
+      "french": "Obtenez 27\u00a0\u00e9toiles dans l'histoire Hors des sentiers battus dans Ma CARRI\u00c8RE.",
+      "italian": "Ottieni 27 stelle nella Storia Oltre i limiti ne La mia CARRIERA.",
+      "koreana": "MyCAREER \uc544\uc6c3 \uc624\ube0c \ubc14\uc6b4\uc988 \uc2a4\ud1a0\ub9ac\uc5d0\uc11c \ubcc4 27\uac1c\ub97c \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue 27 estrellas en la historia Sin l\u00edmites en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u7684\u8d85\u8d8a\u8fb9\u754c\u6545\u4e8b\u4e2d\u83b7\u5f9727\u661f",
+      "tchinese": "\u5728MyCAREER\u7684\u8d85\u8d8a\u754c\u9650\u6545\u4e8b\u4e2d\u7372\u5f9727\u9846\u661f",
+      "japanese": "MyCAREER \u306e\u300c\u30a2\u30a6\u30c8\u30aa\u30d6\u30d0\u30a6\u30f3\u30ba\u300d\u3067\u30b9\u30bf\u30fc\u309227\u500b\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/3b9c5226c6345242721d86d418103ea4269c5e8f.jpg",
+    "icon": "img/927713674fe93ae1e48b73699efa13c2656fbc47.jpg",
+    "name": "11"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Cashing In",
+      "token": "NEW_ACHIEVEMENT_1_11_NAME",
+      "german": "Katsching",
+      "french": "L'argent coule \u00e0 flots",
+      "italian": "Incasso",
+      "koreana": "\uc218\uc775 \uc2e4\ud604",
+      "spanish": "Hacer caja",
+      "schinese": "\u5927\u8d5a\u7279\u8d5a",
+      "tchinese": "\u4f86\u8ca1",
+      "japanese": "\u30ad\u30e3\u30c3\u30b7\u30e5\u3067\u304a\u8cb7\u3044\u4e0a\u3052"
+    },
+    "description": {
+      "english": "Earn All MP Merchandising Rewards in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_11_DESC",
+      "german": "Verdiene in Meine KARRIERE alle MP-Merchandising-Belohnungen.",
+      "french": "Gagnez toutes les r\u00e9compenses Merchandising MP dans Ma CARRI\u00c8RE.",
+      "italian": "Ottieni tutte le ricompense Merchandise MP ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c MP \uc0c1\ud488 \ubcf4\uc0c1\uc744 \ubaa8\ub450 \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue todas las recompensas de merchandising MP en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u83b7\u5f97\u6240\u6709MP\u8425\u9500\u5956\u52b1\u3002",
+      "tchinese": "\u5728MyCAREER\u4e2d\u8d0f\u5f97\u6240\u6709MP\u5468\u908a\u734e\u52f5\u3002",
+      "japanese": "MyCAREER \u3067 MP \u30b0\u30c3\u30ba\u5831\u916c\u3092\u3059\u3079\u3066\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/6dd71c2eb520baf29f59cf7a050fb078fac6aecc.jpg",
+    "icon": "img/a78fa93bd432829971ef440569e54308494d8761.jpg",
+    "name": "12"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Full Potential",
+      "token": "NEW_ACHIEVEMENT_1_12_NAME",
+      "german": "Volles Potenzial",
+      "french": "Plein potentiel",
+      "italian": "Pieno potenziale",
+      "koreana": "\ucd5c\ub300 \uc7a0\uc7ac\ub825",
+      "spanish": "Pleno potencial",
+      "schinese": "\u6f5c\u529b\u7206\u53d1",
+      "tchinese": "\u5b8c\u6574\u6f5b\u529b",
+      "japanese": "\u30d5\u30eb\u30dd\u30c6\u30f3\u30b7\u30e3\u30eb"
+    },
+    "description": {
+      "english": "Earn Hall of Fame on a GOAT Skill in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_12_DESC",
+      "german": "Erreiche in Meine KARRIERE die Hall of Fame mit einem GOAT-Skill.",
+      "french": "Obtenez le niveau Hall of Fame d'une comp\u00e9tence de GOAT dans Ma CARRI\u00c8RE.",
+      "italian": "Raggiungi la Hall of Fame in un'abilit\u00e0 GOAT ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c GOAT \uc2a4\ud0ac\uc744 \uba85\uc608\uc758 \uc804\ub2f9\uae4c\uc9c0 \ub192\uc774\uc138\uc694.",
+      "spanish": "Consigue Sal\u00f3n de la Fama en una habilidad de GOAT en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u83b7\u5f97\u4e00\u4e2a\u540d\u4eba\u5802\u7ea7G.O.A.T.\u6280\u80fd\u3002",
+      "tchinese": "\u5728MyCAREER\u4e2d\uff0c\u8b93\u4e00\u9805GOAT\u6280\u80fd\u9054\u5230\u540d\u4eba\u5802\u7b49\u7d1a\u3002",
+      "japanese": "MyCAREER \u3067 GOAT \u30b9\u30ad\u30eb\u3092\u6bbf\u5802\u5165\u308a\u306b\u30ec\u30d9\u30eb\u30a2\u30c3\u30d7\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/312479230095af833181f882af94beccaf8d4322.jpg",
+    "icon": "img/393bdb04c44d0886dc4a3a716b45de5838707901.jpg",
+    "name": "13"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Establishing a Dynasty",
+      "token": "NEW_ACHIEVEMENT_1_13_NAME",
+      "german": "Eine Dynasty entsteht",
+      "french": "\u00c9tablir une dynastie",
+      "italian": "L'istituzione di una Dinastia",
+      "koreana": "\uc655\uc870 \uad6c\ucd95",
+      "spanish": "Mi propia dinast\u00eda",
+      "schinese": "\u7f14\u9020\u738b\u671d",
+      "tchinese": "\u5efa\u7acb\u738b\u671d",
+      "japanese": "\u7bc9\u304b\u308c\u305f\u30c0\u30a4\u30ca\u30b9\u30c6\u30a3"
+    },
+    "description": {
+      "english": "Earn Gold on a Dynasty Badge in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_13_DESC",
+      "german": "Verdiene in Meine KARRIERE bei einer Dynasty-Plakette Gold.",
+      "french": "Obtenez le niveau Or d'un insigne Dynastie dans Ma CARRI\u00c8RE.",
+      "italian": "Ottieni un distintivo Dinastia Oro ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c \uc655\uc870 \ubc30\uc9c0\ub97c \uace8\ub4dc\uae4c\uc9c0 \ub192\uc774\uc138\uc694.",
+      "spanish": "Consigue Oro en una insignia de dinast\u00eda en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u83b7\u5f97\u4e00\u679a\u9ec4\u91d1\u7ea7\u738b\u671d\u5fbd\u7ae0\u3002",
+      "tchinese": "\u5728MyCAREER\u4e2d\uff0c\u8b93\u4e00\u500b\u738b\u671d\u5fbd\u7ae0\u9054\u5230\u9ec3\u91d1\u7b49\u7d1a\u3002",
+      "japanese": "MyCAREER \u3067\u30b4\u30fc\u30eb\u30c9\u30c0\u30a4\u30ca\u30b9\u30c6\u30a3\u30d0\u30c3\u30b8\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/9d016f62f447c80455eeea7afede470a9fead994.jpg",
+    "icon": "img/528e2f6717e158c1caf1db30f45026b50ce0f794.jpg",
+    "name": "14"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "FIBA Finisher",
+      "token": "NEW_ACHIEVEMENT_1_14_NAME",
+      "german": "FIBA-Finisher",
+      "french": "Triomphe FIBA",
+      "italian": "Fenomeno FIBA",
+      "koreana": "FIBA \uc885\uacb0\uc790",
+      "spanish": "Finalizador en la FIBA",
+      "schinese": "FIBA\u4e4b\u738b",
+      "tchinese": "FIBA\u7d42\u7d50\u8005",
+      "japanese": "FIBA \u30d5\u30a3\u30cb\u30c3\u30b7\u30e3\u30fc"
+    },
+    "description": {
+      "english": "Win 1st Place in the FIBA Games in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_14_DESC",
+      "german": "Belege in Meine KARRIERE den 1. Platz bei den FIBA-Spielen.",
+      "french": "Atteignez la 1re place en FIBA dans Ma CARRI\u00c8RE.",
+      "italian": "Conquista il primo posto nelle partite FIBA ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c FIBA \uacbd\uae30 1\uc704\ub97c \ub2ec\uc131\ud558\uc138\uc694.",
+      "spanish": "Queda primero en los partidos de la FIBA en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u7684FIBA\u6bd4\u8d5b\u4e2d\u8d62\u5f97\u7b2c\u4e00\u540d\u3002",
+      "tchinese": "\u5728MyCAREER\u7684FIBA\u6bd4\u8cfd\u4e2d\u8d0f\u5f97\u7b2c\u4e00\u540d\u3002",
+      "japanese": "MyCAREER \u306e FIBA \u306e\u8a66\u5408\u30671\u4f4d\u306b\u5230\u9054\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/c7c0e616d645ac96966c6948a40d6e409c789fe4.jpg",
+    "icon": "img/67a24ab9ae05281c3dc2e7a0ab7ad684348bf663.jpg",
+    "name": "15"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "The G.O.A.T.",
+      "token": "NEW_ACHIEVEMENT_1_15_NAME",
+      "german": "The GOAT",
+      "french": "GOAT",
+      "italian": "Il GOAT",
+      "koreana": "G.O.A.T",
+      "spanish": "GOAT",
+      "schinese": "\u53f2\u4e0a\u6700\u5f3a",
+      "tchinese": "\u53f2\u4e0a\u6700\u5f37",
+      "japanese": "G.O.A.T."
+    },
+    "description": {
+      "english": "Reach #1 on the GOAT list in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_15_DESC",
+      "german": "Erreiche in Meine KARRIERE Platz 1 auf der GOAT-Liste.",
+      "french": "Atteignez la 1re place de la liste des GOAT dans Ma CARRI\u00c8RE.",
+      "italian": "Raggiungi il primo posto nella lista dei GOAT ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c GOAT \ubaa9\ub85d 1\uc704\ub97c \ub2ec\uc131\ud558\uc138\uc694.",
+      "spanish": "Alcanza el primer puesto en la lista con los GOAT en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u767b\u4e0aG.O.A.T.\u6392\u540d\u7b2c\u4e00\u3002",
+      "tchinese": "\u5728MyCAREER\u7684GOAT\u699c\u55ae\u4e2d\u9054\u5230\u7b2c1\u3002",
+      "japanese": "MyCAREER \u306e GOAT \u30ea\u30b9\u30c8\u30671\u4f4d\u306b\u5230\u9054\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/d62ad8caac3c5175cbdcb7bc3d7bc1169c96261d.jpg",
+    "icon": "img/78d96bcd726fbe8c4713d146bde3c27929100160.jpg",
+    "name": "16"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "The Ultimate Dynasty",
+      "token": "NEW_ACHIEVEMENT_1_16_NAME",
+      "german": "Die Ultimative Dynasty",
+      "french": "Dynastie ultime",
+      "italian": "La dinastia definitiva",
+      "koreana": "\uad81\uadf9\uc758 \uc655\uc870",
+      "spanish": "La dinast\u00eda definitiva",
+      "schinese": "\u7ec8\u6781\u738b\u671d",
+      "tchinese": "\u7d42\u6975\u738b\u671d",
+      "japanese": "\u7a76\u6975\u306e\u738b\u671d"
+    },
+    "description": {
+      "english": "Reach #1 on the Dynasty List in MyCAREER.",
+      "token": "NEW_ACHIEVEMENT_1_16_DESC",
+      "german": "Erreiche in Meine KARRIERE Platz #1 auf der Dynasty-Liste.",
+      "french": "Atteignez la 1re place du classement des dynasties dans Ma CARRI\u00c8RE.",
+      "italian": "Raggiungi il primo posto nella Lista Dinastia ne La mia CARRIERA.",
+      "koreana": "MyCAREER\uc5d0\uc11c \uc655\uc870 \ubaa9\ub85d 1\uc704\ub97c \ub2ec\uc131\ud558\uc138\uc694.",
+      "spanish": "Alcanza el primer puesto en la lista de dinast\u00edas en Mi CARRERA.",
+      "schinese": "\u5728\u8f89\u714c\u751f\u6daf\u4e2d\u767b\u4e0a\u738b\u671d\u6392\u540d\u7b2c\u4e00\u3002",
+      "tchinese": "\u5728MyCAREER\u7684\u738b\u671d\u699c\u55ae\u4e2d\u9054\u5230\u7b2c1\u3002",
+      "japanese": "MyCAREER \u306e\u30c0\u30a4\u30ca\u30b9\u30c6\u30a3 \u30ea\u30b9\u30c8\u30671\u4f4d\u306b\u5230\u9054\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/120815eca67a3c8fab5a34087d9f6aad27be6a71.jpg",
+    "icon": "img/c18c6f037587549dd6e9a316d729f4eebc31bafb.jpg",
+    "name": "17"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "It's All About the W",
+      "token": "NEW_ACHIEVEMENT_1_17_NAME",
+      "german": "Gewinnen ist alles",
+      "french": "Le W de la victoire",
+      "italian": "Doppia V come vittoria",
+      "koreana": "\uc911\uc694\ud55c \uac74 W",
+      "spanish": "Se trata de ganar",
+      "schinese": "\u5973\u4e4b\u771f\u610f",
+      "tchinese": "W\u4e4b\u542b\u7fa9",
+      "japanese": "W \u3053\u305d\u3059\u3079\u3066"
+    },
+    "description": {
+      "english": "Win a WNBA game in The W.",
+      "token": "NEW_ACHIEVEMENT_1_17_DESC",
+      "german": "Gewinne in The W ein WNBA-Spiel.",
+      "french": "Remportez un match WNBA dans The W.",
+      "italian": "Vinci una partita della WNBA in The W.",
+      "koreana": "The W\uc5d0\uc11c WNBA \uacbd\uae30\ub97c \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Gana un partido de la WNBA en La W.",
+      "schinese": "\u5728\u5973\u7bee\u751f\u6daf\u4e2d\u8d62\u5f97\u4e00\u573aWNBA\u6bd4\u8d5b\u3002",
+      "tchinese": "\u5728\u300cThe W\u300d\u4e2d\u8d0f\u5f97\u4e00\u5834WNBA\u6bd4\u8cfd\u3002",
+      "japanese": "The W \u3067 WNBA \u306e\u8a66\u5408\u306b\u52dd\u5229\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/09a8f2bbc897488d795432a9b085ae9edeb2f173.jpg",
+    "icon": "img/e72214b7b1641e2204082e17a7609df02a0181b3.jpg",
+    "name": "18"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Watch Me Work",
+      "token": "NEW_ACHIEVEMENT_1_18_NAME",
+      "german": "Sieh zu und lerne",
+      "french": "Regarde et apprends",
+      "italian": "Verso la vittoria",
+      "koreana": "\ub0b4 \uc2e4\ub825\uc744 \ubd10",
+      "spanish": "M\u00edrame trabajar",
+      "schinese": "\u79c0\u4e3d\u8868\u6f14",
+      "tchinese": "\u9a4d\u52c7\u5973\u5c07",
+      "japanese": "\u898b\u3066\u306a\u3055\u3044\u3088"
+    },
+    "description": {
+      "english": "Win a game in The W Online.",
+      "token": "NEW_ACHIEVEMENT_1_18_DESC",
+      "german": "Gewinne ein Spiel in The W Online.",
+      "french": "Remportez un match dans The W en ligne.",
+      "italian": "Vinci una partita in The W Online.",
+      "koreana": "The W \uc628\ub77c\uc778\uc5d0\uc11c \uacbd\uae30\ub97c \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Gana un partido en La W Online.",
+      "schinese": "\u5728\u5973\u7bee\u751f\u6daf\u5728\u7ebf\u4e2d\u8d62\u5f97\u4e00\u573a\u6bd4\u8d5b\u3002",
+      "tchinese": "\u5728\u7dda\u4e0a\u300cThe W\u300d\u4e2d\u8d0f\u5f97\u4e00\u5834\u6bd4\u8cfd\u3002",
+      "japanese": "The W \u30aa\u30f3\u30e9\u30a4\u30f3\u3067\u8a66\u5408\u306b\u52dd\u5229\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/1cb86592fb7159de4a9ba495470931f706056a32.jpg",
+    "icon": "img/b2fbbf3271c608a3487565519d37e7c362382b16.jpg",
+    "name": "19"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Favorites",
+      "token": "NEW_ACHIEVEMENT_1_19_NAME",
+      "german": "Favoriten",
+      "french": "Favoris",
+      "italian": "Preferiti",
+      "koreana": "\uc990\uaca8\ucc3e\uae30",
+      "spanish": "Favoritas",
+      "schinese": "\u5fc3\u5934\u6700\u7231",
+      "tchinese": "\u6211\u7684\u6700\u611b",
+      "japanese": "\u304a\u6c17\u306b\u5165\u308a"
+    },
+    "description": {
+      "english": "Favorite a Player Card in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_19_DESC",
+      "german": "Favorisiere in MyTEAM eine Spielerkarte.",
+      "french": "Mettez une carte joueur en favori dans MyTEAM.",
+      "italian": "Inserisci una carta giocatore nei preferiti in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc120\uc218 \uce74\ub4dc \uc990\uaca8\ucc3e\uae30\ub97c \uc124\uc815\ud558\uc138\uc694.",
+      "spanish": "Marca una carta de jugador como favorita en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u6536\u85cf\u4e00\u5f20\u7403\u5458\u5361\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u5c07\u4e00\u5f35\u7403\u54e1\u5361\u8a2d\u70ba\u6700\u611b\u3002",
+      "japanese": "MyTEAM \u3067\u9078\u624b\u30ab\u30fc\u30c9\u3092\u304a\u6c17\u306b\u5165\u308a\u306b\u6307\u5b9a\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/1f6c47aea837a9c9f5a6e11edecd8241f1db0ebb.jpg",
+    "icon": "img/3e39b81513773b8f4be13dd2c4704ed92a149ea0.jpg",
+    "name": "20"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Run It",
+      "token": "NEW_ACHIEVEMENT_1_20_NAME",
+      "german": "So l\u00e4uft es",
+      "french": "\u00c9vasion r\u00e9ussie",
+      "italian": "Inarrestabile",
+      "koreana": "\ub05d\uae4c\uc9c0 \ub2ec\ub824",
+      "spanish": "En racha",
+      "schinese": "\u7ec8\u6781\u6536\u5272",
+      "tchinese": "\u5168\u529b\u958b\u6253",
+      "japanese": "\u30e9\u30f3 \u30a4\u30c3\u30c8"
+    },
+    "description": {
+      "english": "Win the final prize in Breakout: Gauntlet in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_20_DESC",
+      "german": "Gewinne in MyTEAM den finalen Preis in Breakout: Gauntlet.",
+      "french": "Gagnez la r\u00e9compense finale en \u00c9preuve Breakout dans MyTEAM.",
+      "italian": "Vinci il premio finale in Sfida Breakout in MyTEAM.",
+      "koreana": "MyTEAM \ube0c\ub808\uc774\ud06c\uc544\uc6c3: \uac74\ud2c0\ub9bf \ubaa8\ub4dc\uc5d0\uc11c \ucd5c\uc885 \ubcf4\uc0c1\uc744 \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Gana el premio final en El Reto Revelaci\u00f3n en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u8d62\u5f97\u7a81\u7834\uff1a\u6218\u5e16\u7684\u6700\u7ec8\u5956\u54c1\u3002",
+      "tchinese": "\u5728MyTEAM\u7684\u7a81\u7834\uff1a\u6230\u5e16\u4e2d\u8d0f\u5f97\u6700\u7d42\u7684\u734e\u54c1\u3002",
+      "japanese": "MyTEAM \u306e\u30d6\u30ec\u30a4\u30af\u30a2\u30a6\u30c8 \u30ac\u30f3\u30c8\u30ec\u30c3\u30c8\u3067\u6700\u5f8c\u306e\u8cde\u54c1\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/db28632a3b308283c6913a479ba487772af9a179.jpg",
+    "icon": "img/d4df60120362942e4f3feb632c220faa116aa4ab.jpg",
+    "name": "21"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "All-Star",
+      "token": "NEW_ACHIEVEMENT_1_21_NAME",
+      "german": "All-Star",
+      "french": "All-Star",
+      "italian": "All-Star",
+      "koreana": "\uc62c\uc2a4\ud0c0",
+      "spanish": "All-Star",
+      "schinese": "\u5168\u660e\u661f",
+      "tchinese": "\u5168\u660e\u661f",
+      "japanese": "\u30aa\u30fc\u30eb\u30b9\u30bf\u30fc"
+    },
+    "description": {
+      "english": "Win a game of All-Star Team-up in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_21_DESC",
+      "german": "Gewinne in MyTEAM ein Spiel All-Star Team-Up.",
+      "french": "Remportez un match en \u00c9quipe All-Star dans MyTEAM.",
+      "italian": "Vinci una partita Alleanza All-Star in MyTEAM.",
+      "koreana": "MyTEAM\uc758 \uc62c\uc2a4\ud0c0 \ud300 \ud3b8\uc131 \uacbd\uae30\uc5d0\uc11c \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Gana un partido de Equipo All-Star en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u8d62\u5f97\u4e00\u573a\u5168\u660e\u661f\u914d\u5bf9\u6bd4\u8d5b\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u8d0f\u5f97\u4e00\u5834\u5168\u660e\u661f\u7d44\u968a\u6bd4\u8cfd\u3002",
+      "japanese": "MyTEAM \u306e\u30aa\u30fc\u30eb\u30b9\u30bf\u30fc \u30c1\u30fc\u30e0\u30a2\u30c3\u30d7\u3067\u8a66\u5408\u306b\u52dd\u3064\u3002"
+    },
+    "icon_gray": "img/1cddd587f91936d72e04a4e6efa22566b639bca3.jpg",
+    "icon": "img/7a7abe4a7f623a754973975d9f42d55a14218461.jpg",
+    "name": "22"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Hacks",
+      "token": "NEW_ACHIEVEMENT_1_22_NAME",
+      "german": "Vorteil",
+      "french": "Coup de pouce",
+      "italian": "Segreti del mestiere",
+      "koreana": "\uce58\ud2b8\ud0a4",
+      "spanish": "Hackeos",
+      "schinese": "\u9ed1\u5ba2",
+      "tchinese": "\u99ed\u5ba2",
+      "japanese": "\u30cf\u30c3\u30af"
+    },
+    "description": {
+      "english": "Use a Game Changer card in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_22_DESC",
+      "german": "Setze in MyTEAM eine Gamechanger-Karte ein.",
+      "french": "Utilisez une carte Game Changer dans MyTEAM.",
+      "italian": "Utilizza una carta Svolta in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uac8c\uc784 \uccb4\uc778\uc800 \uce74\ub4dc\ub97c \uc0ac\uc6a9\ud558\uc138\uc694.",
+      "spanish": "Usa una carta Revolucionaria de partidos en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u4f7f\u7528\u4e00\u5f20\u6bd4\u8d5b\u6539\u53d8\u8005\u5361\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u4f7f\u7528\u4e00\u5f35\u95dc\u9375\u7403\u54e1\u5361\u3002",
+      "japanese": "MyTEAM \u3067\u30b2\u30fc\u30e0\u30c1\u30a7\u30f3\u30b8\u30e3\u30fc\u30ab\u30fc\u30c9\u3092\u4f7f\u3046\u3002"
+    },
+    "icon_gray": "img/c9ca08240fd466e2168ec4c37751364cfe282df6.jpg",
+    "icon": "img/261375e4879966530e572c83139287c4d484f40b.jpg",
+    "name": "23"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Naismith",
+      "token": "NEW_ACHIEVEMENT_1_23_NAME",
+      "german": "Naismith",
+      "french": "Naismith",
+      "italian": "Naismith",
+      "koreana": "Naismith",
+      "spanish": "Naismith",
+      "schinese": "\u5948\u53f2\u5bc6\u65af",
+      "tchinese": "\u5948\u53f2\u5bc6\u65af\u50b3\u5947",
+      "japanese": "\u30cd\u30a4\u30b9\u30df\u30b9"
+    },
+    "description": {
+      "english": "Unlock a Hall of Fame Training badge in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_23_DESC",
+      "german": "Schalte in MyTEAM eine Hall-of-Fame-Trainingsplakette freie.",
+      "french": "D\u00e9bloquez un insigne d'entra\u00eenement Hall of Fame dans MyTEAM.",
+      "italian": "Sblocca un distintivo Allenamento Hall of Fame in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uba85\uc608\uc758 \uc804\ub2f9 \ud2b8\ub808\uc774\ub2dd \ubc30\uc9c0\ub97c \uc7a0\uae08 \ud574\uc81c\ud558\uc138\uc694.",
+      "spanish": "Desbloquea una insignia de entrenamiento del Sal\u00f3n de la Fama en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u89e3\u9501\u4e00\u679a\u540d\u4eba\u5802\u8bad\u7ec3\u5fbd\u7ae0\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u89e3\u9396\u4e00\u500b\u540d\u4eba\u5802\u8a13\u7df4\u5fbd\u7ae0\u3002",
+      "japanese": "MyTEAM \u3067\u6bbf\u5802\u5165\u308a\u30c8\u30ec\u30fc\u30cb\u30f3\u30b0\u30d0\u30c3\u30b8\u3092\u30a2\u30f3\u30ed\u30c3\u30af\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/73d2c9636f2899273bf387838eb6bd41d3191fc1.jpg",
+    "icon": "img/01a51b467b3b03ed80fb53d25e11513f4fefd40c.jpg",
+    "name": "24"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "The W",
+      "token": "NEW_ACHIEVEMENT_1_24_NAME",
+      "german": "The W",
+      "french": "The W",
+      "italian": "The W",
+      "koreana": "The W",
+      "spanish": "La W",
+      "schinese": "\u5973\u7bee\u5dc5\u5cf0",
+      "tchinese": "\u5973\u5c07\u7576\u9053",
+      "japanese": "\u30b6 \u30c0\u30d6\u30ea\u30e5\u30fc"
+    },
+    "description": {
+      "english": "Play Domination, Salary Cap, or Showdown with an all WNBA Lineup in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_24_DESC",
+      "german": "Spiele in MyTEAM mit einer WNBA-Aufstellung Domination, Gehaltsgrenze oder Showdown.",
+      "french": "Jouez en mode Domination, Plafond salarial ou Duel avec une formation WNBA dans MyTEAM.",
+      "italian": "Gioca a Dominio, Tetto salariale o Scontro finale con sole giocatrici WNBA in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc62c WNBA \ub77c\uc778\uc5c5\uc73c\ub85c \ub3c4\ubbf8\ub124\uc774\uc158, \uc0d0\ub7ec\ub9ac\ucea1 \ub610\ub294 \uc1fc\ub2e4\uc6b4\uc744 \ud50c\ub808\uc774\ud558\uc138\uc694.",
+      "spanish": "Juega a Dominaci\u00f3n, Tope salarial o Enfrentamiento con un quinteto de la WNBA en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u4f7f\u7528\u5168WNBA\u9635\u5bb9\u73a9\u79f0\u9738\u8d5b\u3001\u5de5\u8d44\u5e3d\u6216\u51b3\u4e00\u80dc\u8d1f\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u4f7f\u7528\u5168WNBA\u9663\u5bb9\u904a\u73a9\u7a31\u9738\u8cfd\u3001\u85aa\u8cc7\u5e3d\u6216\u4e00\u6c7a\u96cc\u96c4\u3002",
+      "japanese": "MyTEAM \u306e\u30aa\u30fc\u30eb WNBA \u30e9\u30a4\u30f3\u30ca\u30c3\u30d7\u3067\u30c9\u30df\u30cd\u30fc\u30b7\u30e7\u30f3\u3001\u30b5\u30e9\u30ea\u30fc\u30ad\u30e3\u30c3\u30d7\u53c8\u306f\u30b7\u30e7\u30fc\u30c0\u30a6\u30f3\u3092\u30d7\u30ec\u30a4\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/b82fbeff6919f970fb499ca2f14aabb11c90b167.jpg",
+    "icon": "img/b19b7c62f64d94ddb5fb547e0b85d86a4453bd05.jpg",
+    "name": "25"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Got'em",
+      "token": "NEW_ACHIEVEMENT_1_25_NAME",
+      "german": "Hab sie",
+      "french": "On les a eus",
+      "italian": "\u00c8 mia",
+      "koreana": "\uc131\ucde8",
+      "spanish": "Conseguido",
+      "schinese": "\u8f7b\u677e\u62ff\u4e0b",
+      "tchinese": "\u52dd\u5238\u5728\u63e1",
+      "japanese": "\u30b2\u30c3\u30c8\u3060\u305c"
+    },
+    "description": {
+      "english": "Acquire a Victory Card in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_25_DESC",
+      "german": "Erhalte in MyTEAM eine Siegeskarte.",
+      "french": "R\u00e9cup\u00e9rez une carte Victoire dans MyTEAM.",
+      "italian": "Ottieni una carta Vittoria in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc2b9\ub9ac \uce74\ub4dc\ub97c \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue una carta de victoria en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u83b7\u5f97\u4e00\u5f20\u80dc\u5229\u5361\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u7372\u5f97\u4e00\u5f35\u52dd\u5229\u5361\u3002",
+      "japanese": "MyTEAM \u3067\u52dd\u5229\u30ab\u30fc\u30c9\u3092\u5165\u624b\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/d2fa95adf658eceb3a77475b973d06dc94c21900.jpg",
+    "icon": "img/76ed9a4f64b166690efcfcbdeb20403e111859dd.jpg",
+    "name": "26"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "House Party",
+      "token": "NEW_ACHIEVEMENT_1_26_NAME",
+      "german": "House Party",
+      "french": "House Party",
+      "italian": "Festa totale",
+      "koreana": "\ud558\uc6b0\uc2a4 \ud30c\ud2f0",
+      "spanish": "House Party",
+      "schinese": "\u5168\u5458\u767b\u573a",
+      "tchinese": "\u71b1\u9b27\u767b\u5834",
+      "japanese": "\u30cf\u30a6\u30b9\u30d1\u30fc\u30c6\u30a3\u30fc"
+    },
+    "description": {
+      "english": "Acquire a 5-player walkout in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_26_DESC",
+      "german": "Erhalte in MyTEAM einen 5-Spieler-Walkout.",
+      "french": "Faites sortir 5\u00a0joueurs dans MyTEAM.",
+      "italian": "Ottieni un walkout di 5 giocatori in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uac78\uc5b4\ub098\uac00\uae30 \uc560\ub2c8\uba54\uc774\uc158\uc774 \uc788\ub294 \uc120\uc218 5\uba85\uc744 \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue un dribling de 5 jugadores en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u83b7\u5f97\u4e00\u6b215\u7403\u5458\u767b\u573a\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u8b935\u540d\u7403\u54e1\u540c\u6b65\u767b\u5834\u3002",
+      "japanese": "MyTEAM \u3067\u9078\u624b5\u4eba\u306e\u30a6\u30a9\u30fc\u30af\u30a2\u30a6\u30c8\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/574100d1f5e576fab5bd64dba3b4952083eab8f6.jpg",
+    "icon": "img/c8628d272c26b5917e08542c4d3a9f041c70b397.jpg",
+    "name": "27"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Early Bird",
+      "token": "NEW_ACHIEVEMENT_1_27_NAME",
+      "german": "Fr\u00fcher Vogel",
+      "french": "\u00c0 moi",
+      "italian": "Asta celere",
+      "koreana": "\uc77c\ucc0d \uc77c\uc5b4\ub098\ub294 \uc0c8",
+      "spanish": "Apostador r\u00e1pido",
+      "schinese": "\u5148\u624b\u4e3a\u5f3a",
+      "tchinese": "\u65e9\u9ce5\u5f97\u5229",
+      "japanese": "\u8fc5\u901f\u679c\u65ad"
+    },
+    "description": {
+      "english": "Win an Auction within 5 minutes of it being listed in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_27_DESC",
+      "german": "Gewinne in MyTEAM eine Auktion innerhalb von 5 Minuten nach Beginn.",
+      "french": "Remportez une ench\u00e8re dans les 5\u00a0minutes apr\u00e8s sa publication dans MyTEAM.",
+      "italian": "Vinci un'asta entro 5 minuti dal suo inizio in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uacbd\ub9e4\ud488\uc774 \uc62c\ub77c\uc624\uba74 5\ubd84 \uc774\ub0b4\uc5d0 \ub099\ucc30\ubc1b\uc73c\uc138\uc694.",
+      "spanish": "Gana una subasta en 5 minutos como m\u00e1ximo en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u4e0a\u67b6\u540e5\u5206\u949f\u5185\u8d62\u5f97\u4e00\u6b21\u62cd\u5356\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u5728\u4e0a\u67b6\u5f8c5\u5206\u9418\u5167\u6210\u529f\u8d0f\u5f97\u4e00\u5834\u62cd\u8ce3\u3002",
+      "japanese": "MyTEAM \u3067\u30aa\u30fc\u30af\u30b7\u30e7\u30f3\u958b\u59cb\u5f8c5\u5206\u4ee5\u5185\u306b\u843d\u672d\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/14e4f7add78d82d2a713f74bf3a8ac5f5de9f855.jpg",
+    "icon": "img/6f9032e94b0788fda4546890461c78ab1a30f397.jpg",
+    "name": "28"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Bid Snipe",
+      "token": "NEW_ACHIEVEMENT_1_28_NAME",
+      "german": "Gerade noch",
+      "french": "Dernier moment",
+      "italian": "Caccia all'affare",
+      "koreana": "\uc9dc\ub9bf\ud55c \uc785\ucc30",
+      "spanish": "Apostador tard\u00edo",
+      "schinese": "\u72d9\u51fb\u4e2d\u6807",
+      "tchinese": "\u58d3\u54e8\u6436\u6a19",
+      "japanese": "\u30b9\u30ca\u30a4\u30d7\u5165\u672d"
+    },
+    "description": {
+      "english": "Win an Auction with less than 10 seconds remaining in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_28_DESC",
+      "german": "Gewinne in MyTEAM eine Auktion mit weniger als 10 Sekunden verbleibender Restzeit.",
+      "french": "Remportez une ench\u00e8re dans les 10\u00a0derni\u00e8res secondes dans MyTEAM.",
+      "italian": "Vinci un'asta a meno di 10 secondi dal termine in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uacbd\ub9e4 \uc885\ub8cc\uae4c\uc9c0 10\ucd08 \ubbf8\ub9cc\uc73c\ub85c \ub0a8\uc740 \uacbd\ub9e4\ud488\uc744 \ub099\ucc30\ubc1b\uc73c\uc138\uc694.",
+      "spanish": "Gana una subasta con menos de 10 segundos restantes en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u5728\u5269\u4f59\u65f6\u95f4\u5c11\u4e8e10\u79d2\u65f6\u8d62\u5f97\u4e00\u6b21\u62cd\u5356\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u5728\u5269\u9918\u4e0d\u523010\u79d2\u6642\u6210\u529f\u8d0f\u5f97\u4e00\u5834\u62cd\u8ce3\u3002",
+      "japanese": "MyTEAM \u3067\u30aa\u30fc\u30af\u30b7\u30e7\u30f3\u3092\u6b8b\u308a10\u79d2\u672a\u6e80\u3067\u843d\u672d\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/eaa4a4926977ba6157787caabb1920adcecea996.jpg",
+    "icon": "img/ff87589038b70e5fed39aa4b451c1fd3e77c9430.jpg",
+    "name": "29"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Busted",
+      "token": "NEW_ACHIEVEMENT_1_29_NAME",
+      "german": "Serienkiller",
+      "french": "Cass\u00e9",
+      "italian": "Guastafeste",
+      "koreana": "\ubc84\uc2a4\ud130",
+      "spanish": "Aguafiestas",
+      "schinese": "\u8fde\u80dc\u7ec8\u7ed3\u8005",
+      "tchinese": "\u9023\u52dd\u7d42\u7d50\u8005",
+      "japanese": "\u30b9\u30c8\u30c3\u30d1\u30fc"
+    },
+    "description": {
+      "english": "Earn a Streak Buster in Triple Threat Park in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_29_DESC",
+      "german": "Verdiene in MyTEAM in Triple Threat-Park einen Serienbrecher.",
+      "french": "Gagnez un Briseur de s\u00e9rie en parc Triple menace dans MyTEAM.",
+      "italian": "Interrompi una serie nel parco Triplice minaccia in MyTEAM.",
+      "koreana": "MyTEAM \ud2b8\ub9ac\ud50c \uc2a4\ub81b \ud30c\ud06c\uc5d0\uc11c \uc5f0\uc2b9 \ubc84\uc2a4\ud130\ub97c \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Rompe una racha de victorias en el parque de Triple amenaza en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u7684\u4e09\u5a01\u80c1\u516c\u56ed\u4e2d\u7ec8\u7ed3\u5bf9\u624b\u8fde\u80dc\u3002",
+      "tchinese": "\u5728MyTEAM\u7684\u4e09\u91cd\u5a01\u8105\u516c\u5712\u4e2d\u7372\u5f97\u4e00\u9805\u9023\u52dd\u7834\u58de\u3002",
+      "japanese": "MyTEAM \u306e\u30c8\u30ea\u30d7\u30eb\u30b9\u30ec\u30c3\u30c8 \u30d1\u30fc\u30af\u3067\u9023\u52dd\u30b9\u30c8\u30c3\u30d1\u30fc\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/9f6781de707c5a0dfb56edad40da5576aea35a0f.jpg",
+    "icon": "img/23bf4172f3ca5bdbc40e4a323899a8cf71689017.jpg",
+    "name": "30"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Zer0",
+      "token": "NEW_ACHIEVEMENT_1_30_NAME",
+      "german": "Zer0",
+      "french": "Z\u00e9r0",
+      "italian": "Zer0",
+      "koreana": "\uc81c\ub85c",
+      "spanish": "\u00a1A m\u00ed!",
+      "schinese": "\u4e0d\u7559\u60c5\u9762",
+      "tchinese": "\u4e0d\u7559\u60c5\u9762",
+      "japanese": "\u30bc\u30ed"
+    },
+    "description": {
+      "english": "Earn a shutout in a Breakout game in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_30_DESC",
+      "german": "Verdiene in MyTEAM in einem Breakout-Spiel ein Shutout.",
+      "french": "Effectuez un shutout lors d'un match en Breakout dans MyTEAM.",
+      "italian": "Lascia a zero la squadra avversaria in una partita di Breakout in MyTEAM.",
+      "koreana": "MyTEAM \ube0c\ub808\uc774\ud06c\uc544\uc6c3 \uacbd\uae30\uc5d0\uc11c \uc0c1\ub300\ub97c 0\uc810\uc73c\ub85c \ub9c9\uace0 \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "G\u00e1nate una menci\u00f3n en un partido de Revelaci\u00f3n en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u7684\u4e00\u573a\u7a81\u7834\u6bd4\u8d5b\u4e2d\u5b8c\u6210\u96f6\u5c01\u3002",
+      "tchinese": "\u5728MyTEAM\u7684\u4e00\u5834\u7a81\u7834\u8cfd\u4e2d\u5b8c\u6210\u96f6\u5c01\u3002",
+      "japanese": "MyTEAM \u306e\u30d6\u30ec\u30a4\u30af\u30a2\u30a6\u30c8\u306e\u8a66\u5408\u3067\u30b7\u30e3\u30c3\u30c8\u30a2\u30a6\u30c8\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/6aa240bddb30309126c45d4a869d22dadc891058.jpg",
+    "icon": "img/387f49c128ddbd25e9a988fa6838097b999a674a.jpg",
+    "name": "31"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Sealed",
+      "token": "NEW_ACHIEVEMENT_1_31_NAME",
+      "german": "Versiegelt",
+      "french": "Finie",
+      "italian": "Al sicuro",
+      "koreana": "\ubd09\uc778",
+      "spanish": "Sellada",
+      "schinese": "\u706b\u6f06\u5c01\u5370",
+      "tchinese": "\u5c01\u5b58\u5b8c\u6210",
+      "japanese": "\u5c01\u5370"
+    },
+    "description": {
+      "english": "Lock In any Collection in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_1_31_DESC",
+      "german": "Registriere in MyTEAM eine beliebige Sammlung.",
+      "french": "Verrouillez une collection dans MyTEAM.",
+      "italian": "Blocca una collezione qualsiasi in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uceec\ub809\uc158\uc744 \uc7a0\uadf8\uc138\uc694.",
+      "spanish": "Consolida cualquier colecci\u00f3n en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u9501\u5b9a\u4efb\u610f\u6536\u85cf\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u9396\u5b9a\u4efb\u610f\u6536\u85cf\u3002",
+      "japanese": "MyTEAM \u3067\u4efb\u610f\u306e\u30b3\u30ec\u30af\u30b7\u30e7\u30f3\u3092\u30ed\u30c3\u30af\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/ef5b8eb3653de168b6e5b2d553e5b1215025929e.jpg",
+    "icon": "img/60c5780418ced0584534a5289a43b2daec5cd520.jpg",
+    "name": "32"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Dominated",
+      "token": "NEW_ACHIEVEMENT_2_0_NAME",
+      "german": "Dominiert",
+      "french": "Domination",
+      "italian": "Dominio riconosciuto",
+      "koreana": "\ub3c4\ubbf8\ub124\uc774\uc158",
+      "spanish": "Dominado",
+      "schinese": "\u79f0\u738b\u79f0\u9738",
+      "tchinese": "\u7a31\u9738\u8a8d\u8b49",
+      "japanese": "\u5236\u5727"
+    },
+    "description": {
+      "english": "Earn a Crest in Domination in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_0_DESC",
+      "german": "Verdiene in MyTEAM in Domination ein Wappen.",
+      "french": "Gagnez un \u00e9cusson en Domination dans MyTEAM.",
+      "italian": "Ottieni uno stemma Dominio in MyTEAM.",
+      "koreana": "MyTEAM \ub3c4\ubbf8\ub124\uc774\uc158\uc5d0\uc11c \ubb38\uc7a5\uc744 \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue un escudo en Dominaci\u00f3n en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u7684\u79f0\u9738\u8d5b\u4e2d\u83b7\u5f97\u4e00\u679a\u80f8\u7ae0\u3002",
+      "tchinese": "\u5728MyTEAM\u7684\u7a31\u9738\u8cfd\u4e2d\u7372\u5f97\u4e00\u500b\u98fe\u7ae0\u3002",
+      "japanese": "MyTEAM \u306e\u30c9\u30df\u30cd\u30fc\u30b7\u30e7\u30f3\u3067\u30af\u30ec\u30b9\u30c8\u3092\u624b\u306b\u5165\u308c\u308b\u3002"
+    },
+    "icon_gray": "img/b861ab0a83eaf84d56d7f529013e3dbd3b8fa147.jpg",
+    "icon": "img/53488fe3854e60ec340c2c40fd66e459f1e8c1aa.jpg",
+    "name": "33"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Hide and Seek",
+      "token": "NEW_ACHIEVEMENT_2_1_NAME",
+      "german": "Versteckspiel",
+      "french": "Cache-cache",
+      "italian": "Nascondino",
+      "koreana": "\uc228\ubc14\uaf2d\uc9c8",
+      "spanish": "Al escondite",
+      "schinese": "\u5bfb\u5b9d\u597d\u624b",
+      "tchinese": "\u85cf\u5bf6\u767c\u73fe",
+      "japanese": "\u304b\u304f\u308c\u3093\u307c"
+    },
+    "description": {
+      "english": "Acquire a Hidden Gem Player card in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_1_DESC",
+      "german": "Erhalte in MyTEAM eine Verborgene Juwelen-Spielerkarte.",
+      "french": "Obtenez une carte joueur Perles rares dans MyTEAM.",
+      "italian": "Ottieni una carta giocatore Gemme nascoste in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc228\uaca8\uc9c4 \ubcf4\uc11d \uc120\uc218 \uce74\ub4dc\ub97c \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue una carta de jugador Joyas ocultas en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\u83b7\u5f97\u4e00\u5f20\u9690\u85cf\u5b9d\u77f3\u7403\u5458\u5361\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u7372\u5f97\u4e00\u5f35\u96b1\u85cf\u5bf6\u77f3\u7403\u54e1\u5361\u3002",
+      "japanese": "MyTEAM \u3067\u300c\u96a0\u308c\u305f\u5b9d\u77f3\u300d\u9078\u624b\u30ab\u30fc\u30c9\u3092\u7372\u5f97\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/1dfc6d9c3930b730731db42dabc27565713356fa.jpg",
+    "icon": "img/abd04c988074b975de320743d6663c7c4d928053.jpg",
+    "name": "34"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Animated",
+      "token": "NEW_ACHIEVEMENT_2_2_NAME",
+      "german": "Animiert",
+      "french": "Anim\u00e9",
+      "italian": "Animazione",
+      "koreana": "\uc560\ub2c8\uba54\uc774\uc158",
+      "spanish": "Animado",
+      "schinese": "\u52a8\u753b\u8d4b\u80fd",
+      "tchinese": "\u52d5\u614b\u89e3\u653e",
+      "japanese": "\u30a2\u30cb\u30e1\u30fc\u30b7\u30e7\u30f3"
+    },
+    "description": {
+      "english": "Apply an Animation Breaker Game Changer to a Player Card in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_2_DESC",
+      "german": "Wende in MyTEAM einen Animationsbrecher-Gamechanger auf eine Spielerkarte an.",
+      "french": "Appliquez un Game Changer casseur d'animations \u00e0 une carte joueur dans MyTEAM.",
+      "italian": "Applica una Svolta Convertitore animazioni a una carta giocatore in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc120\uc218 \uce74\ub4dc\uc5d0 \uc560\ub2c8\uba54\uc774\uc158 \ube0c\ub808\uc774\ucee4 \uac8c\uc784 \uccb4\uc778\uc800\ub97c \uc801\uc6a9\ud558\uc138\uc694.",
+      "spanish": "Aplica una rompeanimaciones Revolucionaria de partidos a una carta de jugador en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u5c06\u52a8\u753b\u7834\u574f\u8005\u6bd4\u8d5b\u6539\u53d8\u8005\u5e94\u7528\u4e8e\u4e00\u5f20\u7403\u5458\u5361\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\uff0c\u5c07\u52d5\u756b\u7834\u58de\u8005\u95dc\u9375\u7403\u54e1\u5957\u7528\u65bc\u4e00\u5f35\u7403\u54e1\u5361\u3002",
+      "japanese": "MyTEAM \u3067\u30a2\u30cb\u30e1\u30fc\u30b7\u30e7\u30f3\u30d6\u30ec\u30fc\u30ab\u30fc \u30b2\u30fc\u30e0\u30c1\u30a7\u30f3\u30b8\u30e3\u30fc\u3092\u9078\u624b\u30ab\u30fc\u30c9\u306b\u9069\u7528\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/b23200d0410164c5f314862d5c5d00fc22b0b3d1.jpg",
+    "icon": "img/9e2db667218c6ec8cab2c58fc2e11b3a87175ff7.jpg",
+    "name": "35"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Shoe Head",
+      "token": "NEW_ACHIEVEMENT_2_3_NAME",
+      "german": "Sneakerhead",
+      "french": "Fan de sneakers",
+      "italian": "Collezionista di scarpe",
+      "koreana": "\uc6b4\ub3d9\ud654 \ub9c8\ub2c8\uc544",
+      "spanish": "Flipado de las zapas",
+      "schinese": "\u7403\u978b\u63a7",
+      "tchinese": "\u7403\u978b\u72c2\u71b1\u8005",
+      "japanese": "\u30b7\u30e5\u30fc\u30ba\u30d8\u30c3\u30c9"
+    },
+    "description": {
+      "english": "Collect 1 Diamond Shoe from each Shoe Brand featured in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_3_DESC",
+      "german": "Sammle in MyTEAM 1 Diamant-Schuh von jeder gefeaturten Schuhmarke.",
+      "french": "R\u00e9cup\u00e9rez une chaussure Diamant de chaque marque dans MyTEAM.",
+      "italian": "Ottieni 1 scarpa Diamante da ogni marca di scarpe in evidenza in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc5d0\uc11c \ubaa8\ub4e0 \uc2e0\ubc1c \ube0c\ub79c\ub4dc\uc758 \ub2e4\uc774\uc544\ubaac\ub4dc \uc2e0\ubc1c\uc744 \ud558\ub098\uc529 \ud68d\ub4dd\ud558\uc138\uc694.",
+      "spanish": "Consigue 1 zapatillas Diamante de cada marca en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u6bcf\u4e2a\u7403\u978b\u54c1\u724c\u7684\u94bb\u77f3\u7403\u978b\u5404\u6536\u96c6\u4e00\u53cc\u3002",
+      "tchinese": "\u5728MyTEAM\u7684\u7cbe\u9078\u7403\u978b\u54c1\u724c\u4e2d\uff0c\u5404\u6536\u96c6\u4e00\u96d9\u947d\u77f3\u7403\u978b\u3002",
+      "japanese": "MyTEAM \u306e\u5404\u30b7\u30e5\u30fc\u30ba\u30d6\u30e9\u30f3\u30c9\u304b\u3089\u30c0\u30a4\u30e4\u30e2\u30f3\u30c9\u30b7\u30e5\u30fc\u30ba\u30921\u3064\u305a\u3064\u96c6\u3081\u308b\u3002"
+    },
+    "icon_gray": "img/fb38a3429fbcb0b50b4d306b1b6a16d204ba464d.jpg",
+    "icon": "img/f47fd0fb03a40172d8e8daab700660585d5e2e2f.jpg",
+    "name": "36"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Noir",
+      "token": "NEW_ACHIEVEMENT_2_4_NAME",
+      "german": "Noir",
+      "french": "R\u00e9tro",
+      "italian": "Noir",
+      "koreana": "\ub204\uc544\ub974",
+      "spanish": "Noir",
+      "schinese": "\u6000\u65e7\u98ce\u683c",
+      "tchinese": "\u9ed1\u767d\u61f7\u820a",
+      "japanese": "\u30ce\u30ef\u30fc\u30eb"
+    },
+    "description": {
+      "english": "Play a game that uses a Black and White era Filter in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_4_DESC",
+      "german": "Spiele in MyTEAM ein Spiel, das einen Schwarz-Wei\u00df-\u00c4ra-Filter verwendet.",
+      "french": "Jouez un match avec le filtre \u00c8re noir et blanc dans MyTEAM.",
+      "italian": "Gioca una partita con un filtro Era in bianco e nero in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \ud751\ubc31 \uc2dc\ub300 \ud544\ud130\ub97c \uc0ac\uc6a9\ud574 \uacbd\uae30\ub97c \ud50c\ub808\uc774\ud558\uc138\uc694.",
+      "spanish": "Juega un partido con un filtro de la era del blanco y negro en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u4f7f\u7528\u9ed1\u767d\u65f6\u4ee3\u6ee4\u955c\u8fdb\u884c\u4e00\u573a\u6bd4\u8d5b\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u904a\u73a9\u4e00\u5834\u4f7f\u7528\u9ed1\u767d\u5e74\u4ee3\u6ffe\u93e1\u7684\u6bd4\u8cfd\u3002",
+      "japanese": "MyTEAM \u3067\u767d\u9ed2\u30d5\u30a3\u30eb\u30bf\u30fc\u3092\u4f7f\u3046\u8a66\u5408\u3092\u30d7\u30ec\u30a4\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/f1e6f16b7bfae35922bc8111c12eb87f53731abb.jpg",
+    "icon": "img/68171a48345a06de88167b55c7062d33fe1dccce.jpg",
+    "name": "37"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Team Exchange",
+      "token": "NEW_ACHIEVEMENT_2_5_NAME",
+      "german": "Team-Exchange",
+      "french": "\u00c9change d'\u00e9quipe",
+      "italian": "Scambio totale",
+      "koreana": "\ud300 \uc775\uc2a4\uccb4\uc778\uc9c0",
+      "spanish": "Cambio de cromos",
+      "schinese": "\u56e2\u961f\u4ea4\u6613",
+      "tchinese": "\u7403\u968a\u96c6\u63db",
+      "japanese": "\u30c1\u30fc\u30e0\u30a8\u30af\u30b9\u30c1\u30a7\u30f3\u30b8"
+    },
+    "description": {
+      "english": "Complete an OVR-based Exchange in MyTEAM.",
+      "token": "NEW_ACHIEVEMENT_2_5_DESC",
+      "german": "Schlie\u00dfe in MyTEAM einen GES-basierten Exchange ab.",
+      "french": "Terminez un \u00e9change bas\u00e9 sur le GNR dans MyTEAM.",
+      "italian": "Completa uno scambio basato sul TOT in MyTEAM.",
+      "koreana": "MyTEAM\uc5d0\uc11c \uc885\ud569 \ub2a5\ub825\uce58 \uae30\ubc18 \uc775\uc2a4\uccb4\uc778\uc9c0\ub97c \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa un intercambio basado en MED en MyTEAM.",
+      "schinese": "\u5728\u68a6\u5e7b\u7403\u961f\u4e2d\uff0c\u5b8c\u6210\u4e00\u6b21\u57fa\u4e8e\u7efc\u8bc4\u7684\u4ea4\u6613\u3002",
+      "tchinese": "\u5728MyTEAM\u4e2d\u5b8c\u6210\u4e00\u6b21\u4ee5\u7e3d\u8a55\u70ba\u57fa\u6e96\u7684\u96c6\u63db\u3002",
+      "japanese": "MyTEAM \u3067\u7dcf\u5408\u30d9\u30fc\u30b9\u306e\u30a8\u30af\u30b9\u30c1\u30a7\u30f3\u30b8\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon": "img/946ce866681c41ec57a6f488c96fd781c1ad0117.jpg",
+    "icon_gray": "img/70faa8147d71ec97046a5b5ba2289f6396b778c7.jpg",
+    "name": "38"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Winning",
+      "token": "NEW_ACHIEVEMENT_2_6_NAME",
+      "german": "Am Gewinnen",
+      "french": "Victoire",
+      "italian": "Vittoria",
+      "koreana": "\uc2b9\ub9ac",
+      "spanish": "Ganando",
+      "schinese": "\u54c1\u5c1d\u80dc\u679c",
+      "tchinese": "\u521d\u5617\u52dd\u679c",
+      "japanese": "\u52dd\u5229\u306e\u679c\u5b9f"
+    },
+    "description": {
+      "english": "Win a game.",
+      "token": "NEW_ACHIEVEMENT_2_6_DESC",
+      "german": "Gewinne ein Spiel.",
+      "french": "Remportez un match.",
+      "italian": "Vinci una partita.",
+      "koreana": "\uacbd\uae30\uc5d0\uc11c \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Gana un partido.",
+      "schinese": "\u8d62\u5f97\u4e00\u573a\u6bd4\u8d5b\u3002",
+      "tchinese": "\u8d0f\u5f97\u4e00\u5834\u6bd4\u8cfd\u3002",
+      "japanese": "\u8a66\u5408\u306b\u52dd\u5229\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/418f69f931ef701893b4f82d3a5fb83af734e0a0.jpg",
+    "icon": "img/a5378f8e20097e78399a09da97b742da31d961f8.jpg",
+    "name": "39"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Keep Your Distance",
+      "token": "NEW_ACHIEVEMENT_2_7_NAME",
+      "german": "Bleib auf Abstand",
+      "french": "Du parking",
+      "italian": "Alla larga",
+      "koreana": "\uc0ac\ud68c\uc801 \uac70\ub9ac\ub450\uae30",
+      "spanish": "Mant\u00e9n la distancia",
+      "schinese": "\u8fdc\u7a0b\u8f70\u70b8",
+      "tchinese": "\u8ddd\u96e2\u7522\u751f\u7f8e",
+      "japanese": "\u90aa\u9b54\u3059\u308b\u306a"
+    },
+    "description": {
+      "english": "Make 10 three-point shots in any one game.",
+      "token": "NEW_ACHIEVEMENT_2_7_DESC",
+      "german": "Erziele in einem beliebigen Spiel 10 Dreier.",
+      "french": "R\u00e9ussissez 10\u00a0tirs \u00e0 3 points en un match.",
+      "italian": "Realizza 10 tiri da 3 punti in una singola partita qualunque.",
+      "koreana": "\ud55c \uacbd\uae30\uc5d0\uc11c 3\uc810 \uc29b 10\uac1c\ub97c \uae30\ub85d\ud558\uc138\uc694.",
+      "spanish": "Anota 10 triples en un partido.",
+      "schinese": "\u5728\u4efb\u610f\u4e00\u573a\u6bd4\u8d5b\u4e2d\u6295\u8fdb10\u4e2a\u4e09\u5206\u3002",
+      "tchinese": "\u5728\u4efb\u4f55\u4e00\u5834\u6bd4\u8cfd\u4e2d\u6295\u903210\u500b\u4e09\u5206\u7403\u3002",
+      "japanese": "1\u8a66\u5408\u30673\u30dd\u30a4\u30f3\u30c8\u30b7\u30e5\u30fc\u30c8\u309210\u672c\u6c7a\u3081\u308b\u3002"
+    },
+    "icon_gray": "img/334846c9408de0a6e8cacda712d101d2f245f006.jpg",
+    "icon": "img/5885cd0e3d032eff9d5a7cdffa579f89de227c38.jpg",
+    "name": "40"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Spreading The Love",
+      "token": "NEW_ACHIEVEMENT_2_8_NAME",
+      "german": "Geteilte Freude",
+      "french": "Tourn\u00e9e g\u00e9n\u00e9rale",
+      "italian": "Amore per tutti",
+      "koreana": "\uc628 \uc138\uc0c1\uc5d0 \uc0ac\ub791\uc744",
+      "spanish": "Compartir es vivir",
+      "schinese": "\u5206\u6563\u706b\u529b",
+      "tchinese": "\u50b3\u64ad\u611b\u610f",
+      "japanese": "\u6700\u9ad8\u306e\u30c1\u30fc\u30e0\u611b"
+    },
+    "description": {
+      "english": "Finish a game in which all 5 starters score double-digit points.",
+      "token": "NEW_ACHIEVEMENT_2_8_DESC",
+      "german": "Beende ein Spiel, in dem alle 5 Starter zweistellige Punkte erzielen.",
+      "french": "Terminez un match au cours duquel les 5\u00a0titulaires inscrivent chacun au moins 10\u00a0points.",
+      "italian": "Concludi una partita in cui i 5 titolari abbiano realizzato un punteggio a due cifre.",
+      "koreana": "\uc120\ubc1c 5\uba85 \uc804\uc6d0 \ub450 \uc790\ub9bf\uc218 \ub4dd\uc810\uc744 \uae30\ub85d\ud558\uace0 \uacbd\uae30\ub97c \ub9c8\ubb34\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Termina un partido en el que los 5 titulares consigan una anotaci\u00f3n de dos cifras.",
+      "schinese": "\u5728\u4e00\u573a\u6bd4\u8d5b\u4e2d\u8ba9\u6240\u6709\u5148\u53d1\u4e94\u4eba\u5747\u5f97\u5206\u4e0a\u53cc\u3002",
+      "tchinese": "\u5b8c\u6210\u4e00\u5834\u6bd4\u8cfd\uff0c\u8b93\u5148\u767c\u4e94\u4eba\u90fd\u62ff\u4e0b\u5169\u4f4d\u6578\u5f97\u5206\u3002",
+      "japanese": "\u30b9\u30bf\u30fc\u30bf\u30fc\u5168\u54e1\u304c2\u6841\u5f97\u70b9\u3092\u8a18\u9332\u3057\u305f\u72b6\u614b\u3067\u8a66\u5408\u3092\u7d42\u3048\u308b\u3002"
+    },
+    "icon_gray": "img/515cb299c99b9c7b3e215805528b03d3a276b023.jpg",
+    "icon": "img/afbf0b2afe0fe905c9b8a3a34fe64232855099b6.jpg",
+    "name": "41"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Big Timer",
+      "token": "NEW_ACHIEVEMENT_2_9_NAME",
+      "german": "Big Timer",
+      "french": "Historique",
+      "italian": "Big Timer",
+      "koreana": "\ube45 \ud0c0\uc774\uba38",
+      "spanish": "Un grande",
+      "schinese": "\u77e5\u540d\u8001\u5c06",
+      "tchinese": "\u5927\u5496\u7403\u661f",
+      "japanese": "\u30d3\u30c3\u30b0 \u30bf\u30a4\u30de\u30fc"
+    },
+    "description": {
+      "english": "Unlock 1 All-Time team in Play Now Online.",
+      "token": "NEW_ACHIEVEMENT_2_9_DESC",
+      "german": "Schalte in Jetzt online spielen 1 All-Time-Team frei.",
+      "french": "D\u00e9bloquez 1\u00a0\u00e9quipe All-Time en mode Jouer en ligne.",
+      "italian": "Sblocca 1 squadra All-Time in Gioca online ora.",
+      "koreana": "Play Now \uc628\ub77c\uc778\uc5d0\uc11c \uc62c\ud0c0\uc784 \ud300 1\uac1c\ub97c \uc7a0\uae08 \ud574\uc81c\ud558\uc138\uc694.",
+      "spanish": "Desbloquea 1 de los equipos de todos los tiempos en Jugar ya online.",
+      "schinese": "\u5728\u5728\u7ebf\u6bd4\u8d5b\u4e2d\u89e3\u95011\u652f\u540d\u5bbf\u7403\u961f\u3002",
+      "tchinese": "\u5728\u7dda\u4e0a\u6bd4\u8cfd\u4e2d\u89e3\u93961\u652f\u540d\u5c07\u7403\u968a\u3002",
+      "japanese": "\u30aa\u30f3\u30e9\u30a4\u30f3 \u30af\u30a4\u30c3\u30af\u30de\u30c3\u30c1\u3067\u6b74\u4ee3\u30c1\u30fc\u30e0\u30921\u500b\u30a2\u30f3\u30ed\u30c3\u30af\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/e4abd0b9d81c2bcb9a64d5b90eda9157513e02bf.jpg",
+    "icon": "img/10901e38948143a85f16f966efe83bc7354ccde1.jpg",
+    "name": "42"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "All Timer",
+      "token": "NEW_ACHIEVEMENT_2_10_NAME",
+      "german": "All-Timer",
+      "french": "L\u00e9gendaire",
+      "italian": "All-Timer",
+      "koreana": "\uc62c\ud0c0\uc784 \uc2a4\ud0c0",
+      "spanish": "Hist\u00f3rico",
+      "schinese": "\u7bee\u575b\u540d\u5bbf",
+      "tchinese": "\u7c43\u58c7\u540d\u5c07",
+      "japanese": "\u30aa\u30fc\u30eb \u30bf\u30a4\u30de\u30fc"
+    },
+    "description": {
+      "english": "Unlock 3 All-Time teams in Play Now Online.",
+      "token": "NEW_ACHIEVEMENT_2_10_DESC",
+      "german": "Schalte in Jetzt online spielen 3 All-Time-Teams frei.",
+      "french": "D\u00e9bloquez 3\u00a0\u00e9quipes All-Time en mode Jouer en ligne.",
+      "italian": "Sblocca 3 squadre All-Time in Gioca online ora.",
+      "koreana": "Play Now \uc628\ub77c\uc778\uc5d0\uc11c \uc62c\ud0c0\uc784 \ud300 3\uac1c\ub97c \uc7a0\uae08 \ud574\uc81c\ud558\uc138\uc694.",
+      "spanish": "Desbloquea 3 de los equipos de todos los tiempos en Jugar ya online.",
+      "schinese": "\u5728\u5728\u7ebf\u6bd4\u8d5b\u4e2d\u89e3\u95013\u652f\u540d\u5bbf\u7403\u961f\u3002",
+      "tchinese": "\u5728\u7dda\u4e0a\u6bd4\u8cfd\u4e2d\u89e3\u93963\u652f\u540d\u5c07\u7403\u968a\u3002",
+      "japanese": "\u30aa\u30f3\u30e9\u30a4\u30f3 \u30af\u30a4\u30c3\u30af\u30de\u30c3\u30c1\u3067\u6b74\u4ee3\u30c1\u30fc\u30e0\u30923\u500b\u30a2\u30f3\u30ed\u30c3\u30af\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/3c0bc48a41163922e1d9a9876562058fb994b8cd.jpg",
+    "icon": "img/36a43c6391ae673ee8b4729afa63c60fe5c74a4d.jpg",
+    "name": "43"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Well-Traveled",
+      "token": "NEW_ACHIEVEMENT_2_11_NAME",
+      "german": "Weit gereist",
+      "french": "Grand voyageur",
+      "italian": "Vittoria di tutti",
+      "koreana": "\uba4b\uc9c4 \uc5ec\ud589",
+      "spanish": "Trotamundos",
+      "schinese": "\u6e38\u5386\u5e7f\u6cdb",
+      "tchinese": "\u95b1\u6b77\u8c50\u5bcc",
+      "japanese": "\u6642\u9593\u65c5\u884c\u5b8c\u4e86"
+    },
+    "description": {
+      "english": "Win a game with every regular NBA team in Play Now Online.",
+      "token": "NEW_ACHIEVEMENT_2_11_DESC",
+      "german": "Gewinne in Jetzt online spielen ein Spiel mit jedem regul\u00e4ren NBA-Team.",
+      "french": "Remportez un match avec chaque \u00e9quipe r\u00e9guli\u00e8re de la NBA en mode Jouer en ligne.",
+      "italian": "Vinci una partita con ogni squadra NBA regolare in Gioca online ora.",
+      "koreana": "Play Now \uc628\ub77c\uc778\uc5d0\uc11c \ubaa8\ub4e0 NBA \uc815\uaddc \ud300\uc744 \uc0c1\ub300\ub85c \uc2b9\ub9ac\ud558\uc138\uc694.",
+      "spanish": "Gana un partido con todos los equipos de la NBA en Jugar ya online.",
+      "schinese": "\u5728\u5728\u7ebf\u6bd4\u8d5b\u4e2d\uff0c\u7528\u6bcf\u652fNBA\u5e38\u89c4\u7403\u961f\u8d62\u5f97\u4e00\u573a\u6bd4\u8d5b\u3002",
+      "tchinese": "\u5728\u7dda\u4e0a\u6bd4\u8cfd\u4e2d\uff0c\u4ee5\u6bcf\u652f\u5e38\u898fNBA\u7403\u968a\u5404\u8d0f\u5f97\u4e00\u5834\u6bd4\u8cfd\u3002",
+      "japanese": "\u30aa\u30f3\u30e9\u30a4\u30f3 \u30af\u30a4\u30c3\u30af\u30de\u30c3\u30c1\u3067\u5168\u3066\u306e\u30ec\u30ae\u30e5\u30e9\u30fc NBA \u30c1\u30fc\u30e0\u3067\u8a66\u5408\u306b\u52dd\u5229\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/8a8a81dcef55b661b623b14ce2b124e2d34af6d8.jpg",
+    "icon": "img/c006a50b864e889574430218e4d7fc9bb981a9d6.jpg",
+    "name": "44"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Arcade Master",
+      "token": "NEW_ACHIEVEMENT_2_12_NAME",
+      "german": "Arcade-Profi",
+      "french": "Ma\u00eetre de l'arcade",
+      "italian": "Passione arcade",
+      "koreana": "\uc544\ucf00\uc774\ub4dc \ub9c8\uc2a4\ud130",
+      "spanish": "Se\u00f1or del arcade",
+      "schinese": "\u8857\u673a\u5927\u5e08",
+      "tchinese": "\u8857\u6a5f\u5b97\u5e2b",
+      "japanese": "\u30a2\u30fc\u30b1\u30fc\u30c9\u30de\u30b9\u30bf\u30fc"
+    },
+    "description": {
+      "english": "Complete All Mini-Games in Learn 2K.",
+      "token": "NEW_ACHIEVEMENT_2_12_DESC",
+      "german": "Schlie\u00dfe alle Minispiele in Learn 2K ab.",
+      "french": "Terminez tous les mini-jeux du Tuto\u00a02K.",
+      "italian": "Completa tutti i minigiochi di Impara 2K.",
+      "koreana": "2K \ubc30\uc6b0\uae30\uc5d0\uc11c \ubbf8\ub2c8 \uac8c\uc784\uc744 \ubaa8\ub450 \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa todos los minijuegos en Tutorial 2K.",
+      "schinese": "\u5728\u5b66\u4e602K\u4e2d\u5b8c\u6210\u6240\u6709\u8ff7\u4f60\u6e38\u620f\u3002",
+      "tchinese": "\u5728\u5b78\u7fd22K\u4e2d\u5b8c\u6210\u6240\u6709\u5c0f\u904a\u6232\u3002",
+      "japanese": "Learn 2K \u306e\u3059\u3079\u3066\u306e\u30df\u30cb\u30b2\u30fc\u30e0\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/17a6adfd7fe7a67e5d7025ac53cc840378be20d2.jpg",
+    "icon": "img/6954a7fee1f03325f7f093a8d0b56bf329b31902.jpg",
+    "name": "45"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Combine Ready",
+      "token": "NEW_ACHIEVEMENT_2_13_NAME",
+      "german": "Bereits f\u00fcrs Combine",
+      "french": "Par\u00e9 pour le Draft Combine",
+      "italian": "Preparazione",
+      "koreana": "\ucef4\ubc14\uc778 \uc900\ube44",
+      "spanish": "Listo para el Combine",
+      "schinese": "\u96c6\u8bad\u5c31\u7eea",
+      "tchinese": "\u8a66\u8a13\u5c31\u7dd2",
+      "japanese": "\u30b3\u30f3\u30d0\u30a4\u30f3\u6e96\u5099\u5b8c\u4e86"
+    },
+    "description": {
+      "english": "Complete the Beginner Tutorial in Learn 2K.",
+      "token": "NEW_ACHIEVEMENT_2_13_DESC",
+      "german": "Schlie\u00dfe in Learn 2K das Tutorial f\u00fcr Anf\u00e4nger ab.",
+      "french": "Terminez l'initiation d\u00e9butant du Tuto\u00a02K.",
+      "italian": "Completa il tutorial per principianti di Impara 2K.",
+      "koreana": "2K \ubc30\uc6b0\uae30\uc5d0\uc11c \ucd08\uae09 \ud29c\ud1a0\ub9ac\uc5bc\uc744 \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa el tutorial para principiantes de Tutorial 2K.",
+      "schinese": "\u5728\u5b66\u4e602K\u4e2d\u5b8c\u6210\u65b0\u624b\u6559\u7a0b\u3002",
+      "tchinese": "\u5728\u5b78\u7fd22K\u4e2d\u5b8c\u6210\u65b0\u624b\u6559\u5b78\u8ab2\u7a0b\u3002",
+      "japanese": "Learn 2K \u306e\u521d\u7d1a\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/78262303024388b7be661dc792cb4990343b03c6.jpg",
+    "icon": "img/cbec5c6742699e5d6c6bd0d70fb2bad9db757184.jpg",
+    "name": "46"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "League Certified",
+      "token": "NEW_ACHIEVEMENT_2_14_NAME",
+      "german": "Klar f\u00fcr die Liga",
+      "french": "Par\u00e9 pour la ligue",
+      "italian": "Livello da lega",
+      "koreana": "\ub9ac\uadf8 \uc778\uc99d",
+      "spanish": "A la liga",
+      "schinese": "\u8054\u76df\u8ba4\u8bc1",
+      "tchinese": "\u806f\u76df\u8a8d\u8b49",
+      "japanese": "NBA \u9078\u624b\u306e\u8cc7\u683c\u3042\u308a"
+    },
+    "description": {
+      "english": "Complete the Intermediate Tutorial in Learn 2K.",
+      "token": "NEW_ACHIEVEMENT_2_14_DESC",
+      "german": "Schlie\u00dfe in Learn 2K das Tutorial f\u00fcr fortgeschrittene Anf\u00e4nger ab.",
+      "french": "Terminez l'initiation interm\u00e9diaire du Tuto\u00a02K.",
+      "italian": "Completa il tutorial intermedio di Impara 2K.",
+      "koreana": "2K \ubc30\uc6b0\uae30\uc5d0\uc11c \uc911\uae09 \ud29c\ud1a0\ub9ac\uc5bc\uc744 \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa el tutorial intermedio en Tutorial 2K.",
+      "schinese": "\u5728\u5b66\u4e602K\u4e2d\u5b8c\u6210\u4e2d\u7ea7\u6559\u7a0b\u3002",
+      "tchinese": "\u5728\u5b78\u7fd22K\u4e2d\u5b8c\u6210\u4e2d\u7d1a\u6559\u5b78\u8ab2\u7a0b\u3002",
+      "japanese": "Learn 2K \u306e\u4e2d\u7d1a\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/1bcf563e559617cdc3b81dbd1d0c586e9dd376e7.jpg",
+    "icon": "img/aaa4777eddb13afc79402cf49d47f23f5fd4265f.jpg",
+    "name": "47"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "All-Star Potential",
+      "token": "NEW_ACHIEVEMENT_2_15_NAME",
+      "german": "All-Star-Potenzial",
+      "french": "Potentiel All-Star",
+      "italian": "Potenziale da All-Star",
+      "koreana": "\uc62c\uc2a4\ud0c0 \uc7a0\uc7ac\ub825",
+      "spanish": "Potencial de All-Star",
+      "schinese": "\u5168\u660e\u661f\u6f5c\u529b",
+      "tchinese": "\u660e\u661f\u6f5b\u529b\u80a1",
+      "japanese": "\u30aa\u30fc\u30eb\u30b9\u30bf\u30fc\u30dd\u30c6\u30f3\u30b7\u30e3\u30eb"
+    },
+    "description": {
+      "english": "Complete the Advanced Tutorial in Learn 2K.",
+      "token": "NEW_ACHIEVEMENT_2_15_DESC",
+      "german": "Schlie\u00dfe in Learn 2K das Tutorial f\u00fcr Profis ab.",
+      "french": "Terminez l'initiation avanc\u00e9e du Tuto\u00a02K.",
+      "italian": "Completa il tutorial avanzato di Impara 2K.",
+      "koreana": "2K \ubc30\uc6b0\uae30\uc5d0\uc11c \uace0\uae09 \ud29c\ud1a0\ub9ac\uc5bc\uc744 \uc644\ub8cc\ud558\uc138\uc694.",
+      "spanish": "Completa el tutorial avanzado en Tutorial 2K.",
+      "schinese": "\u5728\u5b66\u4e602K\u4e2d\u5b8c\u6210\u9ad8\u7ea7\u6559\u7a0b\u3002",
+      "tchinese": "\u5728\u5b78\u7fd22K\u4e2d\u5b8c\u6210\u9032\u968e\u6559\u5b78\u8ab2\u7a0b\u3002",
+      "japanese": "Learn 2K \u306e\u4e0a\u7d1a\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\u3092\u5b8c\u4e86\u3059\u308b\u3002"
+    },
+    "icon_gray": "img/a20ea8b7bfd3ed4da6f17e29df66bbe3ac9cca2f.jpg",
+    "icon": "img/1839a257d4f2ad2d69ebf6ecbe66a8c80019c199.jpg",
+    "name": "48"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "guild_id": [
+    "YOUR_DISCORD_GUILD_ID"
+  ],
+  "bot_token": "YOUR_DISCORD_BOT_TOKEN",
+  "staff_role_id": "YOUR_STAFF_ROLE_ID",
+  "vouchChannelId": "YOUR_VOUCH_CHANNEL_ID",
+  "mainVouchChannelId": "YOUR_MAIN_VOUCH_CHANNEL_ID",
+  "categories": {
+    "gold": "YOUR_GOLD_CATEGORY_ID",
+    "silver": "YOUR_SILVER_CATEGORY_ID",
+    "bronze": "YOUR_BRONZE_CATEGORY_ID",
+    "investor": "YOUR_INVESTOR_CATEGORY_ID",
+    "free": "YOUR_FREE_CATEGORY_ID"
+  },
+  "roles": {
+    "investor": "YOUR_INVESTOR_ROLE_ID",
+    "gold": "YOUR_GOLD_ROLE_ID",
+    "silver": "YOUR_SILVER_ROLE_ID",
+    "bronze": "YOUR_BRONZE_ROLE_ID",
+    "free": "YOUR_FREE_ROLE_ID"
+  },
+  "cooldowns": {
+    "gold": 0,
+    "silver": 86400000,
+    "bronze": 172800000,
+    "investor": 345600000,
+    "free": 604800000
+  },
+  "donator_role_1": "YOUR_DONATOR_ROLE_1_ID",
+  "donator_role_2": "YOUR_DONATOR_ROLE_2_ID",
+  "donator_role_3": "YOUR_DONATOR_ROLE_3_ID",
+  "denuvo_games": {
+    "2358720": "Black Myth: Wukong"
+  }
+}

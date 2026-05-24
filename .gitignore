@@ -1,0 +1,26 @@
+# Dependency folders
+node_modules/
+__pycache__/
+*.pyc
+
+# Local/Dynamic configuration & credentials
+config.json
+configs.user.ini
+accounts.json
+ubi_accounts.json
+token.txt
+
+# Generated activation files
+completed_configs/
+
+# Dynamic Databases and Caches
+refresh_tokens.json
+guards.json
+cooldowns.json
+tickets.json
+pending_requests.json
+pending_ubi.json
+ownership_cache.json
+verification_queue.json
+steam_state.json
+cachedlogins/

@@ -1,0 +1,14 @@
+english
+german
+french
+italian
+koreana
+spanish
+schinese
+tchinese
+russian
+japanese
+polish
+turkish
+brazilian
+latam

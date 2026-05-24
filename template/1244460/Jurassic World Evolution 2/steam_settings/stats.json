@@ -1,0 +1,86 @@
+[
+  {
+    "default": "0",
+    "global": "0",
+    "name": "HasPlayed",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SessionsStarted",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SessionsEnded",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SessionLengthTotal",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SessionLengthShortest",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "SessionLengthLongest",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "DinosaursReleased",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "HasReleasedModifiedDinosaur",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "HasReleasedHybridDinosaur",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "DinosaurWatermark",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "BaseGameSpeciesCount",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "MaxGuestCount",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "LongestSedationShot",
+    "type": "int"
+  },
+  {
+    "default": "0",
+    "global": "0",
+    "name": "TraumaticStressDinosaursCured",
+    "type": "int"
+  }
+]

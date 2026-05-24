@@ -1,0 +1,1490 @@
+[
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "One Down...",
+      "token": "NEW_ACHIEVEMENT_1_0_NAME",
+      "german": "Einer erledigt\u00a0...",
+      "french": "Et d'un...",
+      "italian": "Un buon inizio",
+      "spanish": "Uno menos...",
+      "arabic": "\u0627\u0646\u062a\u0647\u062a \u0648\u0627\u062d\u062f\u0629..."
+    },
+    "description": {
+      "english": "Complete One Objective in Showcase.",
+      "token": "NEW_ACHIEVEMENT_1_0_DESC",
+      "german": "Schlie\u00dfe ein Ziel in Showcase ab.",
+      "french": "Remplissez un objectif en Showcase.",
+      "italian": "Completa un obiettivo in Showcase.",
+      "spanish": "Completa un objetivo de Showcase.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0647\u062f\u0641\u064b\u0627 \u0648\u0627\u062d\u062f\u064b\u0627 \u0641\u064a \u0648\u0636\u0639 Showcase."
+    },
+    "icon": "img/d1c0b5602ca7fd79dbc9a4945e841f1bb73dfa40.jpg",
+    "icon_gray": "img/6e5955372cc80883658f378a97bbee2707339349.jpg",
+    "name": "WWE26_look_in_my_eyes"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Streak Breaker",
+      "token": "NEW_ACHIEVEMENT_1_1_NAME",
+      "german": "Serienbrecher",
+      "french": "Fin de s\u00e9rie",
+      "italian": "Ciao ciao, serie",
+      "spanish": "Romperrachas",
+      "arabic": "\u0645\u062d\u0637\u0650\u0645 \u0627\u0644\u0633\u0644\u0627\u0633\u0644"
+    },
+    "description": {
+      "english": "End The Streak at WrestleMania 29 in Showcase.",
+      "token": "NEW_ACHIEVEMENT_1_1_DESC",
+      "german": "Beende in Showcase die Streak bei WrestleMania 29.",
+      "french": "Mettez fin \u00e0 la Streak \u00e0 WrestleMania\u00a029 en mode Showcase.",
+      "italian": "Interrompi la serie imbattuta a WrestleMania 29 in Showcase.",
+      "spanish": "Pon fin a The Streak en WrestleMania 29 en Showcase.",
+      "arabic": "\u0623\u0646\u0647\u0650 \u0627\u0644\u0633\u0644\u0633\u0644\u0629 \u0641\u064a WrestleMania 29 \u0641\u064a \u0648\u0636\u0639 Showcase."
+    },
+    "icon_gray": "img/1b90f7ec626f505d2d775eabb11536ea89fcaa14.jpg",
+    "icon": "img/8e9c72e9e8ca06689f26449ef98022a39985c261.jpg",
+    "name": "WWE26_what_do_you_see"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Change History",
+      "token": "NEW_ACHIEVEMENT_1_2_NAME",
+      "german": "Geschichte ver\u00e4ndern",
+      "french": "Changer l'histoire",
+      "italian": "Cambia la storia",
+      "spanish": "Reescribir la historia",
+      "arabic": "\u062a\u063a\u064a\u064a\u0631 \u0645\u062c\u0631\u0649 \u0627\u0644\u062a\u0627\u0631\u064a\u062e"
+    },
+    "description": {
+      "english": "Prevent the Montreal Screwjob in Showcase.",
+      "token": "NEW_ACHIEVEMENT_1_2_DESC",
+      "german": "Verhindere in Showcase den Montreal Screwjob.",
+      "french": "Emp\u00eachez le Montreal Screwjob en mode Showcase.",
+      "italian": "Evita lo screwjob di Montr\u00e9al in Showcase.",
+      "spanish": "Impide la Traici\u00f3n de Montreal en Showcase.",
+      "arabic": "\u0627\u0645\u0646\u0639 \u062d\u062f\u0648\u062b Montreal Screwjob \u0641\u064a \u0648\u0636\u0639 Showcase."
+    },
+    "icon_gray": "img/46a36bb9f3929c6630bdeb2e519529eaa6cb14d0.jpg",
+    "icon": "img/accac31822f81579749f3f7b74d1c32c99c7d0aa.jpg",
+    "name": "WWE26_i_know_your_anger"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "What if?",
+      "token": "NEW_ACHIEVEMENT_1_3_NAME",
+      "german": "Was w\u00e4re wenn?",
+      "french": "Et si\u00a0?",
+      "italian": "E se...",
+      "spanish": "\u00bfY si...?",
+      "arabic": "\u0645\u0627\u0630\u0627 \u0644\u0648\u061f"
+    },
+    "description": {
+      "english": "Finish \u201cWhat If\u201d Section in Showcase.",
+      "token": "NEW_ACHIEVEMENT_1_3_DESC",
+      "german": "Beende in Showcase den \"Was w\u00e4re wenn\"-Abschnitt.",
+      "french": "Terminez le chapitre \"Suppositions\" en mode Showcase.",
+      "italian": "Completa la sezione \"E se...?\" in Showcase.",
+      "spanish": "Completa la secci\u00f3n \"Y si\" en Showcase.",
+      "arabic": "\u0623\u0646\u0647\u0650 \u0642\u0633\u0645 \"What If\" \u0641\u064a \u0648\u0636\u0639 Showcase."
+    },
+    "icon": "img/dee07e7c59be68355ab4df6534866ab2642591e3.jpg",
+    "icon_gray": "img/13e1da6c7a172352917c8f17f64af941c0b12fdc.jpg",
+    "name": "WWE26_i_know_your_dreams"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Perfect 15",
+      "token": "NEW_ACHIEVEMENT_1_4_NAME",
+      "german": "Perfekte 15",
+      "french": "15 sur 15",
+      "italian": "15 \u00e8 il numero perfetto",
+      "spanish": "Perfect 15",
+      "arabic": "\u0627\u0644\u064015 \u0627\u0644\u0645\u0645\u062a\u0627\u0632\u0629"
+    },
+    "description": {
+      "english": "Perform Avalanche Pedigree Super Finisher 15 Times in Showcase.",
+      "token": "NEW_ACHIEVEMENT_1_4_DESC",
+      "german": "F\u00fchre in Showcase 15-mal den Avalanche Pedigree Super Finisher aus.",
+      "french": "R\u00e9ussissez 15\u00a0fois le Super Finisher Avalanche Pedigree en mode Showcase.",
+      "italian": "Esegui 15 super mosse finali Avalanche Pedigree in Showcase.",
+      "spanish": "Realiza 15 veces un superremate Avalanche Pedigree en Showcase.",
+      "arabic": "\u0646\u0641\u0651\u0630 \u062d\u0631\u0643\u0629 Finisher \u0627\u0644\u062e\u0627\u0631\u0642\u0629 Avalanche Pedigree\u060c \u200f15 \u0645\u0631\u0629 \u0641\u064a \u0648\u0636\u0639 Showcase."
+    },
+    "icon_gray": "img/3a99a4bf098756a93cdcc8e4e1cc7f2f102a627f.jpg",
+    "icon": "img/0354e6efbf98cf5cc1dec5ed6d2843586bd17159.jpg",
+    "name": "WWE26_everything_you_want_to_be"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Best in the World",
+      "token": "NEW_ACHIEVEMENT_1_5_NAME",
+      "german": "Nummer 1 der Welt",
+      "french": "Le meilleur au monde",
+      "italian": "Il meglio al mondo",
+      "spanish": "Lo mejor del mundo",
+      "arabic": "\u0627\u0644\u0623\u0641\u0636\u0644 \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645"
+    },
+    "description": {
+      "english": "Complete All Objectives in Showcase or beat the Gauntlet.",
+      "token": "NEW_ACHIEVEMENT_1_5_DESC",
+      "german": "Schlie\u00dfe in Showcase alle Ziele ab oder meistere das Gauntlet.",
+      "french": "Remplissez tous les objectifs en mode Showcase ou terminez le Gauntlet.",
+      "italian": "Completa tutti gli obiettivi in Showcase o supera il Gauntlet.",
+      "spanish": "Completa todos los objetivos en Showcase o supera el Gauntlet.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u062c\u0645\u064a\u0639 \u0627\u0644\u0623\u0647\u062f\u0627\u0641 \u0641\u064a \u0648\u0636\u0639 Showcase \u0623\u0648 \u062a\u0641\u0648\u0651\u0642 \u0641\u064a Gauntlet."
+    },
+    "icon": "img/686534ca6d3da816c41202937c6349c397a886fd.jpg",
+    "icon_gray": "img/4579358deadfd0e8116a1ca355e9e7a8c9d5d566.jpg",
+    "name": "WWE26_only_you_can_set_you_free"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Watch Party",
+      "token": "NEW_ACHIEVEMENT_1_6_NAME",
+      "german": "Watch Party",
+      "french": "Soir\u00e9e t\u00e9l\u00e9",
+      "italian": "Buona visione",
+      "spanish": "Fiesta de mirones",
+      "arabic": "\u062d\u0641\u0644\u0629 \u0645\u0634\u0627\u0647\u062f\u0629"
+    },
+    "description": {
+      "english": "Use the Watch Show option to spectate a total of 5 matches in Universe.",
+      "token": "NEW_ACHIEVEMENT_1_6_DESC",
+      "german": "Sieh dir in Universum 5 Matches \u00fcber die Option \"Match ansehen\".",
+      "french": "Utilisez l'option Regarder le show pour 5\u00a0matchs diff\u00e9rents en mode Univers.",
+      "italian": "Usa l'opzione Guarda show per assistere a 5 match in totale in Universe.",
+      "spanish": "Usa la opci\u00f3n Ver show para ver un total de 5 combates en Universo.",
+      "arabic": "\u0627\u0633\u062a\u062e\u062f\u0645 \u062e\u064a\u0627\u0631 \"\u0645\u0634\u0627\u0647\u062f\u0629 \u0627\u0644\u0639\u0631\u0636\" \u0644\u0645\u0634\u0627\u0647\u062f\u0629 \u0625\u062c\u0645\u0627\u0644\u064a 5 \u0645\u0628\u0627\u0631\u064a\u0627\u062a \u0641\u064a \u0648\u0636\u0639 Universe."
+    },
+    "icon_gray": "img/92529413585c0f35e7de91a8b9576bfb2784f4dd.jpg",
+    "icon": "img/d455f25de3c3235f72d0229b7314274c54ba2ddd.jpg",
+    "name": "WWE26_watch_party"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Brand Loyalty",
+      "token": "NEW_ACHIEVEMENT_1_7_NAME",
+      "german": "Brand Loyalty",
+      "french": "Fid\u00e9lit\u00e9 absolue",
+      "italian": "Lealt\u00e0 al brand",
+      "spanish": "Lealtad de marca",
+      "arabic": "\u0627\u0644\u0648\u0644\u0627\u0621 \u0644\u0644\u0642\u0633\u0645"
+    },
+    "description": {
+      "english": "During a Draft, pick a Superstar as a reserve for the show they\u2019re already assigned to in Universe.",
+      "token": "NEW_ACHIEVEMENT_1_7_DESC",
+      "german": "W\u00e4hle in Universum bei einem Draft einen Superstar als Reserve f\u00fcr die Show, der er zugewiesen ist.",
+      "french": "S\u00e9lectionnez une Superstar et mettez-la dans la r\u00e9serve du show auquel elle est assign\u00e9e (Univers).",
+      "italian": "Durante un draft, scegli una Superstar come riserva per lo show a cui \u00e8 gi\u00e0 assegnata in Universe.",
+      "spanish": "Durante un draft, escoge una Superstar como reserva para el show que ya tenga asignado en Universo.",
+      "arabic": "\u0641\u064a \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0640Draft\u060c \u0627\u062e\u062a\u0631 Superstar \u0643\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0644\u0644\u0639\u0631\u0636 \u0627\u0644\u0630\u064a \u064a\u0646\u062a\u0645\u064a \u0625\u0644\u064a\u0647 \u0628\u0627\u0644\u0641\u0639\u0644 \u0641\u064a \u0648\u0636\u0639 Universe."
+    },
+    "icon": "img/496f49e07e1a36b77d46954e13d4f94840f204ae.jpg",
+    "icon_gray": "img/b409440af29b658ee1f8ec761a1757ad358ed64b.jpg",
+    "name": "WWE26_brand_loyalty"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "A New Era",
+      "token": "NEW_ACHIEVEMENT_1_8_NAME",
+      "german": "Eine neue \u00c4ra",
+      "french": "Une nouvelle \u00e8re",
+      "italian": "Una nuova era",
+      "spanish": "Nueva era",
+      "arabic": "\u0639\u0635\u0631 \u062c\u062f\u064a\u062f"
+    },
+    "description": {
+      "english": "During a Draft, draft a Champion from one show to another in Universe.",
+      "token": "NEW_ACHIEVEMENT_1_8_DESC",
+      "german": "Drafte in Universum bei einem Draft einen Champion von einer Show in eine andere.",
+      "french": "Lors d'une draft, draftez un champion et faites-lui changer de show en mode Univers.",
+      "italian": "Durante un draft, sposta un campione o una campionessa da uno show a un altro in Universe.",
+      "spanish": "Traspasa a un campe\u00f3n de un show a otro en Universo durante un draft.",
+      "arabic": "\u0641\u064a \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0640Draft\u060c \u0627\u0646\u0642\u0644 \u0628\u0637\u0644\u064b\u0627 \u0645\u0646 \u0639\u0631\u0636 \u0625\u0644\u0649 \u0622\u062e\u0631 \u0641\u064a \u0648\u0636\u0639 Universe."
+    },
+    "icon_gray": "img/9dd935e6a34632e8bb8adebde0e708ae925eceab.jpg",
+    "icon": "img/8c1224c2a2ebbc9acaf7a89d500c4e73eeb78721.jpg",
+    "name": "WWE26_a_new_era"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Anytime, Anywhere",
+      "token": "NEW_ACHIEVEMENT_1_9_NAME",
+      "german": "Egal wo, egal wann",
+      "french": "N'importe o\u00f9, n'importe quand",
+      "italian": "Rissa facile",
+      "spanish": "En cualquier momento y lugar",
+      "arabic": "\u0641\u064a \u0623\u064a \u0648\u0642\u062a \u0648\u0623\u064a \u0645\u0643\u0627\u0646"
+    },
+    "description": {
+      "english": "Initiate and win a brawl started from the \u2018Post-Match Interview\u2019 Promo Rival Action in Universe.",
+      "token": "NEW_ACHIEVEMENT_1_9_DESC",
+      "german": "Gewinne eine Pr\u00fcgelei, die durch die Promo-Rivalen-Aktion \"Interview nach dem Match\" startet.",
+      "french": "Remportez une bagarre \u00e0 partir d'une action de rivalit\u00e9 \"Interview d'apr\u00e8s-match\" (Univers).",
+      "italian": "Avvia e vinci una rissa nata da un'azione rivalit\u00e0 Promo \"Intervista post-match\" in Universe.",
+      "spanish": "Gana una pelea iniciada con la acci\u00f3n de rivalidad \"Entrevista tras el combate\" en Universo.",
+      "arabic": "\u0627\u0641\u062a\u0639\u0644 \u0634\u062c\u0627\u0631\u064b\u0627 \u0642\u062f \u0628\u062f\u0623 \u0645\u0646 \u0625\u062c\u0631\u0627\u0621 \u0627\u0644\u0645\u0646\u0627\u0641\u0633 \u0644\u062d\u062f\u064a\u062b \u062a\u0631\u0648\u064a\u062c\u064a \"\u0645\u0642\u0627\u0628\u0644\u0629 \u0628\u0639\u062f \u0627\u0644\u0645\u0628\u0627\u0631\u0627\u0629\" \u0648\u0641\u0632 \u0628\u0647."
+    },
+    "icon": "img/153a07c9651c90fe920ef38034d9b5cfb57116bc.jpg",
+    "icon_gray": "img/8477d694d86b35a7485fc2206f60b89042e21418.jpg",
+    "name": "WWE26_anytime_anywhere"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Heist of the Century",
+      "token": "NEW_ACHIEVEMENT_1_10_NAME",
+      "german": "Coup des Jahrhunderts",
+      "french": "Casse du si\u00e8cle",
+      "italian": "Il colpo del secolo",
+      "spanish": "El golpe del siglo",
+      "arabic": "Heist of the Century"
+    },
+    "description": {
+      "english": "Successfully cash in a Money in the Bank briefcase during the main event of WrestleMania in Universe",
+      "token": "NEW_ACHIEVEMENT_1_10_DESC",
+      "german": "L\u00f6se in Universum w\u00e4hrend des Main Events von WrestleMania einen Money-in-the-Bank-Koffer ein.",
+      "french": "Utilisez votre mallette et remportez le match lors du main event de WrestleMania en mode Univers.",
+      "italian": "Incassa una valigetta Money in the Bank durante il main event di WrestleMania in Universe.",
+      "spanish": "Canjea un malet\u00edn de Money in the Bank durante el evento principal de WrestleMania en Universo.",
+      "arabic": "\u0627\u0646\u062c\u062d \u0641\u064a \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u062d\u0642\u064a\u0628\u0629 Money in the Bank \u062e\u0644\u0627\u0644 \u0627\u0644\u062d\u062f\u062b \u0627\u0644\u0631\u0626\u064a\u0633\u064a \u0644\u0640WrestleMania \u0641\u064a \u0648\u0636\u0639 Universe"
+    },
+    "icon_gray": "img/d096a0ced090d534f58e3946d6909aef62ac2779.jpg",
+    "icon": "img/332d2ad3d720af32d8cce034eb4e35c335aa242c.jpg",
+    "name": "WWE26_heist_of_the_century"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "RKO Everybody",
+      "token": "NEW_ACHIEVEMENT_1_11_NAME",
+      "german": "RKO gegen alle",
+      "french": "Distribution de RKO",
+      "italian": "RKO per tutti",
+      "spanish": "RKO para todos",
+      "arabic": "RKO \u0636\u062f \u0627\u0644\u062c\u0645\u064a\u0639"
+    },
+    "description": {
+      "english": "Using Randy Orton, successfully RKO 26 different opponents on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_11_DESC",
+      "german": "Besiege auf Legend\u00e4r mit Randy Orton 26 verschiedene Gegner per RKO (Exhibition-Modus gegen KI).",
+      "french": "Avec Randy Orton, infligez un RKO \u00e0 26\u00a0adversaires diff\u00e9rents en L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Con Randy Orton, esegui 26 RKO su avversari diversi a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Logra un RKO contra 26 rivales distintos con Randy Orton en dificultad Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0646\u0641\u0651\u0630 \u0628\u0646\u062c\u0627\u062d \u062d\u0631\u0643\u0629 RKO \u0644\u0640Randy Orton \u0639\u0644\u0649 26 \u062e\u0635\u0645\u064b\u0627 \u0645\u062e\u062a\u0644\u0641\u064b\u0627 \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/f34796d9aaffb2c749aa678ba1981863efbe2fd8.jpg",
+    "icon_gray": "img/dbb96a8ecad28f31892c4a285a1fea64458b83fa.jpg",
+    "name": "WWE26_rko_everybody"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "To Hell and Back",
+      "token": "NEW_ACHIEVEMENT_1_12_NAME",
+      "german": "In die H\u00f6lle und zur\u00fcck",
+      "french": "Aller-retour pour les enfers",
+      "italian": "Discesa ai gironi",
+      "spanish": "Viaje al infierno de ida y vuelta",
+      "arabic": "\u0627\u0644\u0639\u0648\u062f\u0629 \u0645\u0646 \u0627\u0644\u062c\u062d\u064a\u0645"
+    },
+    "description": {
+      "english": "Win a 3 Stages of Hell match advancing through all 3 stages on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_12_DESC",
+      "german": "Gewinne auf Legend\u00e4r ein 3 Stages of Hell-Match durch alle 3 Stages (Exhibition-Modus gegen KI).",
+      "french": "Gagnez un match 3\u00a0Stages of Hell en franchissant les 3\u00a0niveaux en L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Vinci un match 3 Stages of Hell resistendo alle 3 fasi a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Gana un combate 3 Stages of Hell avanzando en las 3 fases de dificultad Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0641\u064f\u0632 \u0628\u0645\u0628\u0627\u0631\u0627\u0629 \u200e3 STAGES OF HELL \u0628\u0627\u0644\u062a\u0642\u062f\u0645 \u0639\u0628\u0631 \u0627\u0644\u0645\u0631\u0627\u062d\u0644 \u0627\u0644\u062b\u0644\u0627\u062b \u0643\u0644\u0647\u0627 \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon_gray": "img/841b2ed0e9b083e220958db9f026a6417634df62.jpg",
+    "icon": "img/20c57a26b68d113f0c44dedbc4b1eff48cd7bb27.jpg",
+    "name": "WWE26_to_hell_and_back"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Triangulated Approach",
+      "token": "NEW_ACHIEVEMENT_1_13_NAME",
+      "german": "Dreiecksansatz",
+      "french": "Approche triangulaire",
+      "italian": "Testata d'angolo",
+      "spanish": "Aproximaci\u00f3n triangulada",
+      "arabic": "\u0627\u0644\u0646\u0647\u062c \u0627\u0644\u062b\u0644\u0627\u062b\u064a"
+    },
+    "description": {
+      "english": "Perform a successful corner springboard attack to ringside on any difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_13_DESC",
+      "german": "F\u00fchre einen erfolgreichen Sprungbrettangriff neben den Ring aus (Exhibition-Modus gegen KI).",
+      "french": "R\u00e9ussissez une attaque de coin avec rebond vers le bord du ring (exhibition vs IA).",
+      "italian": "Metti a segno un attacco in tuffo dall'angolo a bordo ring (Esibizione vs IA).",
+      "spanish": "Haz un ataque de trampol\u00edn desde esquina al exterior en cualquier dificultad (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0646\u0641\u0651\u0630 \u0647\u062c\u0648\u0645 \u0642\u0641\u0632 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u062d\u0628\u0644 \u0645\u0646 \u0627\u0644\u0632\u0627\u0648\u064a\u0629 \u0646\u0627\u062c\u062d\u064b\u0627 \u0625\u0644\u0649 \u062c\u0627\u0646\u0628 \u0627\u0644\u062d\u0644\u0628\u0629 \u0628\u0623\u064a \u0645\u0633\u062a\u0648\u0649 \u0635\u0639\u0648\u0628\u0629 (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/0bb0fe06cf042f6df06faea2568279e8c67c07bb.jpg",
+    "icon_gray": "img/6429d10ffd6d9c197209863faddbba04c561647d.jpg",
+    "name": "WWE26_triangulated_approach"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "AvengeHer",
+      "token": "NEW_ACHIEVEMENT_1_14_NAME",
+      "german": "R\u00e4che sie",
+      "french": "AvengeHer",
+      "italian": "Oppressione di regime",
+      "spanish": "V\u00e9ngala",
+      "arabic": "\u0627\u0644\u0623\u062e\u0630 \u0628\u062b\u0623\u0631\u0647\u0627"
+    },
+    "description": {
+      "english": "Using Chelsea Green, defeat Michin in a Dumpster Match on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_14_DESC",
+      "german": "Besiege auf Legend\u00e4r mit Chelsea Green in einem Dumpster Match Michin (Exhibition-Modus gegen KI).",
+      "french": "Avec Chelsea Green, battez Michin dans un match poubelle en difficult\u00e9 L\u00e9gendaire (Exhib. vs IA).",
+      "italian": "Con Chelsea Green, sconfiggi Michin in un Dumpster Match a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Derrota a Michin con Chelsea Green en un combate de contenedor en Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u0647\u0632\u0645 Michin \u0628\u0640Chelsea Green \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 Dumpster \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon_gray": "img/79963fedb0ebd8e1751198bfe2dca972658247af.jpg",
+    "icon": "img/8f31e0c72a23c2ca9028301450a5acc7a66f9cab.jpg",
+    "name": "WWE26_avengeher"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "The Big E Payback",
+      "token": "NEW_ACHIEVEMENT_1_15_NAME",
+      "german": "Big E Payback",
+      "french": "La revanche de Big\u00a0E",
+      "italian": "La vendetta di Big E",
+      "spanish": "La venganza de Big E",
+      "arabic": "\u0627\u0644\u0627\u0646\u062a\u0642\u0627\u0645 \u0645\u0646 Big E"
+    },
+    "description": {
+      "english": "As Big E, pin or submit New Day in a 1-On-2 Handicap Match on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_15_DESC",
+      "german": "Besiege auf Legend\u00e4r mit Big E im 1-on-2 Handicap Match New Day per Pin/Aufgabe (Exhibition vs. KI).",
+      "french": "Avec Big E, r\u00e9aliser un tomb\u00e9/soumission sur New Day dans un 1 c 2 en L\u00e9gendaire (Exhibition vs IA)",
+      "italian": "Con Big E, schiena o sottometti i New Day in un Handicap Match 1 vs 2 a Leggenda (Esibizione vs IA).",
+      "spanish": "Derrota a New Day por pin o sumisi\u00f3n con Big E en un Handicap de 1c2 en Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u0647\u0632\u0645 New Day \u0628\u0640Big E \u0639\u0628\u0631 \u0627\u0644\u062a\u062b\u0628\u064a\u062a \u0623\u0648 \u0627\u0644\u0627\u0633\u062a\u0633\u0644\u0627\u0645 \u0628\u0645\u0628\u0627\u0631\u0627\u0629 Handicap 1 \u0636\u062f 2 \u0628\u0645\u0633\u062a\u0648\u0649 \u0623\u0633\u0637\u0648\u0631\u064a (\u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/4604698e8df54c15966493953c2be2f73ee52619.jpg",
+    "icon_gray": "img/2e15b7dd877052a81697dc6c7b344d6538330462.jpg",
+    "name": "WWE26_the_big_e_payback"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "First Time For Everything",
+      "token": "NEW_ACHIEVEMENT_1_16_NAME",
+      "german": "Es gibt f\u00fcr alles ein erstes Mal",
+      "french": "Une premi\u00e8re \u00e0 tout",
+      "italian": "C'\u00e8 una prima volta per tutto",
+      "spanish": "Para todo hay una primera vez",
+      "arabic": "\u0644\u0643\u0644 \u0634\u064a\u0621 \u0645\u0631\u0629 \u0623\u0648\u0644\u0649"
+    },
+    "description": {
+      "english": "As Rhea Ripley, defeat Iyo Sky in a 15-Minute Iron Man match on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_16_DESC",
+      "german": "Besiege auf Legend\u00e4r mit Rhea Ripley in einem 15-Minute Iron Man Match Iyo Sky (Ex.-Modus gegen KI).",
+      "french": "Avec Rhea Ripley, battez Iyo Sky dans un match Iron Man 15\u00a0minutes en L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Con Rhea Ripley, batti Iyo Sky in un Iron Man da 15 minuti a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Derrota a Iyo Sky con Rhea Ripley en un combate Iron Man de 15\u00a0min. en Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u0647\u0632\u0645 Iyo Sky \u0628\u0640Rhea Ripley \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 Iron Man \u0644\u0645\u062f\u0629 15 \u062f\u0642\u064a\u0642\u0629 \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon_gray": "img/4c17f1474c4507842235c16368d0f28255ff64e6.jpg",
+    "icon": "img/7550bc0c25db37f8c236ef058fe8d9cdd5c73efc.jpg",
+    "name": "WWE26_first_time_for_everything"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Breaking Point \u201809 Revisited",
+      "token": "NEW_ACHIEVEMENT_1_17_NAME",
+      "german": "Erinnerung an Breaking Point '09",
+      "french": "Breaking Point '09 revisit\u00e9",
+      "italian": "Breaking Point '09 2.0",
+      "spanish": "Nuevo Breaking Point 2009",
+      "arabic": "\u0627\u0633\u062a\u0631\u062c\u0627\u0639 Breaking Point \u201809"
+    },
+    "description": {
+      "english": "Using Randy Orton, defeat John Cena in an I Quit Match on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_17_DESC",
+      "german": "Besiege auf Legend\u00e4r mit Randy Orton in einem I Quit Match John Cena (Exhibition-Modus gegen KI).",
+      "french": "Avec Randy Orton, battez John Cena dans un match I Quit en difficult\u00e9 L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Con Randy Orton, sconfiggi John Cena in un match I Quit a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Derrota a John Cena con Randy Orton en un combate I Quit en dificultad Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u0647\u0632\u0645 John Cena \u0628\u0640Randy Orton \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 I Quit \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/aa5c8fdc71e6e68fe496d66ffaa300e0a092700a.jpg",
+    "icon_gray": "img/2720522338ec3ae9105a25acb86cb8998f2f6f02.jpg",
+    "name": "WWE26_breaking_point_09_revisited"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Someone Check On Booker",
+      "token": "NEW_ACHIEVEMENT_1_18_NAME",
+      "german": "Guckt mal jemand nach Booker",
+      "french": "Des nouvelles de Booker\u00a0?",
+      "italian": "Come sta Booker?",
+      "spanish": "Que alguien vaya a ver c\u00f3mo est\u00e1 Booker",
+      "arabic": "\u0644\u064a\u0637\u0645\u0626\u0646 \u0623\u062d\u062f\u0647\u0645 \u0639\u0644\u0649 Booker"
+    },
+    "description": {
+      "english": "Using Stephanie Vaquer, successfully perform Devil\u2019s Kiss. (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_18_DESC",
+      "german": "F\u00fchre mit Stephanie Vaquer erfolgreich den Devil's Kiss aus (Exhibition-Modus gegen KI).",
+      "french": "R\u00e9ussissez un Devil's Kiss avec Stephanie Vaquer (exhibition vs IA).",
+      "italian": "Con Stephanie Vaquer, metti a segno una Devil's Kiss (Esibizione vs IA).",
+      "spanish": "Realiza un Devil's Kiss con Stephanie Vaquer (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0646\u0641\u0651\u0630 Devil\u2019s Kiss \u0628\u0646\u062c\u0627\u062d \u0628\u0640Stephanie Vaquer. (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon_gray": "img/8a88dcf57a80f79f91aa757edc3eeb8fea6bfd3a.jpg",
+    "icon": "img/b811a4023a81408a79983682c2c806b2787717ee.jpg",
+    "name": "WWE26_someone_check_on_booker"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "No Bread, No Water, Just Meat",
+      "token": "NEW_ACHIEVEMENT_1_19_NAME",
+      "german": "Kein Brot, kein Wasser, nur Fleisch",
+      "french": "Pas de pain ni d'eau, juste de la viande",
+      "italian": "Un massiccio massacro",
+      "spanish": "Sin pan ni agua, solo carne",
+      "arabic": "\u0644\u0627 \u062e\u0628\u0632 \u0648\u0644\u0627 \u0645\u0627\u0621\u060c \u0641\u0642\u0637 \u0627\u0644\u0639\u0636\u0644\u0627\u062a"
+    },
+    "description": {
+      "english": "As Oba Femi, win an 8-Way Battle Royal vs. seven Powerhouses on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_19_DESC",
+      "german": "Gewinne auf Legend\u00e4r als Oba Femi ein 8-Way Battle Royal gegen 7 Kraftpakete (Ex.-Modus gegen KI).",
+      "french": "Avec Oba Femi, remportez un Battle Royal \u00e0 8 contre 7\u00a0brutes en L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Con Oba Femi, vinci una Battle Royal a 8 contro 7 Possenti a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Gana un Battle Royal 8-Way con Oba Femi contra siete avasalladores en Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0643\u0640Oba Femi\u060c \u0627\u0631\u0628\u062d \u0645\u0628\u0627\u0631\u0627\u0629 \u200e8-Way Battle Royal \u0636\u062f 7 Powerhouses \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/3d425dd8220114f7be8abceda2d9af4464fee5cd.jpg",
+    "icon_gray": "img/590a5ea4a5c96e372221eb6104319ff52960033a.jpg",
+    "name": "WWE26_no_bread_no_water_just_meat"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Burnt To A Crisp",
+      "token": "NEW_ACHIEVEMENT_1_20_NAME",
+      "german": "V\u00f6llig verbrannt",
+      "french": "Go\u00fbt de br\u00fbl\u00e9",
+      "italian": "Dal ring alla brace",
+      "spanish": "Totalmente chamuscado",
+      "arabic": "\u0627\u062d\u062a\u0631\u0642 \u062a\u0645\u0627\u0645\u064b\u0627"
+    },
+    "description": {
+      "english": "Win an Inferno Match on Legend difficulty (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_20_DESC",
+      "german": "Gewinne auf Legend\u00e4r ein Inferno Match (Exhibition-Modus gegen KI).",
+      "french": "Remportez un match Inferno en difficult\u00e9 L\u00e9gendaire (exhibition vs IA).",
+      "italian": "Vinci un Inferno Match a difficolt\u00e0 Leggenda (Esibizione vs IA).",
+      "spanish": "Gana un combate Inferno en dificultad Leyenda (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u0631\u0628\u062d \u0645\u0628\u0627\u0631\u0627\u0629 Inferno \u0628\u0627\u0644\u0645\u0633\u062a\u0648\u0649 \u0627\u0644\u0623\u0633\u0637\u0648\u0631\u064a (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon_gray": "img/1bc26caa3f3b75ebf47ebc9b37b6083243923cf9.jpg",
+    "icon": "img/86b41b0fc658d24bd91d8ce38330205ce105c82d.jpg",
+    "name": "WWE26_burnt_to_a_crisp"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Everyone\u2019s Got A Job To Do",
+      "token": "NEW_ACHIEVEMENT_1_21_NAME",
+      "german": "Jeder hat einen Job zu erledigen",
+      "french": "On a tous un r\u00f4le \u00e0 jouer",
+      "italian": "Una sconfitta spettacolare",
+      "spanish": "Todos tienen un trabajo que hacer",
+      "arabic": "\u0644\u0643\u0644 \u0634\u062e\u0635 \u0648\u0638\u064a\u0641\u0629"
+    },
+    "description": {
+      "english": "Lose any 5-star rated match via pinfall or submission (Play Mode vs AI).",
+      "token": "NEW_ACHIEVEMENT_1_21_DESC",
+      "german": "Verliere ein beliebiges 5-Sterne-Match via Pinfall oder Submission (Exhibition-Modus gegen KI).",
+      "french": "Perdez un match avec une note de 5\u00a0\u00e9toiles par tomb\u00e9 ou soumission (exhibition vs IA).",
+      "italian": "Perdi un match a 5 stelle qualsiasi per schienamento o sottomissione (Esibizione vs IA).",
+      "spanish": "Pierde un combate cualquiera de 5 estrellas mediante un pinfall o una sumisi\u00f3n (Exhibici\u00f3n vs. IA).",
+      "arabic": "\u0627\u062e\u0633\u0631 \u0623\u064a \u0645\u0628\u0627\u0631\u0627\u0629 \u0645\u0646 \u0641\u0626\u0629 5 \u0646\u062c\u0648\u0645 \u0645\u0635\u0646\u0641\u0629 \u0628\u0627\u0644\u062a\u062b\u0628\u064a\u062a \u0623\u0648 \u0627\u0644\u0627\u0633\u062a\u0633\u0644\u0627\u0645 (\u0648\u0636\u0639 \u0627\u0644\u0644\u0639\u0628 \u0636\u062f AI)."
+    },
+    "icon": "img/b896c64e7b57d82f199bedd6369b277d23cb0772.jpg",
+    "icon_gray": "img/a3e967a71d9a14910f261d5725c1956798bb3f41.jpg",
+    "name": "WWE26_everyones_got_a_job_to_do"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Mixed Matched",
+      "token": "NEW_ACHIEVEMENT_1_22_NAME",
+      "german": "Mixed und Matched",
+      "french": "Mixit\u00e9 sociale",
+      "italian": "Mazzo misto",
+      "spanish": "Combate mixto",
+      "arabic": "\u0645\u0628\u0627\u0631\u0627\u0629 \u0645\u062e\u062a\u0644\u0637\u0629"
+    },
+    "description": {
+      "english": "Use a female and male superstar in a match in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_22_DESC",
+      "german": "Setze in einem Match in Meine FRAKTION einen weiblichen und einen m\u00e4nnlichen Superstar ein.",
+      "french": "Associez une Superstar masculine et une Superstar f\u00e9minine dans le m\u00eame match dans Ma FACTION.",
+      "italian": "Usa una Superstar femminile e una maschile in un match de La mia FAZIONE.",
+      "spanish": "Usa una Superstar femenina y una masculina en un combate de Mi\u00a0FACCI\u00d3N.",
+      "arabic": "\u0627\u0633\u062a\u062e\u062f\u0645 Superstar \u0645\u0646 \u0627\u0644\u0631\u062c\u0627\u0644 \u0648\u0645\u0646 \u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 \u0641\u064a MyFACTION."
+    },
+    "icon_gray": "img/b60d83a9365cc0b0acbbfdd88311dfcd0168541b.jpg",
+    "icon": "img/da5e6fc053bc753efb96521e3831e2c49b6ecc0a.jpg",
+    "name": "WWE26_mixed_matched"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Explosive Chemistry",
+      "german": "Explosive Chemie",
+      "french": "Affinit\u00e9 explosive",
+      "italian": "Affiatamento esplosivo",
+      "spanish": "Qu\u00edmica explosiva",
+      "arabic": "\u062a\u0646\u0627\u063a\u0645 \u0643\u0628\u064a\u0631",
+      "token": "NEW_ACHIEVEMENT_1_23_NAME"
+    },
+    "description": {
+      "english": "Score 3 Chemistry Points in MyFACTION",
+      "german": "Erziele in Meine FRAKTION 3 Chemiepunkte.",
+      "french": "Obtenez 3\u00a0points d'affinit\u00e9 dans Ma FACTION.",
+      "italian": "Ottieni 3 punti affiatamento ne La mia FAZIONE.",
+      "spanish": "Consigue 3 puntos de qu\u00edmica en Mi FACCI\u00d3N.",
+      "arabic": "\u0627\u062d\u0635\u0644 \u0639\u0644\u0649 3 \u0646\u0642\u0627\u0637 \u062a\u0646\u0627\u063a\u0645 \u0641\u064a MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_23_DESC"
+    },
+    "icon": "img/a3acba7e4c1716a29f4203f5e54b8b7bb9894558.jpg",
+    "icon_gray": "img/c0b4cd05398f9f1ef6ab39e29c51e6cd61c17f8e.jpg",
+    "name": "WWE26_explosive_chemistry"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Start of the Journey",
+      "token": "NEW_ACHIEVEMENT_1_24_NAME",
+      "german": "Beginn der Reise",
+      "french": "D\u00e9but de l'aventure",
+      "italian": "L'inizio dell'avventura",
+      "spanish": "Comienza el viaje",
+      "arabic": "\u0628\u062f\u0627\u064a\u0629 \u0627\u0644\u0631\u062d\u0644\u0629"
+    },
+    "description": {
+      "english": "Complete a Location World Tour in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_24_DESC",
+      "german": "Schlie\u00dfe eine Location-Welttour in Meine FRAKTION ab.",
+      "french": "Terminez le site d'un tour du monde dans Ma FACTION.",
+      "italian": "Completa una localit\u00e0 in Tour mondiale ne La mia FAZIONE.",
+      "spanish": "Completa una ubicaci\u00f3n de gira mundial en Mi FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u062c\u0648\u0644\u0629 \u0645\u0648\u0642\u0639 \u0639\u0627\u0644\u0645\u064a\u0629 \u0641\u064a MyFACTION."
+    },
+    "icon_gray": "img/b9436884d423b6d0c56b74882e764b542057c2fe.jpg",
+    "icon": "img/2faca321bd6b7169f4fe53919e4e09695385fb4c.jpg",
+    "name": "WWE26_start_of_the_journey"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "United States Champion",
+      "token": "NEW_ACHIEVEMENT_1_25_NAME",
+      "german": "United States Champion",
+      "french": "Champion United States",
+      "italian": "United States Champion",
+      "spanish": "Campe\u00f3n de Estados\u00a0Unidos",
+      "arabic": "\u0628\u0637\u0644 United States"
+    },
+    "description": {
+      "english": "Complete all of the USA matches in World Tour in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_25_DESC",
+      "german": "Schlie\u00dfe alle USA-Matches in der Welttour in Meine FRAKTION ab.",
+      "french": "Terminez tous les matchs des \u00c9tats-Unis dans un tour du monde dans Ma FACTION.",
+      "italian": "Completa tutti i match degli USA in Tour mondiale ne La mia FAZIONE.",
+      "spanish": "Completa todos los combates de EE.\u00a0UU. en una gira mundial en Mi\u00a0FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u062c\u0645\u064a\u0639 \u0645\u0628\u0627\u0631\u064a\u0627\u062a \u0627\u0644\u0648\u0644\u0627\u064a\u0627\u062a \u0627\u0644\u0645\u062a\u062d\u062f\u0629 \u0627\u0644\u0623\u0645\u0631\u064a\u0643\u064a\u0629 \u0641\u064a \u062c\u0648\u0644\u0629 \u0639\u0627\u0644\u0645\u064a\u0629 \u0641\u064a MyFACTION."
+    },
+    "icon": "img/d842c8f420de1b74d678936600eef51cf2221129.jpg",
+    "icon_gray": "img/95f9a1daf4847130995c6191dc994b43498fc2a7.jpg",
+    "name": "WWE26_united_states_champion"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Faction Wars Champion",
+      "token": "NEW_ACHIEVEMENT_1_26_NAME",
+      "german": "Fraktionskrieg-Champion",
+      "french": "Ma\u00eetrise des guerres de faction",
+      "italian": "Leggenda di Guerra tra fazioni",
+      "spanish": "Victoria en las Guerras de Facciones",
+      "arabic": "\u0628\u0637\u0644 \u0645\u0639\u0627\u0631\u0643 \u0627\u0644\u0641\u0635\u064a\u0644"
+    },
+    "description": {
+      "english": "Defeat 30 Faction Wars Bosses in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_26_DESC",
+      "german": "Besiege 30 Fraktionskrieg-Bosse in Meine FRAKTION.",
+      "french": "Battez 30\u00a0boss de guerres de faction dans Ma FACTION.",
+      "italian": "Sconfiggi 30 boss di Guerra tra fazioni ne La mia FAZIONE.",
+      "spanish": "Derrota a 30\u00a0jefes de Guerras de Facciones en Mi FACCI\u00d3N.",
+      "arabic": "\u0627\u0647\u0632\u0645 30 \u0632\u0639\u064a\u0645\u064b\u0627 \u0645\u0646 \u0645\u0639\u0627\u0631\u0643 \u0627\u0644\u0641\u0635\u064a\u0644 \u0641\u064a MyFACTION."
+    },
+    "icon_gray": "img/d633ee589af4076ff2b4d3c80282a1ec3c13b663.jpg",
+    "icon": "img/f5b2a7f143d834dc6ae54f0cc692a26e758604c6.jpg",
+    "name": "WWE26_faction_wars_champion"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Rise Through the Ranks",
+      "token": "NEW_ACHIEVEMENT_1_27_NAME",
+      "german": "Aufstieg durch die R\u00e4nge",
+      "french": "Mont\u00e9e en grade",
+      "italian": "La grande scalata",
+      "spanish": "Ascendiendo posiciones",
+      "arabic": "\u0627\u0644\u0627\u0631\u062a\u0642\u0627\u0621 \u0639\u0628\u0631 \u0627\u0644\u062a\u0635\u0646\u064a\u0641\u0627\u062a"
+    },
+    "description": {
+      "english": "Earn a Leaderboard Reward from a Ranked Play Season.",
+      "token": "NEW_ACHIEVEMENT_1_27_DESC",
+      "german": "Erhalte eine Bestenlisten-Belohnung in einer Ranglistenspiel-Saison.",
+      "french": "Gagnez une r\u00e9compense de classement lors d'une saison de jeu class\u00e9.",
+      "italian": "Ottieni una ricompensa classifica in una stagione di Partita classificata.",
+      "spanish": "Gana una recompensa de marcador de una temporada de partidas de clasificaci\u00f3n.",
+      "arabic": "\u0627\u0631\u0628\u062d \u0645\u0643\u0627\u0641\u0623\u0629 \u0644\u0648\u062d\u0629 \u0627\u0644\u0635\u062f\u0627\u0631\u0629 \u0645\u0646 \u0645\u0648\u0633\u0645 \u0627\u0644\u0644\u0639\u0628 \u0627\u0644\u0645\u0635\u0646\u0641."
+    },
+    "icon": "img/9103775479ab634426cd84df90c16c97a5de8e8c.jpg",
+    "icon_gray": "img/9a1b722f39280fa0770bfb2b379edd923cc886a8.jpg",
+    "name": "WWE26_rise_through_the_ranks"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Loyalty Confirmed",
+      "token": "NEW_ACHIEVEMENT_1_28_NAME",
+      "german": "Treuebeweis",
+      "french": "Loyaut\u00e9 confirm\u00e9e",
+      "italian": "Lealt\u00e0 confermata",
+      "spanish": "Lealtad confirmada",
+      "arabic": "\u0625\u062b\u0628\u0627\u062a \u0627\u0644\u0648\u0644\u0627\u0621"
+    },
+    "description": {
+      "english": "Earn a Loyalty Reward in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_28_DESC",
+      "german": "Verdiene eine Treuebelohnung in Meine FRAKTION.",
+      "french": "Gagnez une r\u00e9compense de loyaut\u00e9 dans Ma FACTION.",
+      "italian": "Ottieni una ricompensa lealt\u00e0 ne La mia FAZIONE.",
+      "spanish": "Gana una recompensa de lealtad en Mi\u00a0FACCI\u00d3N.",
+      "arabic": "\u0641\u0632 \u0628\u0645\u0643\u0627\u0641\u0623\u0629 \u0627\u0644\u0648\u0644\u0627\u0621 \u0641\u064a MyFACTION."
+    },
+    "icon_gray": "img/f082dc31abad27e5fbcd6788e927952a971ac568.jpg",
+    "icon": "img/7b08ec829b89d9fd98b46f22861aed67ac59e6c3.jpg",
+    "name": "WWE26_loyalty_confirmed"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "A Promising Start",
+      "token": "NEW_ACHIEVEMENT_1_29_NAME",
+      "german": "Ein vielversprechender Start",
+      "french": "D\u00e9buts prometteurs",
+      "italian": "Un inizio promettente",
+      "spanish": "Un comienzo prometedor",
+      "arabic": "\u0628\u062f\u0627\u064a\u0629 \u0648\u0627\u0639\u062f\u0629"
+    },
+    "description": {
+      "english": "Complete a Lifetime Challenge in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_29_DESC",
+      "german": "Schlie\u00dfe eine Lifetime-Herausforderung in Meine FRAKTION ab.",
+      "french": "Terminez un d\u00e9fi d'une vie dans Ma FACTION.",
+      "italian": "Completa una Sfida Carriera ne La mia FAZIONE.",
+      "spanish": "Completa un desaf\u00edo irrepetible en Mi FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u062a\u062d\u062f\u064a \u0627\u0644\u0639\u0645\u0631 \u0641\u064a MyFACTION."
+    },
+    "icon": "img/40955ea423fb4ade8f9d6ee94bb16da6709e9db7.jpg",
+    "icon_gray": "img/65f255bd6e979876931ebe2d9195830379a27e85.jpg",
+    "name": "WWE26_a_promising_start"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Journey of a Lifetime",
+      "token": "NEW_ACHIEVEMENT_1_30_NAME",
+      "german": "Journey of a Lifetime",
+      "french": "Le voyage d'une vie",
+      "italian": "Superstar in carriera",
+      "spanish": "Una experiencia trascendental",
+      "arabic": "\u0631\u062d\u0644\u0629 \u0627\u0644\u0639\u0645\u0631"
+    },
+    "description": {
+      "english": "Complete 15 Lifetime Challenges in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_30_DESC",
+      "german": "Schlie\u00dfe 15 Lifetime-Herausforderungen in Meine FRAKTION ab.",
+      "french": "Compl\u00e9tez 15\u00a0d\u00e9fis d'une vie dans Ma FACTION.",
+      "italian": "Completa 15 Sfide Carriera ne La mia FAZIONE.",
+      "spanish": "Completa 15 desaf\u00edos trascendentales en Mi FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 15 \u0645\u0646 \u062a\u062d\u062f\u064a\u0627\u062a \u0627\u0644\u0639\u0645\u0631 \u0641\u064a MyFACTION."
+    },
+    "icon_gray": "img/141bff3dab03f3d569937bcc8761435eb5554f47.jpg",
+    "icon": "img/4ccb5a1ca5ca3ef643cb84623a9ee5d4ddf9041e.jpg",
+    "name": "WWE26_journey_of_a_lifetime"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Weekly Winner",
+      "token": "NEW_ACHIEVEMENT_1_31_NAME",
+      "german": "W\u00f6chentlicher Gewinner",
+      "french": "Vainqueur hebdomadaire",
+      "italian": "Vincita della settimana",
+      "spanish": "Victoria semanal",
+      "arabic": "\u0641\u0627\u0626\u0632 \u0623\u0633\u0628\u0648\u0639\u064a"
+    },
+    "description": {
+      "english": "Complete a Weekly Tower in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_1_31_DESC",
+      "german": "Schlie\u00dfe einen w\u00f6chentlichen Turm in Meine FRAKTION ab.",
+      "french": "Finissez une tour hebdomadaire dans Ma FACTION.",
+      "italian": "Completa una Torre settimanale ne La mia FAZIONE.",
+      "spanish": "Completa una torre semanal en Mi FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 Tower \u0623\u0633\u0628\u0648\u0639\u064a \u0641\u064a MyFACTION."
+    },
+    "icon": "img/3a8241d0d5e3b34487117cdc33c4bcaf201a43c8.jpg",
+    "icon_gray": "img/d03ad037d90bb006817d10d8f36d171077419d74.jpg",
+    "name": "WWE26_weekly_winner"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Never Felt More A-LIVE",
+      "german": "Ich war LIVE dabei",
+      "french": "La magie du direct",
+      "italian": "Il bello della diretta",
+      "spanish": "Nunca me he sentido tan EN VIVO",
+      "arabic": "\u0631\u0648\u0639\u0629 \u0627\u0644\u0623\u062d\u062f\u0627\u062b \u0627\u0644\u0645\u0628\u0627\u0634\u0631\u0629",
+      "token": "NEW_ACHIEVEMENT_2_0_NAME"
+    },
+    "description": {
+      "english": "Win 10 LIVE Events in MyFACTION.",
+      "german": "Gewinne 10 LIVE-Events in Meine FRAKTION.",
+      "french": "Gagnez 10 \u00e9v\u00e9nements en direct dans Ma FACTION.",
+      "italian": "Vinci 10 eventi LIVE ne La mia FAZIONE.",
+      "spanish": "Gana 10 eventos en vivo en Mi FACCI\u00d3N.",
+      "arabic": "\u200f\u0641\u064f\u0632 \u0641\u064a 10 \u0623\u062d\u062f\u0627\u062b \u0645\u0628\u0627\u0634\u0631\u0629 \u0641\u064a MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_2_0_DESC"
+    },
+    "icon_gray": "img/e84e93a1e1e77f99fb19e0907aaed8244c75858b.jpg",
+    "icon": "img/6b4472efe9459e7fae5f7dcf6f43ee8085890e58.jpg",
+    "name": "WWE26_never_felt_more_alive"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Beginner's Luck",
+      "token": "NEW_ACHIEVEMENT_2_1_NAME",
+      "german": "Anf\u00e4ngergl\u00fcck",
+      "french": "Chance de d\u00e9butant",
+      "italian": "La fortuna del principiante",
+      "spanish": "La suerte del principiante",
+      "arabic": "\u062d\u0638 \u0627\u0644\u0645\u0628\u062a\u062f\u0626\u064a\u0646"
+    },
+    "description": {
+      "english": "Complete ALL Intro Challenges in MyFACTION.",
+      "token": "NEW_ACHIEVEMENT_2_1_DESC",
+      "german": "Schlie\u00dfe ALLE Intro-Herausforderungen in Meine FRAKTION ab.",
+      "french": "Compl\u00e9tez TOUS les d\u00e9fis d'introduction dans Ma FACTION.",
+      "italian": "Completa tutte le Sfide iniziali de La mia FAZIONE.",
+      "spanish": "Completa todos los desaf\u00edos de introducci\u00f3n en Mi FACCI\u00d3N.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0643\u0644 \u062a\u062d\u062f\u064a\u0627\u062a \u0627\u0644\u0645\u0642\u062f\u0645\u0629 \u0641\u064a MyFACTION."
+    },
+    "icon": "img/3137d6427b643d7d6a14288c78dd66d5c0d1490a.jpg",
+    "icon_gray": "img/aff47215a4096f68f66aeb147388fd24614cf584.jpg",
+    "name": "WWE26_beginners_luck"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Face the Music",
+      "token": "NEW_ACHIEVEMENT_2_2_NAME",
+      "german": "Der Ton macht die Musik",
+      "french": "Face \u00e0 face",
+      "italian": "Beati i miti",
+      "spanish": "M\u00fasica de face",
+      "arabic": "\u0645\u0648\u0627\u062c\u0647\u0629 \u0627\u0644\u0623\u0632\u0645\u0627\u062a"
+    },
+    "description": {
+      "english": "Choose the Initial Fan Favorite Path in MyRISE",
+      "token": "NEW_ACHIEVEMENT_2_2_DESC",
+      "german": "W\u00e4hle in Meine STORY den anf\u00e4nglichen Publikumsliebling-Pfad.",
+      "french": "Choisissez le parcours Favori des fans initial dans Mon ASCENSION.",
+      "italian": "Scegli di iniziare da Idolo dei fan ne La mia ASCESA",
+      "spanish": "Elige el camino de Favorito de los fans inicial en Mi LEYENDA.",
+      "arabic": "\u0627\u062e\u062a\u0631 \u0645\u0633\u0627\u0631 \u0645\u062d\u0628\u0648\u0628 \u0627\u0644\u062c\u0645\u0627\u0647\u064a\u0631 \u0627\u0644\u0645\u0628\u062f\u0626\u064a \u0641\u064a MyRISE"
+    },
+    "icon_gray": "img/c984891c66a3b54458334f7fe18cad3551a3296e.jpg",
+    "icon": "img/b38ad4c79dd5e8643242a2a27e0199c6721ea44e.jpg",
+    "name": "WWE26_face_the_music"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Heel-ing Power",
+      "token": "NEW_ACHIEVEMENT_2_3_NAME",
+      "german": "Heel the World",
+      "french": "Heel \u00e9tait une fois",
+      "italian": "La paura \u00e8 potere",
+      "spanish": "El poder del heel",
+      "arabic": "\u0642\u0648\u0629 Heel"
+    },
+    "description": {
+      "english": "Choose the Initial Rule Breaker Path in MyRISE",
+      "token": "NEW_ACHIEVEMENT_2_3_DESC",
+      "german": "W\u00e4hle in Meine STORY den anf\u00e4nglichen Regelbrecher-Pfad.",
+      "french": "Choisissez le parcours Rebelle initial dans Mon ASCENSION.",
+      "italian": "Scegli di iniziare da Ribelle ne La mia ASCESA",
+      "spanish": "Elige el camino de Antirreglamentario inicial en Mi LEYENDA.",
+      "arabic": "\u0627\u062e\u062a\u0631 \u0645\u0633\u0627\u0631 \u062e\u0627\u0631\u0642 \u0627\u0644\u0642\u0648\u0627\u0639\u062f \u0627\u0644\u0645\u0628\u062f\u0626\u064a \u0641\u064a MyRISE"
+    },
+    "icon": "img/8daf006617701a96762ac48ab7a24bce7c331b23.jpg",
+    "icon_gray": "img/a0a966aec409137c6eef8da708aa3725fc7c109b.jpg",
+    "name": "WWE26_heeling_power"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "A Hero's Journey",
+      "token": "NEW_ACHIEVEMENT_2_4_NAME",
+      "german": "Heldenreise",
+      "french": "Le destin des h\u00e9ros",
+      "italian": "Giocata leale",
+      "spanish": "El viaje del h\u00e9roe",
+      "arabic": "\u0631\u062d\u0644\u0629 \u0627\u0644\u0628\u0637\u0644"
+    },
+    "description": {
+      "english": "Remain a Fan Favorite Throughout an Entire MyRISE playthrough.",
+      "token": "NEW_ACHIEVEMENT_2_4_DESC",
+      "german": "Bleibe w\u00e4hrend eines gesamten Meine STORY-Durchgangs Publikumsliebling.",
+      "french": "Jouez toute votre partie en tant que Favori des fans dans Mon ASCENSION.",
+      "italian": "Completa La mia ASCESA rimanendo sempre Idolo dei fan.",
+      "spanish": "S\u00e9 un Favorito de los fans hasta el final de una partida entera de Mi LEYENDA.",
+      "arabic": "\u0627\u0628\u0642\u064e \u0645\u062d\u0628\u0648\u0628 \u0627\u0644\u062c\u0645\u0627\u0647\u064a\u0631 \u0637\u0648\u0627\u0644 \u0645\u0631\u0629 \u0644\u0639\u0628 \u0643\u0627\u0645\u0644\u0629 \u0641\u064a MyRISE."
+    },
+    "icon_gray": "img/6e9b31b6e1832155db507a2eca14a9bc490df80c.jpg",
+    "icon": "img/e330541e1937f019d6d1ac100860eb1ee15294c3.jpg",
+    "name": "WWE26_a_heros_journey"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Bad Times Don't Last, Bad Guys Do",
+      "token": "NEW_ACHIEVEMENT_2_5_NAME",
+      "german": "B\u00f6sewichte leben ewig",
+      "french": "Bad Times Don't Last, Bad Guys Do",
+      "italian": "Era una brava persona",
+      "spanish": "Los malos tiempos no duran, los malos s\u00ed",
+      "arabic": "\u0627\u0644\u0623\u0648\u0642\u0627\u062a \u0627\u0644\u0633\u064a\u0626\u0629 \u0644\u0627 \u062a\u062f\u0648\u0645\u060c \u0639\u0644\u0649 \u0639\u0643\u0633 \u0627\u0644\u0623\u0634\u0631\u0627\u0631"
+    },
+    "description": {
+      "english": "Remain a Rule Breaker Throughout an Entire MyRISE Playthrough.",
+      "token": "NEW_ACHIEVEMENT_2_5_DESC",
+      "german": "Bleibe w\u00e4hrend eines gesamten Meine STORY-Durchgangs Regelbrecher.",
+      "french": "Jouez toute votre partie en tant que Rebelle dans Mon ASCENSION.",
+      "italian": "Completa La mia ASCESA rimanendo sempre Ribelle.",
+      "spanish": "S\u00e9 un Antirreglamentario hasta el final de una partida entera de Mi LEYENDA.",
+      "arabic": "\u0627\u0628\u0642\u064e \u062e\u0627\u0631\u0642 \u0627\u0644\u0642\u0648\u0627\u0639\u062f \u0637\u0648\u0627\u0644 \u0645\u0631\u0629 \u0644\u0639\u0628 \u0643\u0627\u0645\u0644\u0629 \u0641\u064a MyRISE."
+    },
+    "icon": "img/a55d236ede745a609971a14819a09f7ca88de02e.jpg",
+    "icon_gray": "img/3f4bd3eb34a9bc5cc34d035b8bd496b08611e366.jpg",
+    "name": "WWE26_bad_times_dont_last_bad_guys_do"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Nice Guys Finish First",
+      "token": "NEW_ACHIEVEMENT_2_6_NAME",
+      "german": "Nett sein lohnt sich",
+      "french": "Nice Guys Finish First",
+      "italian": "Lieto fine",
+      "spanish": "Los chicos buenos acaban primero",
+      "arabic": "\u0627\u0644\u0623\u062e\u064a\u0627\u0631 \u064a\u0641\u0648\u0632\u0648\u0646"
+    },
+    "description": {
+      "english": "Complete either the Men's or Women's story as a Fan Favorite in MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_6_DESC",
+      "german": "Schlie\u00dfe in Meine STORY die Men's- oder Women's-Story als Publikumsliebling ab.",
+      "french": "Terminez l'histoire avec une Superstar masculine ou f\u00e9minine en Favori des fans dans Mon ASCENSION.",
+      "italian": "Completa la storia maschile o femminile da Idolo dei fan ne La mia ASCESA.",
+      "spanish": "Completa una historia de hombre o de mujer como Favorito de los fans en Mi LEYENDA.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0625\u0645\u0627 \u0642\u0635\u0629 \u0627\u0644\u0631\u062c\u0627\u0644 \u0623\u0648 \u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0643\u0645\u062d\u0628\u0648\u0628 \u0627\u0644\u062c\u0645\u0627\u0647\u064a\u0631 \u0641\u064a MyRISE."
+    },
+    "icon": "img/376c3f8691d77f6c7fa3e564187f986fecf09870.jpg",
+    "icon_gray": "img/0c12a08a27f6a93446092eb86e270f0d61faca4b.jpg",
+    "name": "WWE26_nice_guys_finish_first"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Showcase of the Immortals",
+      "token": "NEW_ACHIEVEMENT_2_7_NAME",
+      "german": "Showcase of the Immortals",
+      "french": "Show des immortels",
+      "italian": "Showcase of the Immortals",
+      "spanish": "Escaparate de los Inmortales",
+      "arabic": "Showcase of the Immortals"
+    },
+    "description": {
+      "english": "Complete either the Men's or Women's story as a Rule Breaker in MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_7_DESC",
+      "german": "Schlie\u00dfe in Meine STORY die Men's- oder Women's-Story als Regelbrecher ab.",
+      "french": "Terminez l'histoire avec une Superstar masculine ou f\u00e9minine en Rebelle dans Mon ASCENSION.",
+      "italian": "Completa la storia maschile o femminile da Ribelle ne La mia ASCESA.",
+      "spanish": "Completa una historia de hombre o de mujer como Antirreglamentario en Mi LEYENDA.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0625\u0645\u0627 \u0642\u0635\u0629 \u0627\u0644\u0631\u062c\u0627\u0644 \u0623\u0648 \u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0643\u062e\u0627\u0631\u0642 \u0627\u0644\u0642\u0648\u0627\u0639\u062f \u0641\u064a MyRISE."
+    },
+    "icon_gray": "img/7e6602a9de4cb37b70789bdf84e4fc0b02bfd9c2.jpg",
+    "icon": "img/620c089a6822787cca21ea62227fabc1bfab397a.jpg",
+    "name": "WWE26_showcase_of_the_immortals"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "No Oracle Needed",
+      "german": "Kein Orakel n\u00f6tig",
+      "french": "Pas besoin d'oracle",
+      "italian": "Nessun oracolo, grazie",
+      "spanish": "No necesito un or\u00e1culo",
+      "arabic": "\u0644\u0627 \u062d\u0627\u062c\u0629 \u0625\u0644\u0649 Oracle",
+      "token": "NEW_ACHIEVEMENT_2_8_NAME"
+    },
+    "description": {
+      "english": "Reject Paul Heyman in MyRISE.",
+      "german": "Weise in Meine STORY Paul Heyman zur\u00fcck.",
+      "french": "Rejetez l'offre de Paul Heyman dans Mon ASCENSION.",
+      "italian": "Rifiuta l'aiuto di Paul Heyman ne La mia ASCESA.",
+      "spanish": "Rechaza a Paul Heyman en Mi LEYENDA.",
+      "arabic": "\u0627\u0631\u0641\u0636 Paul Heyman \u0641\u064a MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_8_DESC"
+    },
+    "icon_gray": "img/ebf93c04c0c372ab2999a3fe9e0aab568dcafd6c.jpg",
+    "icon": "img/8c9f3f491275bf1d969dd2822b6e71f1eee10fc8.jpg",
+    "name": "WWE26_no_oracle_needed"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "The Wise Choice",
+      "token": "NEW_ACHIEVEMENT_2_9_NAME",
+      "german": "Die weise Entscheidung",
+      "french": "Le bon choix",
+      "italian": "La scelta pi\u00f9 saggia",
+      "spanish": "La elecci\u00f3n m\u00e1s sensata",
+      "arabic": "\u0627\u0644\u0627\u062e\u062a\u064a\u0627\u0631 \u0627\u0644\u062d\u0643\u064a\u0645"
+    },
+    "description": {
+      "english": "Align with Paul Heyman in MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_9_DESC",
+      "german": "Schlie\u00dfe dich in Meine STORY mit Paul Heyman zusammen.",
+      "french": "Acceptez l'offre de Paul Heyman dans Mon ASCENSION.",
+      "italian": "Alleati con Paul Heyman ne La mia ASCESA.",
+      "spanish": "Ponte del lado de Paul Heyman en Mi LEYENDA.",
+      "arabic": "\u062a\u062d\u0627\u0644\u0641 \u0645\u0639 Paul Heyman \u0641\u064a MyRISE."
+    },
+    "icon": "img/a1cabeea04c16fb4d3276e43790091c1149cbf8a.jpg",
+    "icon_gray": "img/2b162f81a554e08979aa65a80ad68942ba03954e.jpg",
+    "name": "WWE26_the_wise_choice"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Comeback Again",
+      "token": "NEW_ACHIEVEMENT_2_10_NAME",
+      "german": "Erneutes Comeback",
+      "french": "Encore toi",
+      "italian": "Doppio ritorno",
+      "spanish": "De vuelta otra vez",
+      "arabic": "\u0627\u0644\u0639\u0648\u062f\u0629 \u0645\u062c\u062f\u062f\u064b\u0627"
+    },
+    "description": {
+      "english": "Complete a playthrough of Both the Men's Division and Women's Division stories.",
+      "token": "NEW_ACHIEVEMENT_2_10_DESC",
+      "german": "Schlie\u00dfe einen Durchgang der Storys der Men's Division und der Women's Division ab.",
+      "french": "Arrivez au bout de l'histoire dans la division masculine et dans la division f\u00e9minine.",
+      "italian": "Completa entrambe le storie della divisione maschile e di quella femminile.",
+      "spanish": "Completa una partida tanto en la historia de divisi\u00f3n masculina como en la femenina.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0645\u0631\u0629 \u0644\u0639\u0628 \u0644\u0643\u0644 \u0645\u0646 \u0642\u0635\u0635 \u0642\u0633\u0645 \u0627\u0644\u0631\u062c\u0627\u0644 \u0648\u0642\u0633\u0645 \u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0627\u0644\u0641\u0631\u0639\u064a\u064a\u0646."
+    },
+    "icon_gray": "img/ea574c82fc1881c8ff6dac3fc22fbab666e30a9f.jpg",
+    "icon": "img/8e95c65aa5d4c54ab839009b1ca90caa5f325806.jpg",
+    "name": "WWE26_comeback_again"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "RISE Up",
+      "token": "NEW_ACHIEVEMENT_2_11_NAME",
+      "german": "SternenSTORY",
+      "french": "ASCENSION",
+      "italian": "Ascesa esponenziale",
+      "spanish": "Creando leyendas",
+      "arabic": "\u0627\u0644\u0627\u0631\u062a\u0642\u0627\u0621 \u0641\u064a RISE"
+    },
+    "description": {
+      "english": "Earn 5 Stars in a Single RISE Match",
+      "token": "NEW_ACHIEVEMENT_2_11_DESC",
+      "german": "Verdiene 5 Sterne in einem einzigen RISE-Match.",
+      "french": "Remportez 5\u00a0\u00e9toiles dans un match RISE.",
+      "italian": "Ottieni 5 stelle in un singolo match RISE de La mia ASCESA.",
+      "spanish": "Consigue 5 estrellas en un combate RISE individual.",
+      "arabic": "\u0627\u0631\u0628\u062d 5 \u0646\u062c\u0648\u0645 \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 RISE \u0648\u0627\u062d\u062f\u0629"
+    },
+    "icon": "img/2ba3d852055b3e2a0985202a5c9258a8c19221a3.jpg",
+    "icon_gray": "img/d11904f5a48a4e5db10ca7551e9c067e7302dd73.jpg",
+    "name": "WWE26_rise_up"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Who's Next?",
+      "token": "NEW_ACHIEVEMENT_2_12_NAME",
+      "german": "Der N\u00e4chste, bitte!",
+      "french": "\u00c0 qui le tour\u00a0?",
+      "italian": "Sotto a chi tocca",
+      "spanish": "\u00bfQui\u00e9n es el siguiente?",
+      "arabic": "\u0645\u064e\u0646 \u0627\u0644\u062a\u0627\u0644\u064a\u061f"
+    },
+    "description": {
+      "english": "Defend your Championship in MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_12_DESC",
+      "german": "Verteidige in Meine STORY deine Championship.",
+      "french": "D\u00e9fendez votre titre dans Mon ASCENSION.",
+      "italian": "Difendi il tuo titolo ne La mia ASCESA.",
+      "spanish": "Defiende tu t\u00edtulo en Mi LEYENDA.",
+      "arabic": "\u062f\u0627\u0641\u0639 \u0639\u0646 \u0628\u0637\u0648\u0644\u062a\u0643 \u0641\u064a MyRISE."
+    },
+    "icon_gray": "img/b9850f8e1734565eccbacffd77a0b1d619c7ad25.jpg",
+    "icon": "img/fcd869f338b592484dcf4f8067d88277837aa2ed.jpg",
+    "name": "WWE26_whos_next"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Back on Top",
+      "token": "NEW_ACHIEVEMENT_2_13_NAME",
+      "german": "Wieder ganz oben",
+      "french": "Retour au sommet",
+      "italian": "Di nuovo in cima",
+      "spanish": "De vuelta a la cima",
+      "arabic": "\u0627\u0644\u0639\u0648\u062f\u0629 \u0625\u0644\u0649 \u0627\u0644\u0642\u0645\u0629"
+    },
+    "description": {
+      "english": "Regain your Championship in MyRISE.",
+      "token": "NEW_ACHIEVEMENT_2_13_DESC",
+      "german": "Erobere in Meine STORY deine Championship zur\u00fcck.",
+      "french": "R\u00e9cup\u00e9rez votre titre dans Mon ASCENSION.",
+      "italian": "Riconquista il tuo titolo ne La mia ASCESA.",
+      "spanish": "Recupera tu t\u00edtulo en Mi LEYENDA.",
+      "arabic": "\u0627\u0633\u062a\u0639\u062f \u0628\u0637\u0648\u0644\u062a\u0643 \u0641\u064a MyRISE."
+    },
+    "icon": "img/55d15c451fb5675f6d5bc7c792bb3dc75730a75a.jpg",
+    "icon_gray": "img/7e2140770c822fca2f26d151998afe5b9b492db6.jpg",
+    "name": "WWE26_back_on_top"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Ring of Fire",
+      "token": "NEW_ACHIEVEMENT_2_14_NAME",
+      "german": "Feuerring",
+      "french": "Cercle de feu",
+      "italian": "Ring in fiamme",
+      "spanish": "Ring de fuego",
+      "arabic": "\u062d\u0644\u0628\u0629 \u0645\u0646 \u0627\u0644\u0646\u0627\u0631"
+    },
+    "description": {
+      "english": "Book a 5 star inferno match that includes the Red Flame defeating Ace Backdraft in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_14_DESC",
+      "german": "Buche in Mein GM ein 5-Sterne-Inferno-Match, bei dem Red Flame gegen Ace Backdraft gewinnt.",
+      "french": "Organisez un match Inferno 5\u00a0\u00e9toiles remport\u00e9 par \"The Red Flame\" contre Ace Backdraft dans Mon MG.",
+      "italian": "Organizza un Inferno Match a 5 stelle in cui La LLama Roja batte Ace Backdraft ne Il mio GM.",
+      "spanish": "Reserva un Inferno 5 estrellas que incluya una victoria de Llama Roja contra Ace Backdraft en Mi GM.",
+      "arabic": "\u0627\u062d\u062c\u0632 \u0645\u0628\u0627\u0631\u0627\u0629 Inferno \u0645\u0646 \u0641\u0626\u0629 5 \u0646\u062c\u0648\u0645 \u062a\u062a\u0636\u0645\u0646 \u0641\u0648\u0632 Red Flame \u0639\u0644\u0649 Ace Backdraft \u0641\u064a MyGM."
+    },
+    "icon_gray": "img/467e4b1512c44a3155b96576dea72fe763f135f8.jpg",
+    "icon": "img/bea1090c4489086cac9d16cd24c1c1e05d38a369.jpg",
+    "name": "WWE26_ring_of_fire"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Tag Champs",
+      "token": "NEW_ACHIEVEMENT_2_15_NAME",
+      "german": "Tag-Champs",
+      "french": "Champions par \u00e9quipe",
+      "italian": "Coppia iridata",
+      "spanish": "Campeones por parejas",
+      "arabic": "\u0623\u0628\u0637\u0627\u0644 Tag"
+    },
+    "description": {
+      "english": "Book a intergender match with a male and female tag champion on the same team and win in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_15_DESC",
+      "german": "Buche in Mein GM ein Intergender Match mit m\u00e4nnlichem und weiblichem Tag Champion und gewinne.",
+      "french": "Organisez et remportez un match intergenre avec un champion de tag f\u00e9minin et masculin dans Mon MG.",
+      "italian": "Organizza un match misto con due Tag Team Champion di genere opposto nello stesso team ne Il mio GM.",
+      "spanish": "Reserva un combate interg\u00e9nero con un campe\u00f3n por parejas de cada g\u00e9nero y gana en Mi GM.",
+      "arabic": "\u0627\u062d\u062c\u0632 \u0645\u0628\u0627\u0631\u0627\u0629 \u0645\u062e\u062a\u0644\u0637\u0629 \u0627\u0644\u0646\u0648\u0639 \u0645\u0639 \u0623\u0628\u0637\u0627\u0644 Tag \u0645\u0646 \u0627\u0644\u0631\u062c\u0627\u0644 \u0648\u0627\u0644\u0633\u064a\u062f\u0627\u062a \u0641\u064a \u0627\u0644\u0641\u0631\u064a\u0642 \u0646\u0641\u0633\u0647 \u0648\u0641\u0632 \u0641\u064a MyGM."
+    },
+    "icon": "img/e43367283e27f8f3ef79c998e48cb1f189bd619a.jpg",
+    "icon_gray": "img/1d3ba323a9357ff29bd221917e744a850309def9.jpg",
+    "name": "WWE26_tag_champs"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Mr. Perfect",
+      "token": "NEW_ACHIEVEMENT_2_16_NAME",
+      "german": "Mr. Perfect",
+      "french": "Mr. Perfect",
+      "italian": "Mr. Perfect",
+      "spanish": "Mr. Perfect",
+      "arabic": "Mr. Perfect"
+    },
+    "description": {
+      "english": "Book a show with five 5 star matches during a normal or Go Home show in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_16_DESC",
+      "german": "Buche in Mein GM eine Show mit f\u00fcnf 5-Sterne-Matches bei einer normalen oder einer Go Home Show.",
+      "french": "Organisez un show avec plusieurs matchs 5\u00a0\u00e9toiles lors d'un show normal ou Go Home dans Mon MG.",
+      "italian": "Organizza uno show normale o un Go Home Show con cinque match a 5 stelle ne Il mio GM.",
+      "spanish": "Reserva un show con cinco combates de 5 estrellas durante un show normal o Go Home en Mi GM.",
+      "arabic": "\u0627\u062d\u062c\u0632 \u0639\u0631\u0636\u064b\u0627 \u064a\u062a\u0636\u0645\u0646 \u062e\u0645\u0633 \u0645\u0628\u0627\u0631\u064a\u0627\u062a \u0645\u0646 \u0641\u0626\u0629 5 \u0646\u062c\u0648\u0645 \u0633\u0648\u0627\u0621 \u0641\u064a \u0627\u0644\u0639\u0631\u0636 \u0627\u0644\u0639\u0627\u062f\u064a \u0623\u0648 \u0627\u0644\u0639\u0631\u0636 \u0627\u0644\u0633\u0627\u0628\u0642 \u0644\u0644\u062d\u062f\u062b \u0641\u064a MyGM."
+    },
+    "icon_gray": "img/2dcb88fa677163c4a182b4ac3ae2d7c04a49a06f.jpg",
+    "icon": "img/60410f3aaf0720b29fc2ba2e2b24b5a4f0a11111.jpg",
+    "name": "WWE26_mr_perfect"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Brown Noser",
+      "token": "NEW_ACHIEVEMENT_2_17_NAME",
+      "german": "Schleimer",
+      "french": "L\u00e8che-bottes",
+      "italian": "Leccapiedi",
+      "spanish": "Lameculos",
+      "arabic": "\u0627\u0644\u0645\u062a\u0645\u0644\u0642"
+    },
+    "description": {
+      "english": "Complete every commissioner goal in a season and end in first place against 3 CPU opponents in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_17_DESC",
+      "german": "Schlie\u00dfe in Mein GM alle Commissioner-Ziele ab und hole gegen 3 CPU-Gegner den ersten Platz.",
+      "french": "Atteignez les objectifs du commissaire et terminez en 1\u00e8re position contre 3\u00a0adv. IA dans Mon MG.",
+      "italian": "Completa ogni obiettivo del commissario e chiudi la stagione in testa contro 3 GM IA ne Il mio GM.",
+      "spanish": "Completa todos los objetivos de la comisi\u00f3n en una temporada y termina 1.\u00ba contra 3 CPU en Mi GM.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0643\u0644 \u0647\u062f\u0641 \u0645\u0646 \u0623\u0647\u062f\u0627\u0641 \u0627\u0644\u0645\u0641\u0648\u0636 \u0641\u064a \u0645\u0648\u0633\u0645 \u0648\u0627\u062d\u062f \u0648\u0627\u062d\u062a\u0644 \u0627\u0644\u0645\u0631\u0643\u0632 \u0627\u0644\u0623\u0648\u0644 \u0636\u062f 3 \u0645\u0646 \u062e\u0635\u0648\u0645 \u0627\u0644\u0643\u0645\u0628\u064a\u0648\u062a\u0631 \u0641\u064a MyGM."
+    },
+    "icon": "img/15766df5c08b0c3dcc2d9a7ceeb4c72e5871f986.jpg",
+    "icon_gray": "img/2b0e589350b6707788db4b69cc2f8e144c3fa51f.jpg",
+    "name": "WWE26_brown_noser"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Judge, Jury and Executioner",
+      "token": "NEW_ACHIEVEMENT_2_18_NAME",
+      "german": "Richter, Geschworene und Henker",
+      "french": "Juge, jur\u00e9 et bourreau",
+      "italian": "Giudice, giuria e boia",
+      "spanish": "Juez, jurado y verdugo",
+      "arabic": "\u0635\u0627\u062d\u0628 \u0627\u0644\u0633\u0644\u0637\u0629 \u0627\u0644\u0645\u0637\u0644\u0642\u0629"
+    },
+    "description": {
+      "english": "Win a lawsuit in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_18_DESC",
+      "german": "Gewinne in Mein GM einen Prozess.",
+      "french": "Remportez un proc\u00e8s dans Mon MG.",
+      "italian": "Vinci una causa ne Il mio GM.",
+      "spanish": "Gana una demanda en Mi GM.",
+      "arabic": "\u0627\u0631\u0628\u062d \u062f\u0639\u0648\u0649 \u0642\u0636\u0627\u0626\u064a\u0629 \u0641\u064a MyGM."
+    },
+    "icon_gray": "img/15adb5ea3691d2742acb9fc22ddb3d8c98d578f2.jpg",
+    "icon": "img/3c7f0b3e95d438cf1d4a7e673ed955d6298f82b6.jpg",
+    "name": "WWE26_judge_jury_and_executioner"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Squash The Beef",
+      "token": "NEW_ACHIEVEMENT_2_19_NAME",
+      "german": "Schluss mit dem Beef",
+      "french": "Rivalit\u00e9s termin\u00e9es",
+      "italian": "Tutto a posto",
+      "spanish": "Sin rencores",
+      "arabic": "\u0623\u0646\u0647\u0650 \u0627\u0644\u062e\u0644\u0627\u0641"
+    },
+    "description": {
+      "english": "Resolve 4 rivalries in a single match in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_19_DESC",
+      "german": "Lege in Mein GM in einem einzigen Match 4 Rivalit\u00e4ten bei.",
+      "french": "Mettez un terme \u00e0 4\u00a0rivalit\u00e9s dans un seul match dans Mon MG.",
+      "italian": "Risolvi 4 rivalit\u00e0 in un solo match ne Il mio GM.",
+      "spanish": "Resuelve 4 rivalidades en un combate individual en Mi\u00a0GM.",
+      "arabic": "\u0623\u0646\u0647\u0650 4 \u0639\u062f\u0627\u0648\u0627\u062a \u0641\u064a \u0645\u0628\u0627\u0631\u0627\u0629 \u0648\u0627\u062d\u062f\u0629 \u0641\u064a MyGM."
+    },
+    "icon": "img/0711e093c54f3dd67a420dc1da789af9aef13481.jpg",
+    "icon_gray": "img/63b920150dba44f48d6f697e8bdea78dda02c570.jpg",
+    "name": "WWE26_squash_the_beef"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Immortalized",
+      "token": "NEW_ACHIEVEMENT_2_20_NAME",
+      "german": "Unsterblich gemacht",
+      "french": "Immortalit\u00e9",
+      "italian": "Immortalit\u00e0",
+      "spanish": "Inmortalidad",
+      "arabic": "\u0645\u062e\u0644\u062f"
+    },
+    "description": {
+      "english": "Enter the HOF against 3 CPU opponents using both AI and Game immortal difficulties in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_20_DESC",
+      "german": "Erreiche in Mein GM mit KI- und Spielschwierigkeit Unsterblich gegen 3 CPU-Gegner die HOF.",
+      "french": "Entrez au Hall of Fame contre 3\u00a0adversaires IA en difficult\u00e9s IA et Immortel dans Mon MG.",
+      "italian": "Entra nella Hall of Fame contro 3 GM controllati dall'IA a difficolt\u00e0 Immortale ne Il mio GM.",
+      "spanish": "Entra en el HoF contra 3 rivales de la CPU en dificultad Inmortal de la IA y del juego en Mi\u00a0GM.",
+      "arabic": "\u0627\u062f\u062e\u0644 HOF \u0636\u062f 3 \u0645\u0646 \u062e\u0635\u0648\u0645 \u0627\u0644\u0643\u0645\u0628\u064a\u0648\u062a\u0631 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064a \u0648\u0645\u0633\u062a\u0648\u0649 \u0635\u0639\u0648\u0628\u0629 \u0627\u0644\u0646\u062c\u0645 \u0627\u0644\u062e\u0627\u0644\u062f \u0641\u064a MyGM."
+    },
+    "icon_gray": "img/180d498c915ad114cb77f0c93ffb5882c96bf7ec.jpg",
+    "icon": "img/a10d6c1f71bf32c36ad3635e05d2b5cfb744dd41.jpg",
+    "name": "WWE26_immortalized"
+  },
+  {
+    "hidden": 1,
+    "displayName": {
+      "english": "Canceled",
+      "token": "NEW_ACHIEVEMENT_2_21_NAME",
+      "german": "Abgesagt",
+      "french": "Annul\u00e9",
+      "italian": "Fuori scaletta",
+      "spanish": "Cancelado",
+      "arabic": "\u0645\u0644\u063a\u0627\u0629"
+    },
+    "description": {
+      "english": "Have a GM earn the \"Canceled\" Slammy in MyGM.",
+      "token": "NEW_ACHIEVEMENT_2_21_DESC",
+      "german": "Verdiene in Mein GM mit einem GM den \"Abgesagt\"-Slammy.",
+      "french": "Obtenez le Slammy \"Annul\u00e9\" avec un MG dans Mon MG.",
+      "italian": "Fai ottenere uno Slammy \"Fuori scaletta\" a un GM ne Il mio GM.",
+      "spanish": "Haz que un GM gane el Slammy \"Cancelado\" en Mi GM.",
+      "arabic": "\u0627\u062c\u0639\u0644 GM \u064a\u0631\u0628\u062d \u062c\u0627\u0626\u0632\u0629 Slammy \"\u0627\u0644\u0645\u064f\u0644\u063a\u0627\u0629\" \u0641\u064a MyGM."
+    },
+    "icon": "img/93444e67d3359021113f53920bc05f0206c91967.jpg",
+    "icon_gray": "img/6125397c4c8cdfe5d825abf5ce486794018f0dd1.jpg",
+    "name": "WWE26_canceled"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "In the Blender",
+      "token": "NEW_ACHIEVEMENT_2_22_NAME",
+      "german": "Im Mixer",
+      "french": "Frankenstein",
+      "italian": "Fusione",
+      "spanish": "En la batidora",
+      "arabic": "\u0627\u0644\u0645\u062e\u062a\u0644\u0637"
+    },
+    "description": {
+      "english": "Create a Superstar with a blended body.",
+      "token": "NEW_ACHIEVEMENT_2_22_DESC",
+      "german": "Erstelle einen Superstar mit einem gemischten K\u00f6rper.",
+      "french": "Cr\u00e9ez une Superstar avec un corps al\u00e9atoire.",
+      "italian": "Crea una Superstar con corporatura mista.",
+      "spanish": "Crea una Superstar con un cuerpo mezclado.",
+      "arabic": "\u0623\u0646\u0634\u0626 Superstar \u0628\u062c\u0633\u0645 \u0645\u062e\u062a\u0644\u0637."
+    },
+    "icon_gray": "img/fa4c74107fbbe7667fafcf59ba4654be1546392d.jpg",
+    "icon": "img/bd4189cd1b174e7a08e802c25699753d7091bb46.jpg",
+    "name": "WWE26_in_the_blender"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Chop it Up",
+      "german": "Verhackst\u00fcckt",
+      "french": "Montage vid\u00e9o",
+      "italian": "Taglia e cuci",
+      "spanish": "C\u00f3rtalo bien",
+      "arabic": "\u0627\u0644\u062a\u062e\u0635\u064a\u0635",
+      "token": "NEW_ACHIEVEMENT_2_23_NAME"
+    },
+    "description": {
+      "english": "Create a Champ, double champ or MITB custom entrance using the timeline.",
+      "german": "Erstelle mit der Timeline einen Champ, Double-Champ oder MITB-Einzug.",
+      "french": "Cr\u00e9ez une entr\u00e9e personnalis\u00e9e de champion, de double champion ou MITB via la Chronologie.",
+      "italian": "Crea un'entrata personalizzata Campione, Doppio campione o MITB usando la linea temporale.",
+      "spanish": "Crea una entrada personalizada de campe\u00f3n, campe\u00f3n doble o un MITB usando la cronolog\u00eda.",
+      "arabic": "\u0635\u0645\u0645 \u062f\u062e\u0648\u0644\u064b\u0627 \u0645\u062e\u0635\u0635\u064b\u0627 \u0644\u0644\u0628\u0637\u0644 \u0623\u0648 \u0627\u0644\u062d\u0627\u0635\u0644 \u0639\u0644\u0649 \u0628\u0637\u0648\u0644\u062a\u064a\u0646 \u0623\u0648 MITB \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u062c\u062f\u0648\u0644 \u0627\u0644\u0632\u0645\u0646\u064a.",
+      "token": "NEW_ACHIEVEMENT_2_23_DESC"
+    },
+    "icon": "img/9d186a65acb5438c47c83dc39a2c41e9bbefc7d3.jpg",
+    "icon_gray": "img/6d1b13cb6e01be14c7c171e1563f068c4d2f77e0.jpg",
+    "name": "WWE26_chop_it_up"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "It's Just Like I Remember",
+      "token": "NEW_ACHIEVEMENT_2_24_NAME",
+      "german": "Genau so habe ich's in Erinnerung",
+      "french": "Comme dans mes souvenirs",
+      "italian": "Materiale pregiato",
+      "spanish": "Justo como lo recordaba",
+      "arabic": "\u0643\u0645\u0627 \u0623\u062a\u0630\u0643\u0631"
+    },
+    "description": {
+      "english": "In CAA apply a WWE Apron, Mat, or Announce Table Material.",
+      "token": "NEW_ACHIEVEMENT_2_24_DESC",
+      "german": "Wende in CAA ein WWE-Apron-, Matten- oder Kommentatorentisch-Material an.",
+      "french": "En CAA, utilisez un tablier, un tapis ou une table des commentateurs \u00e0 l'effigie de la WWE.",
+      "italian": "In Creazione arena, applica un materiale WWE per l'apron, il tappeto o il tavolo dei commentatori.",
+      "spanish": "En CUA, aplica un material de lateral, de lona o de mesa de comentaristas de la WWE.",
+      "arabic": "\u0641\u064a CAA\u060c \u0642\u0645 \u0628\u0627\u062e\u062a\u064a\u0627\u0631 \u062e\u0627\u0645\u0629 \u0628\u0633\u0627\u0637 \u0627\u0644\u062d\u0644\u0628\u0629 \u0623\u0648 \u0627\u0644\u0637\u0631\u0641 \u0627\u0644\u062e\u0627\u0631\u062c\u064a \u0623\u0648 \u0637\u0627\u0648\u0644\u0629 \u0627\u0644\u0645\u0639\u0644\u0642\u064a\u0646 \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0640WWE."
+    },
+    "icon_gray": "img/4f6d8594bc2401e493cd4261e148e05b72a24105.jpg",
+    "icon": "img/c20a7ec6a13c29ed3aded3b36b71d77eb9f4ab73.jpg",
+    "name": "WWE26_its_just_like_i_remember"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "The Aftermath",
+      "token": "NEW_ACHIEVEMENT_2_25_NAME",
+      "german": "Die Folgen",
+      "french": "Et maintenant\u00a0?",
+      "italian": "Ripercussioni",
+      "spanish": "Las consecuencias",
+      "arabic": "\u0627\u0644\u0639\u0648\u0627\u0642\u0628"
+    },
+    "description": {
+      "english": "Complete the first story chapter on The Island, as a member of any Order.\t",
+      "token": "NEW_ACHIEVEMENT_2_25_DESC",
+      "german": "Schlie\u00dfe das erste Storykapitel auf The Island ab, als Mitglied eines beliebigen Ordens.",
+      "french": "Terminez le premier chapitre de l'histoire sur The Island avec un membre de n'importe quel ordre.\t",
+      "italian": "Completa il primo capitolo della storia di The Island come membro di un Ordine.\t",
+      "spanish": "Completa el primer cap\u00edtulo de historia de The Island como miembro de cualquier orden.\t",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0627\u0644\u0641\u0635\u0644 \u0627\u0644\u0623\u0648\u0644 \u0645\u0646 \u0642\u0635\u0629 The Island\u060c \u0643\u0639\u0636\u0648 \u0641\u064a \u0623\u064a \u062c\u0645\u0627\u0639\u0629.\t"
+    },
+    "icon": "img/91df20cad04a07e4e071dcc7448585d21b0685b6.jpg",
+    "icon_gray": "img/1864244c01f7503046968293486ebfe7fd28b76f.jpg",
+    "name": "WWE26_the_aftermath"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Power Up\t",
+      "token": "NEW_ACHIEVEMENT_2_26_NAME",
+      "german": "Power-Up",
+      "french": "Power-up",
+      "italian": "Potenziamento",
+      "spanish": "M\u00e1s poder",
+      "arabic": "\u0632\u064a\u0627\u062f\u0629 \u0627\u0644\u0637\u0627\u0642\u0629"
+    },
+    "description": {
+      "english": "Unlock the DISRUPTOR Prestige rank with your Island Superstar after reaching OVR 85 for the 1st time",
+      "token": "NEW_ACHIEVEMENT_2_26_DESC",
+      "german": "Schalte den Prestigerang DISRUPTOR frei, nachdem du zum ersten Mal GES 85 erreicht hast.",
+      "french": "D\u00e9bloquez le rang DISRUPTOR avec votre Superstar The Island apr\u00e8s avoir atteint le G\u00c9N\u00a085.",
+      "italian": "Raggiungi per la prima volta un TOT di 85 e sblocca il grado FIGURA DI DISTURBO in The Island.",
+      "spanish": "Desbloquea el rango DISRUPCI\u00d3N con tu Superstar de The Island tras alcanzar una MED 85 por 1.\u00aa vez.",
+      "arabic": "\u0627\u0641\u062a\u062d \u062a\u0635\u0646\u064a\u0641 \u0627\u0644\u0646\u0641\u0648\u0630 \"\u0627\u0644\u0645\u0632\u0639\u062c\" \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 Superstar \u0627\u0644\u0640Island \u0628\u0639\u062f \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0625\u062c\u0645\u0627\u0644\u064a \u0642\u0648\u0629 85 \u0644\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649."
+    },
+    "icon_gray": "img/e634b8ae678f9ac567bb65dfd99076a88aa4e7be.jpg",
+    "icon": "img/67ada7cc143fdd9286bdde529eb9c7b50271ce6c.jpg",
+    "name": "WWE26_power_up"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Super Booster",
+      "token": "NEW_ACHIEVEMENT_2_27_NAME",
+      "german": "Superbooster",
+      "french": "Boosts en pagaille",
+      "italian": "Super potenziamento",
+      "spanish": "Superpotenciador",
+      "arabic": "\u0627\u0644\u0645\u0639\u0632\u0632 \u0627\u0644\u0641\u0627\u0626\u0642"
+    },
+    "description": {
+      "english": "Use any 3 unique Boosts while playing on The Island.",
+      "token": "NEW_ACHIEVEMENT_2_27_DESC",
+      "german": "Setze 3 beliebige einzigartige Boosts ein, w\u00e4hrend du auf The Island spielst.",
+      "french": "Utilisez 3\u00a0boosts uniques en jouant dans The Island.",
+      "italian": "Usa 3 Potenziamenti unici su The Island.",
+      "spanish": "Usa 3 potenciadores cualesquiera mientras juegas en The Island.",
+      "arabic": "\u0627\u0633\u062a\u062e\u062f\u0645 \u0623\u064a 3 \u062a\u0639\u0632\u064a\u0632\u0627\u062a \u0641\u0631\u064a\u062f\u0629 \u0641\u064a \u0623\u062b\u0646\u0627\u0621 \u0627\u0644\u0644\u0639\u0628 \u0641\u064a The Island."
+    },
+    "icon": "img/f4c46ce8aa2615ce6cb8603dabc596fba640086b.jpg",
+    "icon_gray": "img/d312bbd7fd9b3bc82894c17ce01e4e3def187b18.jpg",
+    "name": "WWE26_super_booster"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Fashion Icon",
+      "token": "NEW_ACHIEVEMENT_2_28_NAME",
+      "german": "Modeikone",
+      "french": "Fashionista",
+      "italian": "Icona della moda",
+      "spanish": "Icono de la moda",
+      "arabic": "\u0631\u0645\u0632 \u0627\u0644\u0645\u0648\u0636\u0629"
+    },
+    "description": {
+      "english": "Purchase 10 different attire items in The Island\u2019s stores.",
+      "token": "NEW_ACHIEVEMENT_2_28_DESC",
+      "german": "Kaufe in den L\u00e4den auf The Island 10 verschiedene Kleidungsst\u00fccke.",
+      "french": "Achetez 10\u00a0accessoires diff\u00e9rents pour votre tenue dans les boutiques de The Island.",
+      "italian": "Acquista 10 diversi capi d'abbigliamento nei negozi di The Island.",
+      "spanish": "Compra 10 atuendos distintos en las tiendas de The Island.",
+      "arabic": "\u0627\u0634\u062a\u0631\u0650 10 \u0642\u0637\u0639 \u0645\u062e\u062a\u0644\u0641\u0629 \u0645\u0646 \u0627\u0644\u0623\u0632\u064a\u0627\u0621 \u0645\u0646 \u0645\u062a\u0627\u062c\u0631 The Island."
+    },
+    "icon_gray": "img/117be67d0326f817dcffe0f2b1daea86bd4d8978.jpg",
+    "icon": "img/53e9073741fd78899e9844b97902b7e82efb4ae9.jpg",
+    "name": "WWE26_fashion_icon"
+  },
+  {
+    "hidden": 0,
+    "displayName": {
+      "english": "Top Of The Tower",
+      "token": "NEW_ACHIEVEMENT_2_29_NAME",
+      "german": "Oben auf dem Turm",
+      "french": "Au sommet",
+      "italian": "In cima alla Torre",
+      "spanish": "En lo alto de la torre",
+      "arabic": "\u062a\u0635\u062f\u0631 Tower"
+    },
+    "description": {
+      "english": "Complete any Tower run on The Island.\t",
+      "token": "NEW_ACHIEVEMENT_2_29_DESC",
+      "german": "Schlie\u00dfe auf The Island einen Turmdurchlauf ab.",
+      "french": "Terminez une session Tour dans The Island.",
+      "italian": "Completa una sessione nella Torre di The Island.",
+      "spanish": "Completa cualquier sesi\u00f3n de torre en The Island.",
+      "arabic": "\u0623\u0643\u0645\u0644 \u0623\u064a \u062c\u0648\u0644\u0629 Tower \u0641\u064a The Island."
+    },
+    "icon": "img/e5040d2f1c726152020dd45a81475779177ee525.jpg",
+    "icon_gray": "img/5c9b64b77bb425250c49e8384c59506aa9e2d90d.jpg",
+    "name": "WWE26_top_of_the_tower"
+  }
+]
