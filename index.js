@@ -38,25 +38,42 @@ if (!fs.existsSync(GAMES_FILE) && fs.existsSync(GAMES_DEFAULT)) {
 
 console.log('[MASTER LAUNCHER] Starting services...');
 
-// Launch Discord Bot
-console.log('[MASTER LAUNCHER] Launching Discord Bot...');
-const discordBot = spawn('node', ['botDiscord.js'], { stdio: 'inherit' });
-
-discordBot.on('close', (code) => {
-    console.error(`[MASTER LAUNCHER] Discord bot exited with code ${code}`);
-});
-
-// Launch Steam Worker
-console.log('[MASTER LAUNCHER] Launching Steam Worker...');
-const steamWorker = spawn('node', ['StemTokenGen.js'], { stdio: 'inherit' });
-
-steamWorker.on('close', (code) => {
-    console.error(`[MASTER LAUNCHER] Steam worker exited with code ${code}`);
-});
-
 // Launch Ubisoft Worker (if dll and dotnet are available)
 const ubiDir = path.join(__dirname, 'UbisoftBot');
 const ubiDll = path.join(ubiDir, 'DenuvoTicket.dll');
+
+if (process.platform !== 'win32') {
+    const ubiExe = path.join(ubiDir, 'DenuvoTicket');
+    if (fs.existsSync(ubiExe)) {
+        try {
+            fs.chmodSync(ubiExe, 0o755);
+            console.log('[MASTER LAUNCHER] Configured execute permissions on DenuvoTicket');
+        } catch (e) {
+            console.warn('[MASTER LAUNCHER] Failed to set execute permissions on DenuvoTicket:', e.message);
+        }
+    }
+}
+
+function startService(scriptName) {
+    console.log(`[MASTER LAUNCHER] Launching ${scriptName}...`);
+    const child = spawn('node', [scriptName], { stdio: 'inherit' });
+    
+    child.on('close', (code) => {
+        console.error(`[MASTER LAUNCHER] ${scriptName} exited with code ${code}`);
+        console.log(`[MASTER LAUNCHER] Restarting ${scriptName} in 5 seconds...`);
+        setTimeout(() => {
+            startService(scriptName);
+        }, 5000);
+    });
+
+    return child;
+}
+
+// Launch Discord Bot
+startService('botDiscord.js');
+
+// Launch Steam Worker
+startService('StemTokenGen.js');
 
 if (fs.existsSync(ubiDll)) {
     console.log('[MASTER LAUNCHER] Ubisoft bot files detected. Checking for dotnet environment...');

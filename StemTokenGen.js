@@ -15,6 +15,18 @@ const MAUTH = path.join(DATA, 'cachedlogins');
     if (!fs.existsSync(d)) fs.mkdirSync(d, { recursive: true });
 });
 
+if (process.platform !== 'win32') {
+    const ubiExe = path.join(UBI_DIR, 'DenuvoTicket');
+    if (fs.existsSync(ubiExe)) {
+        try {
+            fs.chmodSync(ubiExe, 0o755);
+            console.log('[STEAM FLEET] Configured execute permissions on DenuvoTicket');
+        } catch (e) {
+            console.warn('[STEAM FLEET] Failed to set execute permissions on DenuvoTicket:', e.message);
+        }
+    }
+}
+
 const ACCOUNTS_FILE = path.join(DATA, 'accounts.json');
 const PENDING_FILE = path.join(DATA, 'pending_requests.json');
 const GUARDS_FILE = path.join(DATA, 'guards.json');
@@ -278,18 +290,47 @@ async function processSteamQueue() {
     let missingCacheAccounts = [];
     let guardNeededAccounts = [];
 
+    console.log(`[STEAM ENGINE] Scanning active accounts for AppID ${appId}...`);
     for (let u in accDict) {
-        if (cache[u] && cache[u].includes(appId)) {
+        let isCached = !!cache[u];
+        let ownsInCache = isCached && cache[u].includes(appId);
+        let isLoggedOn = !!(states[u] && states[u].logged_in);
+
+        console.log(`[STEAM ENGINE] -> Account: ${u} | Cached: ${isCached} | Owns (in cache): ${ownsInCache} | Logged On: ${isLoggedOn}`);
+
+        if (ownsInCache) {
             ownerFound = u;
             break;
         }
-        if (!cache[u]) {
+
+        // Live check if logged on but cache doesn't show ownership (could be recently purchased/activated)
+        if (isLoggedOn && clients[u] && typeof clients[u].getOwnedApps === 'function') {
+            try {
+                let owned = clients[u].getOwnedApps();
+                if (owned && owned.includes(appId)) {
+                    console.log(`[STEAM ENGINE] -> Live check SUCCESS: ${u} owns AppID ${appId} (updating cache).`);
+                    cache[u] = owned;
+                    writeJson(OWNERSHIP_CACHE_FILE, cache);
+                    ownerFound = u;
+                    break;
+                }
+            } catch (e) {
+                console.log(`[STEAM ENGINE] -> Failed live check for ${u}: ${e.message}`);
+            }
+        }
+
+        if (!isCached) {
             if (states[u] && states[u].guard_needed) {
                 guardNeededAccounts.push(u);
+                console.log(`[STEAM ENGINE] -> Account ${u} has no cache but requires Steam Guard. Waiting.`);
                 continue;
             }
-            if (states[u] && states[u].error) continue;
+            if (states[u] && states[u].error) {
+                console.log(`[STEAM ENGINE] -> Account ${u} has no cache but has login error: ${states[u].error}. Skipping.`);
+                continue;
+            }
             missingCacheAccounts.push(u);
+            console.log(`[STEAM ENGINE] -> Account ${u} has no cache. Added to missing cache list.`);
         }
     }
 

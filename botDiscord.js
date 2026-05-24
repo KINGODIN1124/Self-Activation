@@ -603,7 +603,7 @@ client.on('messageCreate', async message => {
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
                 
                 let worker = await tesseract.createWorker('eng', 1, {
-                    langPath: 'C:\\Program Files\\Tesseract-OCR\\tessdata',
+                    langPath: process.env.TESSERACT_LANG_PATH || BASE,
                     gzip: false
                 });
                 let ocr = await worker.recognize(canvas.toBuffer());
@@ -839,6 +839,25 @@ client.on('interactionCreate', async interaction => {
                 .setTimestamp();
             return interaction.followUp({ embeds: [embed] });
         }
+        else if (interaction.commandName === 'refreshcache') {
+            await interaction.deferReply({ ephemeral: true });
+            const cachePath = path.join(DATA, 'ownership_cache.json');
+            try {
+                if (fs.existsSync(cachePath)) {
+                    fs.unlinkSync(cachePath);
+                }
+                fs.writeFileSync(cachePath, '{}', 'utf-8');
+                return interaction.followUp({
+                    embeds: [new EmbedBuilder()
+                        .setTitle('🔄 Cache Cleared')
+                        .setDescription('Ownership cache has been cleared. The worker fleet will now re-authenticate accounts on-demand to rebuild the game ownership database.')
+                        .setColor(CLR.GREEN)],
+                    ephemeral: true
+                });
+            } catch (err) {
+                return interaction.followUp({ content: `❌ Failed to clear cache: ${err.message}`, ephemeral: true });
+            }
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1028,7 +1047,8 @@ const commands = [
     { name: 'removeflag', description: 'Unflag a user so they can donate again', options: [{ name: 'user_id', description: 'The Discord User ID to unflag', type: 3, required: true }] },
     { name: 'resetcooldown', description: 'Reset a user ticket cooldown', options: [{ name: 'user_id', description: 'The Discord User ID whose ticket cooldown should be cleared', type: 3, required: true }] },
     { name: 'delete', description: 'Securely close and wipe ticket' },
-    { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' }
+    { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' },
+    { name: 'refreshcache', description: 'Clear ownership cache and force rebuild of the fleet database' }
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);
