@@ -519,6 +519,37 @@ async function prompt_ubi_token(channel, user, game) {
 client.on('messageCreate', async message => {
     if (message.author.bot) return;
 
+    if (message.content.trim().toLowerCase() === '-saveguide') {
+        let embed = new EmbedBuilder()
+            .setTitle('💾 Steam Emulator Save Guide')
+            .setColor(CLR.BLUE)
+            .setDescription(
+                `### 📂 Default Save Locations\n` +
+                `By default, your save files are stored in one of the following global folders:\n\n` +
+                `• **Goldberg Saves:**\n` +
+                `  \`C:\\Users\\<Username>\\AppData\\Roaming\\Goldberg SteamEmu Saves\\\`\n` +
+                `  *or*\n` +
+                `  \`C:\\Users\\<Username>\\Documents\\Goldberg SteamEmu Saves\\\`\n\n` +
+                `• **Contrary Saves:**\n` +
+                `  \`C:\\Users\\<Username>\\Documents\\GSE_Saves\\\`\n\n` +
+                `---` +
+                `### ⚙️ How to Customise Save Location\n` +
+                `You can redirect your saves to any custom folder (e.g., directly inside your game directory) by editing the configuration files:\n\n` +
+                `**1.** Open your game folder and navigate to the **\`steam_settings\`** directory.\n` +
+                `**2.** Open **\`configs.user.ini\`** (or **\`configs.user\`** depending on the emulator) in Notepad.\n` +
+                `**3.** Add the following configuration block at the bottom of the file:\n` +
+                ` \`\`\`ini\n` +
+                ` [user::saves]\n` +
+                ` local_save_path=.\\Saves\n` +
+                ` saves_folder_name=MySaveGame\n` +
+                ` \`\`\`\n` +
+                `**4.** Save the file and launch the game. Your saves will now be stored in the custom path specified!`
+            )
+            .setFooter({ text: 'Crack World Hub • Save Configuration Systems' })
+            .setTimestamp();
+        return message.reply({ embeds: [embed] });
+    }
+
     if (VOUCH_CHANNEL_ID && String(message.channel.id) === String(VOUCH_CHANNEL_ID)) {
         console.log(`[VOUCH] Message received from ${message.author.tag} in vouch channel ${message.channel.id}`);
         let linked_ticket = find_open_ticket(message.guild, message.author.id) || find_recent_user_ticket(message.guild, message.author.id);
@@ -767,6 +798,37 @@ client.on('interactionCreate', async interaction => {
             await interaction.deferReply();
             await close_ticket_channel(interaction.channel, true, "Staff closed this ticket.");
         }
+        else if (interaction.commandName === 'saveguide') {
+            await interaction.deferReply();
+            let embed = new EmbedBuilder()
+                .setTitle('💾 Steam Emulator Save Guide')
+                .setColor(CLR.BLUE)
+                .setDescription(
+                    `### 📂 Default Save Locations\n` +
+                    `By default, your save files are stored in one of the following global folders:\n\n` +
+                    `• **Goldberg Saves:**\n` +
+                    `  \`C:\\Users\\<Username>\\AppData\\Roaming\\Goldberg SteamEmu Saves\\\`\n` +
+                    `  *or*\n` +
+                    `  \`C:\\Users\\<Username>\\Documents\\Goldberg SteamEmu Saves\\\`\n\n` +
+                    `• **Contrary Saves:**\n` +
+                    `  \`C:\\Users\\<Username>\\Documents\\GSE_Saves\\\`\n\n` +
+                    `---` +
+                    `### ⚙️ How to Customise Save Location\n` +
+                    `You can redirect your saves to any custom folder (e.g., directly inside your game directory) by editing the configuration files:\n\n` +
+                    `**1.** Open your game folder and navigate to the **\`steam_settings\`** directory.\n` +
+                    `**2.** Open **\`configs.user.ini\`** (or **\`configs.user\`** depending on the emulator) in Notepad.\n` +
+                    `**3.** Add the following configuration block at the bottom of the file:\n` +
+                    ` \`\`\`ini\n` +
+                    ` [user::saves]\n` +
+                    ` local_save_path=.\\Saves\n` +
+                    ` saves_folder_name=MySaveGame\n` +
+                    ` \`\`\`\n` +
+                    `**4.** Save the file and launch the game. Your saves will now be stored in the custom path specified!`
+                )
+                .setFooter({ text: 'Crack World Hub • Save Configuration Systems' })
+                .setTimestamp();
+            return interaction.followUp({ embeds: [embed] });
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -955,7 +1017,8 @@ const commands = [
     { name: 'removeubiacc', description: 'Remove a Ubisoft account', options: [{ name: 'email', description: 'The exact Ubisoft email to remove', type: 3, required: true }] },
     { name: 'removeflag', description: 'Unflag a user so they can donate again', options: [{ name: 'user_id', description: 'The Discord User ID to unflag', type: 3, required: true }] },
     { name: 'resetcooldown', description: 'Reset a user ticket cooldown', options: [{ name: 'user_id', description: 'The Discord User ID whose ticket cooldown should be cleared', type: 3, required: true }] },
-    { name: 'delete', description: 'Securely close and wipe ticket' }
+    { name: 'delete', description: 'Securely close and wipe ticket' },
+    { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' }
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);
