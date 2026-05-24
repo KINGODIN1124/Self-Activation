@@ -556,7 +556,7 @@ client.on('messageCreate', async message => {
         if (!linked_ticket) {
             try { await message.delete(); } catch (e) { console.error('[VOUCH] Failed to delete message:', e.message); }
             try {
-                let warn = await message.channel.send(`⚠️ <@${message.author.id}>, do not post in this channel unless you are vouching for an active activation!`);
+                let warn = await message.channel.send(`⚠️ <@${message.author.id}>, Do not post anything unless you have to vouch for a activation!`);
                 setTimeout(() => warn.delete().catch(() => {}), 5000);
             } catch (e) {}
             return;
