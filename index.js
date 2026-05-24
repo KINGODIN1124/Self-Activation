@@ -30,18 +30,13 @@ if (fs.existsSync(ubiDll)) {
     
     checkDotnet.on('close', (code) => {
         if (code === 0) {
-            console.log('[MASTER LAUNCHER] dotnet runtime found. Launching Ubisoft worker...');
-            const ubiWorker = spawn('dotnet', ['DenuvoTicket.dll'], { cwd: ubiDir, stdio: 'inherit' });
-            
-            ubiWorker.on('close', (c) => {
-                console.error(`[MASTER LAUNCHER] Ubisoft worker exited with code ${c}`);
-            });
+            console.log('[MASTER LAUNCHER] dotnet runtime found. Ubisoft worker is ready (will be invoked dynamically on-demand).');
         } else {
-            console.warn('[MASTER LAUNCHER] dotnet command was not found. Skipping Ubisoft worker. (Ensure .NET Runtime is installed if hosting Ubisoft titles)');
+            console.warn('[MASTER LAUNCHER] dotnet command was not found. Ubisoft activations will fail. (Ensure .NET Runtime is installed if hosting Ubisoft titles)');
         }
     });
 
     checkDotnet.on('error', () => {
-        console.warn('[MASTER LAUNCHER] dotnet command failed or was not found. Skipping Ubisoft worker.');
+        console.warn('[MASTER LAUNCHER] dotnet command failed or was not found. Ubisoft activations will fail.');
     });
 }
