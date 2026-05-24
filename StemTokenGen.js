@@ -89,8 +89,8 @@ function doLogin(u, p, code = null) {
         });
 
         clients[u].on('steamGuard', (domain, callback, lastCodeWrong) => {
-            console.log(`[STEAM FLEET] -> Steam Guard needed for ${u} (domain: ${domain})`);
-            states[u] = { logged_in: false, connecting: false, guard_needed: true, guard_domain: domain ? 'email' : '2FA' };
+            console.log(`[STEAM FLEET] -> Steam Guard needed for ${u} (domain: ${domain}, lastCodeWrong: ${lastCodeWrong})`);
+            states[u] = { logged_in: false, connecting: false, guard_needed: true, guard_domain: domain ? 'email' : '2FA', last_code_wrong: !!lastCodeWrong };
             guardCallbacks[u] = callback;
             lastLoginTime = 0;
             syncState();
@@ -135,6 +135,7 @@ function doLogin(u, p, code = null) {
         states[u].connecting = true;
         states[u].guard_needed = false;
         states[u].error = null;
+        states[u].last_code_wrong = false;
         syncState();
         guardCallbacks[u](code);
         delete guardCallbacks[u];
@@ -166,6 +167,7 @@ function doLogin(u, p, code = null) {
     states[u].error = null;
     states[u].guard_needed = false;
     states[u].guard_domain = null;
+    states[u].last_code_wrong = false;
     console.log(`[STEAM FLEET] Establishing connection for worker account: ${u}...`);
     try {
         clients[u].logOn(logOnOptions);

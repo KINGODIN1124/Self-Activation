@@ -990,18 +990,40 @@ client.once('clientReady', async () => {
         setInterval(async () => {
             if (!fs.existsSync(STEAM_STATE_FILE)) return;
             let states = readJson(STEAM_STATE_FILE, {});
-            let channel = client.channels.cache.get(String(CFG.vouchChannelId));
+            
+            // Target channel for Steam Guard prompts
+            const guardChannelId = process.env.GUARD_CHANNEL_ID || '1472543211204378625';
+            let channel = client.channels.cache.get(String(guardChannelId));
             if (!channel) return;
 
             for (let u in states) {
-                if (states[u].guard_needed && !notified_guards[u]) {
-                    let row = new ActionRowBuilder().addComponents(
-                        new ButtonBuilder().setCustomId(`guard_prompt_${u}`).setLabel('Enter Steam Guard Code').setStyle(ButtonStyle.Danger)
-                    );
-                    try {
-                        await channel.send({ content: `${staff_ping()} ⚠️ **Steam Guard Required** for worker account \`${u}\`.\nThe worker fleet is stuck. Click below to provide the code.`, components: [row] });
-                        notified_guards[u] = true;
-                    } catch(e) {}
+                if (states[u].guard_needed) {
+                    let needsNotification = false;
+                    let isRetry = !!states[u].last_code_wrong;
+                    
+                    if (!notified_guards[u]) {
+                        needsNotification = true;
+                    } else if (isRetry && notified_guards[u] === 'sent') {
+                        needsNotification = true;
+                    }
+
+                    if (needsNotification) {
+                        let row = new ActionRowBuilder().addComponents(
+                            new ButtonBuilder().setCustomId(`guard_prompt_${u}`).setLabel('Enter Steam Guard Code').setStyle(ButtonStyle.Danger)
+                        );
+                        
+                        let messageText = `${staff_ping()} ⚠️ **Steam Guard Required** for worker account \`${u}\`.\n`;
+                        if (isRetry) {
+                            messageText += `❌ **The previous code you entered was incorrect or expired.** Please click below to try again with a new code.`;
+                        } else {
+                            messageText += `The worker fleet is stuck. Click below to provide the code.`;
+                        }
+
+                        try {
+                            await channel.send({ content: messageText, components: [row] });
+                            notified_guards[u] = isRetry ? 'wrong_notified' : 'sent';
+                        } catch(e) {}
+                    }
                 } else if (!states[u].guard_needed && notified_guards[u]) {
                     delete notified_guards[u]; // reset when no longer needed
                 }
