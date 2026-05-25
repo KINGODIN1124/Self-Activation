@@ -563,7 +563,15 @@ client.on('messageCreate', async message => {
         }
 
         const botPinged = message.mentions.has(client.user);
-        if (!botPinged) {
+        const staffPinged = message.mentions.roles.has(STAFF_ROLE_ID) || 
+                            message.mentions.members.some(m => m.roles.cache.has(STAFF_ROLE_ID));
+
+        if (!botPinged && !staffPinged) {
+            try { await message.delete(); } catch (e) { console.error('[VOUCH] Failed to delete message:', e.message); }
+            try {
+                let warn = await message.channel.send(`⚠️ <@${message.author.id}>, Mention either the bot or your activator.`);
+                setTimeout(() => warn.delete().catch(() => {}), 5000);
+            } catch (e) {}
             return;
         }
 
