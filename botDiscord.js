@@ -985,6 +985,70 @@ client.on('interactionCreate', async interaction => {
                 await trigger_worker(interaction, game, targetMember);
             }
         }
+        else if (interaction.commandName === 'editsteamacc') {
+            await interaction.deferReply({ ephemeral: true });
+            let accounts = load_accounts();
+            let username = interaction.options.getString('username').trim();
+            let password = interaction.options.getString('password');
+            
+            let idx = accounts.findIndex(a => a.username.toLowerCase() === username.toLowerCase());
+            if (idx === -1) {
+                return interaction.followUp({ content: `❌ Account \`${username}\` was not found in Steam Fleet.`, ephemeral: true });
+            }
+            
+            accounts[idx].password = password;
+            save_accounts(accounts);
+            
+            // Delete cached token and state so the bot re-logins fresh
+            let tokensPath = path.join(DATA, 'refresh_tokens.json');
+            if (fs.existsSync(tokensPath)) {
+                try {
+                    let tokens = readJson(tokensPath, {});
+                    if (tokens[username]) {
+                        delete tokens[username];
+                        writeJson(tokensPath, tokens);
+                    }
+                } catch (e) {}
+            }
+            
+            let statesPath = path.join(DATA, 'steam_state.json');
+            if (fs.existsSync(statesPath)) {
+                try {
+                    let states = readJson(statesPath, {});
+                    if (states[username]) {
+                        delete states[username];
+                        writeJson(statesPath, states);
+                    }
+                } catch (e) {}
+            }
+            
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('✅ Fleet Updated').setDescription(`Updated password for Steam account \`${username}\`. Old session tokens have been cleared for re-authentication.`).setColor(CLR.GREEN)], ephemeral: true });
+        }
+        else if (interaction.commandName === 'editubiacc') {
+            await interaction.deferReply({ ephemeral: true });
+            let email = interaction.options.getString('email').trim();
+            let password = interaction.options.getString('password').trim();
+            let appid = interaction.options.getString('appid').trim();
+            let data = load_ubi_accounts();
+            
+            let found = false;
+            for (let id of Object.keys(data)) {
+                let originalLength = data[id].length;
+                data[id] = data[id].filter(a => a.email.toLowerCase() !== email.toLowerCase());
+                if (data[id].length < originalLength) found = true;
+                if (!data[id].length) delete data[id];
+            }
+            
+            if (!found) {
+                return interaction.followUp({ content: `❌ Account \`${email}\` was not found in Ubisoft Fleet.`, ephemeral: true });
+            }
+            
+            if (!data[appid]) data[appid] = [];
+            data[appid].push({ email, password });
+            save_ubi_accounts(data);
+            
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('✅ Fleet Updated').setDescription(`Updated Ubisoft account \`${email}\` and mapped it to AppID \`${appid}\`.`).setColor(CLR.GREEN)], ephemeral: true });
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1181,7 +1245,16 @@ const commands = [
     { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' },
     { name: 'refreshcache', description: 'Clear ownership cache and force rebuild of the fleet database' },
     { name: 'liststeamacc', description: 'List all Steam worker accounts and their live status' },
-    { name: 'redo', description: 'Re-trigger the token/activation file generation inside a ticket' }
+    { name: 'redo', description: 'Re-trigger the token/activation file generation inside a ticket' },
+    { name: 'editsteamacc', description: 'Edit/update a Steam account password in Fleet', options: [
+        { name: 'username', description: 'Steam username', type: 3, required: true },
+        { name: 'password', description: 'New Steam password', type: 3, required: true }
+    ]},
+    { name: 'editubiacc', description: 'Edit/update a Ubisoft account password or mapped AppID', options: [
+        { name: 'email', description: 'Ubisoft email', type: 3, required: true },
+        { name: 'password', description: 'New Ubisoft password', type: 3, required: true },
+        { name: 'appid', description: 'Mapped Denuvo AppID', type: 3, required: true }
+    ]}
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);
