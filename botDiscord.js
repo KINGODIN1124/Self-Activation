@@ -885,8 +885,12 @@ client.on('interactionCreate', async interaction => {
                 return interaction.followUp({ content: `⏳ You are still on cooldown. Please wait **${format_duration(remainingCooldown)}** before opening another activation ticket.` });
             }
             
-            let openTicket = find_open_ticket(interaction.guild, interaction.user.id, game.id);
-            if (openTicket) return interaction.followUp({ content: `🎮 You already opened a ticket for this game in <#${openTicket.id}>` });
+            let openTicket = find_open_ticket(interaction.guild, interaction.user.id);
+            if (openTicket) {
+                let meta = parse_ticket_topic(openTicket.topic);
+                let openGame = get_game_by_id(meta.game);
+                return interaction.followUp({ content: `🎫 You already have an active ticket open in <#${openTicket.id}>${openGame ? ` (for **${openGame.name}**)` : ''}. Please close or complete that session before opening a new one.` });
+            }
 
             let cat = resolve_ticket_category(interaction.guild, tier);
             let safeName = interaction.user.username.replace(/[^a-zA-Z0-9-]/g, '').substring(0, 20) || 'user';
