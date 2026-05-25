@@ -519,6 +519,52 @@ async function prompt_ubi_token(channel, user, game) {
 client.on('messageCreate', async message => {
     if (message.author.bot) return;
 
+    if (message.content.trim().toLowerCase() === '-redo') {
+        if (!message.channel.name.includes("ticket-")) {
+            return message.reply("❌ Command must be used in a ticket channel.");
+        }
+        
+        let meta = parse_ticket_topic(message.channel.topic);
+        let state = get_ticket_state(message.channel.id) || {};
+        let userId = state.user_id || meta.uid;
+        let gameId = state.game_id || meta.game;
+        
+        if (!userId || !gameId) {
+            return message.reply("❌ Could not retrieve ticket metadata (User ID or Game ID is missing).");
+        }
+        
+        if (message.author.id !== userId && !is_bartender(message.member)) {
+            return message.reply("❌ Only the ticket owner or staff can run this command.");
+        }
+        
+        let game = get_game_by_id(gameId);
+        if (!game) {
+            return message.reply("❌ Game not found in vault database.");
+        }
+        
+        let targetMember = await message.guild.members.fetch(userId).catch(() => null);
+        if (!targetMember) {
+            return message.reply("❌ Could not locate the ticket owner in the server.");
+        }
+        
+        let safeUserTag = targetMember.user.tag.replace(/[^a-zA-Z0-9]/g, '');
+        let failedFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${game.app_id}_failed.txt`);
+        if (fs.existsSync(failedFile)) {
+            try { fs.unlinkSync(failedFile); } catch (e) {}
+        }
+        
+        if (game.platform === 'ubi') {
+            await message.reply("🔄 Resetting Ubisoft token request flow...");
+            update_ticket_state(message.channel.id, { stage: "verified" });
+            await prompt_ubi_token(message.channel, targetMember, game);
+        } else {
+            await message.reply("🔄 Re-triggering activation token generation...");
+            update_ticket_state(message.channel.id, { stage: "verified" });
+            await trigger_worker({ channel: message.channel }, game, targetMember);
+        }
+        return;
+    }
+
     if (message.content.trim().toLowerCase() === '-saveguide') {
         let embed = new EmbedBuilder()
             .setTitle('💾 Steam Emulator Save Guide')
@@ -895,6 +941,50 @@ client.on('interactionCreate', async interaction => {
                 
             return interaction.followUp({ embeds: [embed], ephemeral: true });
         }
+        else if (interaction.commandName === 'redo') {
+            if (!interaction.channel.name.includes("ticket-")) {
+                return interaction.reply({ content: "❌ Command must be used in a ticket channel.", ephemeral: true });
+            }
+            
+            let meta = parse_ticket_topic(interaction.channel.topic);
+            let state = get_ticket_state(interaction.channel.id) || {};
+            let userId = state.user_id || meta.uid;
+            let gameId = state.game_id || meta.game;
+            
+            if (!userId || !gameId) {
+                return interaction.reply({ content: "❌ Could not retrieve ticket metadata (User ID or Game ID is missing).", ephemeral: true });
+            }
+            
+            if (interaction.user.id !== userId && !is_bartender(interaction.member)) {
+                return interaction.reply({ content: "❌ Only the ticket owner or staff can run this command.", ephemeral: true });
+            }
+            
+            let game = get_game_by_id(gameId);
+            if (!game) {
+                return interaction.reply({ content: "❌ Game not found in vault database.", ephemeral: true });
+            }
+            
+            let targetMember = await interaction.guild.members.fetch(userId).catch(() => null);
+            if (!targetMember) {
+                return interaction.reply({ content: "❌ Could not locate the ticket owner in the server.", ephemeral: true });
+            }
+            
+            let safeUserTag = targetMember.user.tag.replace(/[^a-zA-Z0-9]/g, '');
+            let failedFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${game.app_id}_failed.txt`);
+            if (fs.existsSync(failedFile)) {
+                try { fs.unlinkSync(failedFile); } catch (e) {}
+            }
+            
+            if (game.platform === 'ubi') {
+                await interaction.reply({ content: "🔄 Resetting Ubisoft token request flow...", ephemeral: true });
+                update_ticket_state(interaction.channel.id, { stage: "verified" });
+                await prompt_ubi_token(interaction.channel, targetMember, game);
+            } else {
+                await interaction.reply({ content: "🔄 Re-triggering activation token generation...", ephemeral: true });
+                update_ticket_state(interaction.channel.id, { stage: "verified" });
+                await trigger_worker(interaction, game, targetMember);
+            }
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1090,7 +1180,8 @@ const commands = [
     { name: 'delete', description: 'Securely close and wipe ticket' },
     { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' },
     { name: 'refreshcache', description: 'Clear ownership cache and force rebuild of the fleet database' },
-    { name: 'liststeamacc', description: 'List all Steam worker accounts and their live status' }
+    { name: 'liststeamacc', description: 'List all Steam worker accounts and their live status' },
+    { name: 'redo', description: 'Re-trigger the token/activation file generation inside a ticket' }
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);
