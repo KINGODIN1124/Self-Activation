@@ -866,6 +866,35 @@ client.on('interactionCreate', async interaction => {
                 return interaction.followUp({ content: `❌ Failed to clear cache: ${err.message}`, ephemeral: true });
             }
         }
+        else if (interaction.commandName === 'liststeamacc') {
+            await interaction.deferReply({ ephemeral: true });
+            let accounts = load_accounts();
+            if (accounts.length === 0) {
+                return interaction.followUp({ content: '❌ No accounts registered in the Steam Fleet.', ephemeral: true });
+            }
+            
+            let states = readJson(STEAM_STATE_FILE, {});
+            let desc = accounts.map(a => {
+                let u = a.username;
+                let s = states[u] || { logged_in: false, connecting: false };
+                let statusStr = '';
+                if (s.logged_in) statusStr = '🟢 **Online / Logged In**';
+                else if (s.connecting) statusStr = '🟡 **Connecting...**';
+                else if (s.guard_needed) statusStr = `🔴 **Requires Steam Guard (${s.guard_domain || '2FA'})**`;
+                else if (s.error) statusStr = `🔴 **Error: ${s.error}**`;
+                else statusStr = '⚪ **Offline**';
+                
+                return `• **\`${u}\`** - ${statusStr}`;
+            }).join('\n');
+            
+            let embed = new EmbedBuilder()
+                .setTitle('🚢 Steam Worker Fleet Status')
+                .setColor(CLR.BLUE)
+                .setDescription(desc)
+                .setTimestamp();
+                
+            return interaction.followUp({ embeds: [embed], ephemeral: true });
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1060,7 +1089,8 @@ const commands = [
     { name: 'resetcooldown', description: 'Reset a user ticket cooldown', options: [{ name: 'user_id', description: 'The Discord User ID whose ticket cooldown should be cleared', type: 3, required: true }] },
     { name: 'delete', description: 'Securely close and wipe ticket' },
     { name: 'saveguide', description: 'Show the Steam Emulator save game path configuration guide' },
-    { name: 'refreshcache', description: 'Clear ownership cache and force rebuild of the fleet database' }
+    { name: 'refreshcache', description: 'Clear ownership cache and force rebuild of the fleet database' },
+    { name: 'liststeamacc', description: 'List all Steam worker accounts and their live status' }
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);

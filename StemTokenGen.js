@@ -508,6 +508,11 @@ async function processUbiQueue() {
 
 async function main() {
     let guardSnapshot = '';
+    try {
+        let initialAccs = readJson(ACCOUNTS_FILE, []);
+        console.log(`[STEAM FLEET] Fleet database loaded. Registered accounts: ${initialAccs.map(a => a.username).join(', ') || 'None (Empty)'}`);
+    } catch (e) {}
+
     while (true) {
         try {
             let accs = readJson(ACCOUNTS_FILE, []);
