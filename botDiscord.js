@@ -1049,6 +1049,40 @@ client.on('interactionCreate', async interaction => {
             
             return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('✅ Fleet Updated').setDescription(`Updated Ubisoft account \`${email}\` and mapped it to AppID \`${appid}\`.`).setColor(CLR.GREEN)], ephemeral: true });
         }
+        else if (interaction.commandName === 'loginacc') {
+            await interaction.deferReply({ ephemeral: true });
+            let username = interaction.options.getString('username').trim();
+            let accounts = load_accounts();
+            
+            if (!accounts.some(a => a.username.toLowerCase() === username.toLowerCase())) {
+                return interaction.followUp({ content: `❌ Account \`${username}\` was not found in Steam Fleet.`, ephemeral: true });
+            }
+            
+            const loginReqPath = path.join(DATA, 'login_requests.json');
+            let reqs = [];
+            if (fs.existsSync(loginReqPath)) {
+                try { reqs = readJson(loginReqPath, []); } catch (e) {}
+            }
+            if (!reqs.includes(username)) {
+                reqs.push(username);
+                writeJson(loginReqPath, reqs);
+            }
+            
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('⚙️ Login Triggered').setDescription(`Manual login request sent for \`${username}\`. The Steam worker will connect shortly.`).setColor(CLR.BLUE)], ephemeral: true });
+        }
+        else if (interaction.commandName === 'loginfleet') {
+            await interaction.deferReply({ ephemeral: true });
+            let accounts = load_accounts();
+            if (accounts.length === 0) {
+                return interaction.followUp({ content: '❌ No accounts registered in the Steam Fleet.', ephemeral: true });
+            }
+            
+            const loginReqPath = path.join(DATA, 'login_requests.json');
+            let reqs = accounts.map(a => a.username);
+            writeJson(loginReqPath, reqs);
+            
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('⚙️ Fleet Login Triggered').setDescription(`Manual login request sent for all ${accounts.length} worker accounts in the fleet.`).setColor(CLR.BLUE)], ephemeral: true });
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1254,7 +1288,11 @@ const commands = [
         { name: 'email', description: 'Ubisoft email', type: 3, required: true },
         { name: 'password', description: 'New Ubisoft password', type: 3, required: true },
         { name: 'appid', description: 'Mapped Denuvo AppID', type: 3, required: true }
-    ]}
+    ]},
+    { name: 'loginacc', description: 'Force a worker account to log in and connect to Steam', options: [
+        { name: 'username', description: 'Steam username to log in', type: 3, required: true }
+    ]},
+    { name: 'loginfleet', description: 'Force all worker accounts in the fleet to log in and connect to Steam' }
 ];
 client.once('clientReady', async () => {
     console.log(`Logged in as ${client.user.tag}`);

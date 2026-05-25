@@ -519,6 +519,25 @@ async function main() {
             let accDict = {};
             for (let a of accs) accDict[a.username] = a.password;
 
+            // Check for manual login requests
+            const loginReqPath = path.join(DATA, 'login_requests.json');
+            if (fs.existsSync(loginReqPath)) {
+                try {
+                    let reqs = readJson(loginReqPath, []);
+                    if (reqs.length > 0) {
+                        for (let u of reqs) {
+                            if (accDict[u]) {
+                                console.log(`[STEAM FLEET] Manual login request received for: ${u}`);
+                                doLogin(u, accDict[u]);
+                            }
+                        }
+                        writeJson(loginReqPath, []); // Clear requests
+                    }
+                } catch (e) {
+                    console.error('[STEAM FLEET] Failed to process manual login requests:', e.message);
+                }
+            }
+
             // Bulk logins removed! Logins are now strictly on-demand based on the queue or guard requirements.
 
             if (fs.existsSync(GUARDS_FILE)) {
