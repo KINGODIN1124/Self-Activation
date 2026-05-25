@@ -49,7 +49,7 @@ if (process.platform !== 'win32') {
             fs.chmodSync(ubiExe, 0o755);
             console.log('[MASTER LAUNCHER] Configured execute permissions on DenuvoTicket');
         } catch (e) {
-            console.warn('[MASTER LAUNCHER] Failed to set execute permissions on DenuvoTicket:', e.message);
+            console.log(`[MASTER LAUNCHER] Note: runtime chmod not permitted (${e.message}). Relying on Git executable permissions.`);
         }
     }
 }

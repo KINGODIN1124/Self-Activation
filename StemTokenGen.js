@@ -22,7 +22,7 @@ if (process.platform !== 'win32') {
             fs.chmodSync(ubiExe, 0o755);
             console.log('[STEAM FLEET] Configured execute permissions on DenuvoTicket');
         } catch (e) {
-            console.warn('[STEAM FLEET] Failed to set execute permissions on DenuvoTicket:', e.message);
+            console.log(`[STEAM FLEET] Note: runtime chmod not permitted (${e.message}). Relying on Git executable permissions.`);
         }
     }
 }
