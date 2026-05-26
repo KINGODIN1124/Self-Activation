@@ -1294,7 +1294,7 @@ const commands = [
     ]},
     { name: 'loginfleet', description: 'Force all worker accounts in the fleet to log in and connect to Steam' }
 ];
-client.once('clientReady', async () => {
+client.once('ready', async () => {
     console.log(`Logged in as ${client.user.tag}`);
     try {
         const rest = new REST({ version: '10' }).setToken(CFG.bot_token);
