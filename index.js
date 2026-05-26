@@ -4,7 +4,6 @@ const fs = require('fs');
 const express = require('express');
 
 const app = express();
-const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
     res.send('Self-Activation Bot is online!');
@@ -14,19 +13,40 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', uptime: process.uptime() });
 });
 
-const server = app.listen(PORT, () => {
-    console.log(`[MASTER LAUNCHER] Web server bound to port ${PORT} (Keep-alive ready)`);
-});
+// Explicitly bind to port 8080 (standard OpenShift target port)
+try {
+    app.listen(8080, () => {
+        console.log('[MASTER LAUNCHER] Web server bound to port 8080 (Primary ready)');
+    }).on('error', (err) => {
+        console.log(`[MASTER LAUNCHER] Port 8080 bind skipped/failed: ${err.message}`);
+    });
+} catch (e) {
+    console.error('[MASTER LAUNCHER] Port 8080 bind exception:', e.message);
+}
 
-// Bind auxiliary listener on 3000 if not specified, for local environment compatibility
-if (!process.env.PORT && PORT !== 3000) {
+// Explicitly bind to port 3000 (legacy / local port)
+try {
+    app.listen(3000, () => {
+        console.log('[MASTER LAUNCHER] Web server bound to port 3000 (Auxiliary ready)');
+    }).on('error', (err) => {
+        console.log(`[MASTER LAUNCHER] Port 3000 bind skipped/failed: ${err.message}`);
+    });
+} catch (e) {
+    console.error('[MASTER LAUNCHER] Port 3000 bind exception:', e.message);
+}
+
+// Check and bind to process.env.PORT if specified and is different
+const envPort = process.env.PORT ? parseInt(process.env.PORT, 10) : null;
+if (envPort && envPort !== 8080 && envPort !== 3000) {
     try {
-        app.listen(3000, () => {
-            console.log(`[MASTER LAUNCHER] Web server auxiliary port 3000 listener ready`);
+        app.listen(envPort, () => {
+            console.log(`[MASTER LAUNCHER] Web server bound to env port ${envPort} (Keep-alive ready)`);
         }).on('error', (err) => {
-            console.log(`[MASTER LAUNCHER] Auxiliary port 3000 bind skipped: ${err.message}`);
+            console.log(`[MASTER LAUNCHER] Env port ${envPort} bind skipped/failed: ${err.message}`);
         });
-    } catch (e) {}
+    } catch (e) {
+        console.error(`[MASTER LAUNCHER] Env port ${envPort} bind exception:`, e.message);
+    }
 }
 
 // Initialize empty persistent directories and files if they are blank (common in container volume mounts)
