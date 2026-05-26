@@ -4,7 +4,7 @@ const fs = require('fs');
 const express = require('express');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
     res.send('Self-Activation Bot is online!');
@@ -14,9 +14,20 @@ app.get('/health', (req, res) => {
     res.json({ status: 'ok', uptime: process.uptime() });
 });
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log(`[MASTER LAUNCHER] Web server bound to port ${PORT} (Keep-alive ready)`);
 });
+
+// Bind auxiliary listener on 3000 if not specified, for local environment compatibility
+if (!process.env.PORT && PORT !== 3000) {
+    try {
+        app.listen(3000, () => {
+            console.log(`[MASTER LAUNCHER] Web server auxiliary port 3000 listener ready`);
+        }).on('error', (err) => {
+            console.log(`[MASTER LAUNCHER] Auxiliary port 3000 bind skipped: ${err.message}`);
+        });
+    } catch (e) {}
+}
 
 // Initialize empty persistent directories and files if they are blank (common in container volume mounts)
 const DATA_DIR = path.join(__dirname, 'data');
