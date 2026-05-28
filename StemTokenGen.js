@@ -111,6 +111,11 @@ function doLogin(u, p, code = null) {
         clients[u].on('error', err => {
             console.log(`[STEAM FLEET] -> Error for ${u}: ${err.message}`);
             
+            // Set error cooldown to prevent spamming login requests (15 mins for Throttle/RateLimit, 1 min for others)
+            let isThrottle = err.message.toLowerCase().includes('throttle') || err.message.toLowerCase().includes('ratelimit') || err.message.toLowerCase().includes('rate limit');
+            let backoffMs = isThrottle ? 15 * 60 * 1000 : 60 * 1000;
+            let retryAfter = Date.now() + backoffMs;
+            
             if (err.message.includes('InvalidPassword') || err.message.includes('AccessDenied') || err.message.toLowerCase().includes('token')) {
                 let tokens = readJson(TOKENS_FILE, {});
                 if (tokens[u]) {
@@ -125,7 +130,7 @@ function doLogin(u, p, code = null) {
             } else if (err.message.includes('SteamGuardNeedAuthCode') || err.message.includes('NeedAuthCode')) {
                 states[u] = { logged_in: false, connecting: false, guard_needed: true, guard_domain: 'email' };
             } else {
-                states[u] = { logged_in: false, connecting: false, guard_needed: false, error: err.message };
+                states[u] = { logged_in: false, connecting: false, guard_needed: false, error: err.message, retry_after: retryAfter };
             }
             lastLoginTime = 0;
             syncState();
@@ -142,12 +147,18 @@ function doLogin(u, p, code = null) {
 
     if (!states[u]) states[u] = { logged_in: false, connecting: false };
 
+    // Prevent login attempts if the account is currently under error cooldown (unless code is provided)
+    if (states[u].retry_after && Date.now() < states[u].retry_after && !code) {
+        return;
+    }
+
     if (code && states[u].guard_needed && guardCallbacks[u]) {
         console.log(`[STEAM FLEET] Submitting Guard code for ${u} via callback...`);
         states[u].connecting = true;
         states[u].guard_needed = false;
         states[u].error = null;
         states[u].last_code_wrong = false;
+        if (states[u].retry_after) delete states[u].retry_after;
         syncState();
         guardCallbacks[u](code);
         delete guardCallbacks[u];
@@ -336,6 +347,11 @@ async function processSteamQueue() {
 
     if (!ownerFound && missingCacheAccounts.length > 0) {
         let targetUser = missingCacheAccounts[0];
+        if (states[targetUser]?.retry_after && Date.now() < states[targetUser].retry_after) {
+            let remaining = Math.ceil((states[targetUser].retry_after - Date.now()) / 1000);
+            console.log(`[STEAM ENGINE] -> Account ${targetUser} has no cache but is cooldowned. Retry in ${remaining}s.`);
+            return;
+        }
         if (!states[targetUser]?.connecting && !states[targetUser]?.logged_in) {
             doLogin(targetUser, accDict[targetUser]);
         }
@@ -357,6 +373,11 @@ async function processSteamQueue() {
     if (!states[ownerFound]?.logged_in || !states[ownerFound]?.ownership_cached || !clients[ownerFound]?.steamID) {
         if (states[ownerFound]?.guard_needed) {
             return; // Wait for guard code
+        }
+        if (states[ownerFound]?.retry_after && Date.now() < states[ownerFound].retry_after) {
+            let remaining = Math.ceil((states[ownerFound].retry_after - Date.now()) / 1000);
+            console.log(`[STEAM ENGINE] -> Account ${ownerFound} owns the game but is cooldowned/throttled. Retry in ${remaining}s.`);
+            return;
         }
         if (!states[ownerFound]?.connecting) {
             console.log(`[STEAM ENGINE] AppID ${appId} is owned by ${ownerFound}. Logging them in...`);
