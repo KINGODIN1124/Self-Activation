@@ -284,6 +284,8 @@ function findSteamSettings(dir) {
     return null;
 }
 
+let lastQueueLogTime = 0;
+
 async function processSteamQueue() {
     if (!fs.existsSync(PENDING_FILE)) return;
     let reqs = readJson(PENDING_FILE, []);
@@ -301,13 +303,23 @@ async function processSteamQueue() {
     let missingCacheAccounts = [];
     let guardNeededAccounts = [];
 
-    console.log(`[STEAM ENGINE] Scanning active accounts for AppID ${appId}...`);
+    let now = Date.now();
+    let shouldLog = (now - lastQueueLogTime > 60000);
+    if (shouldLog) {
+        lastQueueLogTime = now;
+    }
+
+    if (shouldLog) {
+        console.log(`[STEAM ENGINE] Scanning active accounts for AppID ${appId}...`);
+    }
     for (let u in accDict) {
         let isCached = !!cache[u];
         let ownsInCache = isCached && cache[u].includes(appId);
         let isLoggedOn = !!(states[u] && states[u].logged_in);
 
-        console.log(`[STEAM ENGINE] -> Account: ${u} | Cached: ${isCached} | Owns (in cache): ${ownsInCache} | Logged On: ${isLoggedOn}`);
+        if (shouldLog) {
+            console.log(`[STEAM ENGINE] -> Account: ${u} | Cached: ${isCached} | Owns (in cache): ${ownsInCache} | Logged On: ${isLoggedOn}`);
+        }
 
         if (ownsInCache) {
             ownerFound = u;
@@ -326,30 +338,40 @@ async function processSteamQueue() {
                     break;
                 }
             } catch (e) {
-                console.log(`[STEAM ENGINE] -> Failed live check for ${u}: ${e.message}`);
+                if (shouldLog) {
+                    console.log(`[STEAM ENGINE] -> Failed live check for ${u}: ${e.message}`);
+                }
             }
         }
 
         if (!isCached) {
             if (states[u] && states[u].guard_needed) {
                 guardNeededAccounts.push(u);
-                console.log(`[STEAM ENGINE] -> Account ${u} has no cache but requires Steam Guard. Waiting.`);
+                if (shouldLog) {
+                    console.log(`[STEAM ENGINE] -> Account ${u} has no cache but requires Steam Guard. Waiting.`);
+                }
                 continue;
             }
             if (states[u] && states[u].error) {
-                console.log(`[STEAM ENGINE] -> Account ${u} has no cache but has login error: ${states[u].error}. Skipping.`);
+                if (shouldLog) {
+                    console.log(`[STEAM ENGINE] -> Account ${u} has no cache but has login error: ${states[u].error}. Skipping.`);
+                }
                 continue;
             }
             missingCacheAccounts.push(u);
-            console.log(`[STEAM ENGINE] -> Account ${u} has no cache. Added to missing cache list.`);
+            if (shouldLog) {
+                console.log(`[STEAM ENGINE] -> Account ${u} has no cache. Added to missing cache list.`);
+            }
         }
     }
 
     if (!ownerFound && missingCacheAccounts.length > 0) {
         let targetUser = missingCacheAccounts[0];
         if (states[targetUser]?.retry_after && Date.now() < states[targetUser].retry_after) {
-            let remaining = Math.ceil((states[targetUser].retry_after - Date.now()) / 1000);
-            console.log(`[STEAM ENGINE] -> Account ${targetUser} has no cache but is cooldowned. Retry in ${remaining}s.`);
+            if (shouldLog) {
+                let remaining = Math.ceil((states[targetUser].retry_after - Date.now()) / 1000);
+                console.log(`[STEAM ENGINE] -> Account ${targetUser} has no cache but is cooldowned. Retry in ${remaining}s.`);
+            }
             return;
         }
         if (!states[targetUser]?.connecting && !states[targetUser]?.logged_in) {
@@ -375,8 +397,10 @@ async function processSteamQueue() {
             return; // Wait for guard code
         }
         if (states[ownerFound]?.retry_after && Date.now() < states[ownerFound].retry_after) {
-            let remaining = Math.ceil((states[ownerFound].retry_after - Date.now()) / 1000);
-            console.log(`[STEAM ENGINE] -> Account ${ownerFound} owns the game but is cooldowned/throttled. Retry in ${remaining}s.`);
+            if (shouldLog) {
+                let remaining = Math.ceil((states[ownerFound].retry_after - Date.now()) / 1000);
+                console.log(`[STEAM ENGINE] -> Account ${ownerFound} owns the game but is cooldowned/throttled. Retry in ${remaining}s.`);
+            }
             return;
         }
         if (!states[ownerFound]?.connecting) {
