@@ -1,0 +1,50 @@
+[
+  {
+    "name": "CollectiblesPost",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "CollectiblesIntel",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "CollectiblesMementos",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "CollectiblesCards",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "TSIM_MissionsDone",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "Collectibles",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "CollectiblesLegacy",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  },
+  {
+    "name": "TSIM_Level",
+    "type": "int",
+    "default": "0",
+    "global": "0"
+  }
+]
