@@ -640,6 +640,35 @@ client.on('messageCreate', async message => {
         return message.reply({ embeds: [embed] });
     }
 
+    if (message.content.trim().toLowerCase() === '-process') {
+        let embed = new EmbedBuilder()
+            .setTitle('📦 Denuvo Game Activation Process')
+            .setColor(CLR.GREEN)
+            .setDescription(
+                `### 🧭 Step-by-Step Instructions\n` +
+                `Follow this process to activate and play the game:\n\n` +
+                `1️⃣ **Extract Archive**\n` +
+                `Extract the downloaded activation files using **WinRAR** or **7-Zip**.\n\n` +
+                `2️⃣ **Open Folder**\n` +
+                `Open the extracted folder containing the bypass files.\n\n` +
+                `3️⃣ **Copy Files**\n` +
+                `Select and copy all the files and folders inside that directory.\n\n` +
+                `4️⃣ **Apply to Game Root**\n` +
+                `Paste them directly into your **Game Root Folder** (where the game's main \`.exe\` executable is located).\n` +
+                `*⚠️ If prompted to replace existing files, click **Replace**.*\n\n` +
+                `5️⃣ **Launch & Play**\n` +
+                `• Launch the game executable from your game directory.\n` +
+                `• If the game is not present in the folder, run it directly from **Steam**.\n\n` +
+                `---\n` +
+                `### 💖 Vouch For Us!\n` +
+                `If this activation worked and you enjoy your game, please support us by leaving a vouch!\n` +
+                `👉 Click here to vouch: <#1497614783887966468>`
+            )
+            .setFooter({ text: 'Crack World Hub • Activation Systems' })
+            .setTimestamp();
+        return message.reply({ embeds: [embed] });
+    }
+
     if (VOUCH_CHANNEL_ID && String(message.channel.id) === String(VOUCH_CHANNEL_ID)) {
         let linked_ticket = find_open_ticket(message.guild, message.author.id) || find_recent_user_ticket(message.guild, message.author.id);
 
