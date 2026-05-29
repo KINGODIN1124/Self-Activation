@@ -573,6 +573,17 @@ async function main() {
                         for (let u of reqs) {
                             if (accDict[u]) {
                                 console.log(`[STEAM FLEET] Manual login request received for: ${u}`);
+                                if (states[u] && states[u].retry_after) {
+                                    delete states[u].retry_after;
+                                }
+                                if (clients[u] && (states[u]?.logged_in || states[u]?.connecting)) {
+                                    console.log(`[STEAM FLEET] Forcing logoff for reconnect: ${u}`);
+                                    try {
+                                        clients[u].logOff();
+                                    } catch (e) {}
+                                    states[u].logged_in = false;
+                                    states[u].connecting = false;
+                                }
                                 doLogin(u, accDict[u]);
                             }
                         }
