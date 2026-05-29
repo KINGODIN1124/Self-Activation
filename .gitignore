@@ -4,7 +4,6 @@ __pycache__/
 *.pyc
 
 # Local/Dynamic configuration & credentials
-config.json
 configs.user.ini
 accounts.json
 ubi_accounts.json
