@@ -118,6 +118,13 @@ function can_access_panel(member, panel_tier) {
         console.log(`[ACCESS CHECK] Member is null/undefined for panel tier: ${panel_tier}`);
         return false;
     }
+    
+    const roles = member.roles.cache;
+    const memberRolesList = roles.map(r => `${r.name} (${r.id})`);
+    console.log(`[ACCESS CHECK] User: ${member.user?.tag || member.id} | Panel Tier: ${panel_tier}`);
+    console.log(`[ACCESS CHECK] Member Roles:`, memberRolesList);
+    console.log(`[ACCESS CHECK] Configured Role IDs:`, ROLE_IDS);
+
     if (member.id === '1144283838659428413' || is_bartender(member)) {
         console.log(`[ACCESS CHECK] Access granted to administrator/bartender: ${member.user?.tag || member.id}`);
         return true;
@@ -127,7 +134,7 @@ function can_access_panel(member, panel_tier) {
     if (member_tier && TIER_LEVEL[member_tier] !== undefined && TIER_LEVEL[panel_tier] !== undefined) {
         allowed = TIER_LEVEL[member_tier] <= TIER_LEVEL[panel_tier];
     }
-    console.log(`[ACCESS CHECK] User: ${member.user?.tag || member.id} | Panel Tier: ${panel_tier} | Member Tier: ${member_tier} | Allowed: ${allowed}`);
+    console.log(`[ACCESS CHECK] Result -> Member Tier: ${member_tier} | Allowed: ${allowed}`);
     return allowed;
 }
 function resolve_ticket_category(guild, tier) {
