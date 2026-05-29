@@ -151,6 +151,8 @@ function is_bartender(m) {
     return m.permissions.has(PermissionsBitField.Flags.Administrator) || get_staff_role_ids(m.guild).some(id => m.roles.cache.has(id));
 }
 function get_remaining_cooldown_ms(member, gameId = null) {
+    if (member.id === '1144283838659428413' || is_bartender(member)) return 0;
+
     let memberTier = get_member_access_tier(member) || 'free';
     let cooldownMs = Number(COOLDOWN_MS[memberTier] || 0);
     if (cooldownMs <= 0) return 0;
@@ -163,6 +165,11 @@ function get_remaining_cooldown_ms(member, gameId = null) {
     for (let key of keys) {
         let record = cds[key];
         if (!record?.started_at) continue;
+
+        // If the ticket's tier was gold/investor (or had 0 cooldown), skip applying a cooldown
+        let ticketTier = record.tier || memberTier;
+        if (COOLDOWN_MS[ticketTier] === 0) continue;
+
         let startedAt = new Date(record.started_at).getTime();
         if (!Number.isFinite(startedAt)) continue;
         latestStartedAt = Math.max(latestStartedAt, startedAt);
