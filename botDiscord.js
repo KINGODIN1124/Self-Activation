@@ -821,7 +821,44 @@ client.on('interactionCreate', async interaction => {
             let filtered = accounts.filter(a => a.username.toLowerCase() !== username.toLowerCase());
             if (filtered.length === accounts.length) return interaction.followUp({ content: `❌ Account \`${username}\` not found in Steam Fleet.`, ephemeral: true });
             save_accounts(filtered);
-            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('✅ Fleet Updated').setDescription(`Removed Steam account \`${username}\`.`).setColor(CLR.GREEN)], ephemeral: true });
+
+            // Clean up state, tokens, and cache for the removed account
+            let statesPath = path.join(DATA, 'steam_state.json');
+            if (fs.existsSync(statesPath)) {
+                try {
+                    let states = readJson(statesPath, {});
+                    if (states[username]) {
+                        delete states[username];
+                        writeJson(statesPath, states);
+                    }
+                } catch (e) {}
+            }
+
+            let tokensPath = path.join(DATA, 'refresh_tokens.json');
+            if (fs.existsSync(tokensPath)) {
+                try {
+                    let tokens = readJson(tokensPath, {});
+                    let foundKey = Object.keys(tokens).find(k => k.toLowerCase() === username.toLowerCase());
+                    if (foundKey) {
+                        delete tokens[foundKey];
+                        writeJson(tokensPath, tokens);
+                    }
+                } catch (e) {}
+            }
+
+            let cachePath = path.join(DATA, 'ownership_cache.json');
+            if (fs.existsSync(cachePath)) {
+                try {
+                    let cache = readJson(cachePath, {});
+                    let foundKey = Object.keys(cache).find(k => k.toLowerCase() === username.toLowerCase());
+                    if (foundKey) {
+                        delete cache[foundKey];
+                        writeJson(cachePath, cache);
+                    }
+                } catch (e) {}
+            }
+
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('✅ Fleet Updated').setDescription(`Removed Steam account \`${username}\` and scrubbed all session cache files.`).setColor(CLR.GREEN)], ephemeral: true });
         }
         else if (interaction.commandName === 'addubiacc') {
             await interaction.deferReply({ ephemeral: true });
@@ -1094,6 +1131,27 @@ client.on('interactionCreate', async interaction => {
             
             return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('⚙️ Fleet Login Triggered').setDescription(`Manual login request sent for all ${accounts.length} worker accounts in the fleet.`).setColor(CLR.BLUE)], ephemeral: true });
         }
+        else if (interaction.commandName === 'clearsteamfleet') {
+            await interaction.deferReply({ ephemeral: true });
+            save_accounts([]);
+            
+            // Clean up state, tokens, and cache files completely
+            let statesPath = path.join(DATA, 'steam_state.json');
+            if (fs.existsSync(statesPath)) writeJson(statesPath, {});
+            
+            let tokensPath = path.join(DATA, 'refresh_tokens.json');
+            if (fs.existsSync(tokensPath)) writeJson(tokensPath, {});
+            
+            let cachePath = path.join(DATA, 'ownership_cache.json');
+            if (fs.existsSync(cachePath)) writeJson(cachePath, {});
+            
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('🧹 Fleet Wiped').setDescription('Successfully deleted all Steam accounts, login states, refresh tokens, and library caches.').setColor(CLR.GREEN)], ephemeral: true });
+        }
+        else if (interaction.commandName === 'clearubifleet') {
+            await interaction.deferReply({ ephemeral: true });
+            save_ubi_accounts({});
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('🧹 Fleet Wiped').setDescription('Successfully deleted all Ubisoft/Denuvo accounts.').setColor(CLR.GREEN)], ephemeral: true });
+        }
     } else if (interaction.isStringSelectMenu()) {
         if (interaction.customId.startsWith('direct_steam_select_') || interaction.customId.startsWith('direct_ubi_select_')) {
             await interaction.deferReply({ ephemeral: true });
@@ -1303,7 +1361,9 @@ const commands = [
     { name: 'loginacc', description: 'Force a worker account to log in and connect to Steam', options: [
         { name: 'username', description: 'Steam username to log in', type: 3, required: true }
     ]},
-    { name: 'loginfleet', description: 'Force all worker accounts in the fleet to log in and connect to Steam' }
+    { name: 'loginfleet', description: 'Force all worker accounts in the fleet to log in and connect to Steam' },
+    { name: 'clearsteamfleet', description: 'Wipe all Steam accounts and session data from the database' },
+    { name: 'clearubifleet', description: 'Wipe all Ubisoft accounts from the database' }
 ];
 client.once('ready', async () => {
     console.log(`Logged in as ${client.user.tag}`);
