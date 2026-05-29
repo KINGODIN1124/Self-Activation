@@ -105,8 +105,6 @@ function get_member_access_tier(member) {
     const roles = member.roles.cache;
     for (let tier of ROLE_TIER_PRIORITY) {
         if (ROLE_IDS[tier] && roles.has(String(ROLE_IDS[tier]))) return tier;
-    }
-    for (let tier of ROLE_TIER_PRIORITY) {
         if (roles.some(r => r && r.name && typeof r.name === 'string' && r.name.toLowerCase().includes(tier.toLowerCase()))) return tier;
     }
     console.log(`[TIER CHECK FAIL] User ${member.user?.tag || member.id} has no matching tier. Roles possessed:`, roles.map(r => `${r.name} (${r.id})`));
