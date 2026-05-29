@@ -263,7 +263,7 @@ def get_member_access_tier(member: discord.Member) -> Optional[str]:
         if ROLE_IDS.get(tier) in role_ids:
             return tier
     for tier in ROLE_TIER_PRIORITY:
-        if any(tier.lower() in role.name.lower() for role in roles):
+        if any(role.name and tier.lower() in role.name.lower() for role in roles if getattr(role, "name", None)):
             return tier
     return None
 

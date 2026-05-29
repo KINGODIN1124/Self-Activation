@@ -26,7 +26,13 @@ function writeJson(p, data) { fs.writeFileSync(p + '.tmp', JSON.stringify(data, 
 const fileCFG = readJson(path.join(BASE, 'config.json'), {});
 function parseEnvJson(val, fallback) {
     if (!val) return fallback;
-    try { return JSON.parse(val); } catch { return fallback; }
+    try {
+        // Pre-parse: convert unquoted large integers (15+ digits) in JSON into strings to prevent precision loss in JS numbers
+        const cleaned = val.replace(/:\s*(\d{15,})/g, ': "$1"');
+        return JSON.parse(cleaned);
+    } catch {
+        try { return JSON.parse(val); } catch { return fallback; }
+    }
 }
 const CFG = {
     bot_token: process.env.BOT_TOKEN || fileCFG.bot_token,
@@ -92,21 +98,37 @@ function normalize_game_tiers(raw) {
 function format_tier_badges(tiers) { return tiers.filter(t => PANEL_META[t]).map(t => `${PANEL_META[t].emoji} \`${PANEL_META[t].name}\``).join(' '); }
 function game_allowed_in_tier(game, tier) { return normalize_game_tiers(game.tiers).includes(tier); }
 function get_member_access_tier(member) {
-    if (!member || !member.roles || !member.roles.cache) return null;
+    if (!member || !member.roles || !member.roles.cache) {
+        console.log('[TIER CHECK] Member or member.roles is missing.');
+        return null;
+    }
     const roles = member.roles.cache;
     for (let tier of ROLE_TIER_PRIORITY) {
         if (ROLE_IDS[tier] && roles.has(String(ROLE_IDS[tier]))) return tier;
     }
     for (let tier of ROLE_TIER_PRIORITY) {
-        if (roles.some(r => r.name.toLowerCase().includes(tier.toLowerCase()))) return tier;
+        if (roles.some(r => r && r.name && typeof r.name === 'string' && r.name.toLowerCase().includes(tier.toLowerCase()))) return tier;
     }
+    console.log(`[TIER CHECK FAIL] User ${member.user?.tag || member.id} has no matching tier. Roles possessed:`, roles.map(r => `${r.name} (${r.id})`));
+    console.log(`[TIER CHECK FAIL] Configured Role IDs:`, ROLE_IDS);
     return null;
 }
 function can_access_panel(member, panel_tier) {
-    if (member.id === '1144283838659428413' || is_bartender(member)) return true;
+    if (!member) {
+        console.log(`[ACCESS CHECK] Member is null/undefined for panel tier: ${panel_tier}`);
+        return false;
+    }
+    if (member.id === '1144283838659428413' || is_bartender(member)) {
+        console.log(`[ACCESS CHECK] Access granted to administrator/bartender: ${member.user?.tag || member.id}`);
+        return true;
+    }
     let member_tier = get_member_access_tier(member);
-    if (!member_tier || TIER_LEVEL[member_tier] === undefined || TIER_LEVEL[panel_tier] === undefined) return false;
-    return TIER_LEVEL[member_tier] <= TIER_LEVEL[panel_tier];
+    let allowed = false;
+    if (member_tier && TIER_LEVEL[member_tier] !== undefined && TIER_LEVEL[panel_tier] !== undefined) {
+        allowed = TIER_LEVEL[member_tier] <= TIER_LEVEL[panel_tier];
+    }
+    console.log(`[ACCESS CHECK] User: ${member.user?.tag || member.id} | Panel Tier: ${panel_tier} | Member Tier: ${member_tier} | Allowed: ${allowed}`);
+    return allowed;
 }
 function resolve_ticket_category(guild, tier) {
     let catId = CATEGORY_IDS[tier];
