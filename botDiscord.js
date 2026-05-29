@@ -421,6 +421,9 @@ async function close_ticket_channel(channel, apply_cooldown, notice) {
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers] });
 
 async function trigger_worker(interaction, game, original_user) {
+    if (interaction.channel && !client.channels.cache.has(interaction.channel.id)) {
+        try { await client.channels.fetch(interaction.channel.id); } catch (e) {}
+    }
     let reqs = load_requests();
     reqs.push({
         request_id: `${original_user.id}-${Date.now()}`,
