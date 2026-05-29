@@ -35,6 +35,7 @@ const UBI_PENDING_FILE = path.join(DATA, 'pending_ubi.json');
 const STEAM_STATE_FILE = path.join(DATA, 'steam_state.json');
 const OWNERSHIP_CACHE_FILE = path.join(DATA, 'ownership_cache.json');
 const TOKENS_FILE = path.join(DATA, 'refresh_tokens.json');
+const CACHED_TICKETS_FILE = path.join(DATA, 'cached_tickets.json');
 
 if (!fs.existsSync(ACCOUNTS_FILE)) fs.writeFileSync(ACCOUNTS_FILE, '[]');
 if (!fs.existsSync(GUARDS_FILE)) fs.writeFileSync(GUARDS_FILE, '{}');
@@ -42,6 +43,7 @@ if (!fs.existsSync(UBI_ACCOUNTS_FILE)) fs.writeFileSync(UBI_ACCOUNTS_FILE, '{}')
 if (!fs.existsSync(STEAM_STATE_FILE)) fs.writeFileSync(STEAM_STATE_FILE, '{}');
 if (!fs.existsSync(OWNERSHIP_CACHE_FILE)) fs.writeFileSync(OWNERSHIP_CACHE_FILE, '{}');
 if (!fs.existsSync(TOKENS_FILE)) fs.writeFileSync(TOKENS_FILE, '{}');
+if (!fs.existsSync(CACHED_TICKETS_FILE)) fs.writeFileSync(CACHED_TICKETS_FILE, '{}');
 
 const clients = {};
 const states = {};
@@ -65,7 +67,7 @@ function syncState() {
 }
 
 let lastLoginTime = 0;
-const LOGIN_DELAY_MS = 8000; // Stagger logins by 8 seconds to avoid Steam rate limit
+const LOGIN_DELAY_MS = 30000; // Stagger logins by 30 seconds to avoid Steam rate limit
 
 function doLogin(u, p, code = null) {
     if (!clients[u]) {
@@ -284,6 +286,84 @@ function findSteamSettings(dir) {
     return null;
 }
 
+async function compileAndZipTemplate(userTag, appId, accountName, steamId, ticket) {
+    let safeUserTag = getSafeUserTag(userTag);
+    let searchPaths = [
+        path.join(BASE, 'template'),
+        path.join(BASE, 'templates'),
+        path.join(BASE, '..', 'template'),
+        path.join(BASE, '..', 'templates')
+    ];
+
+    let tempDir = fs.mkdtempSync(path.join(require('os').tmpdir(), 'steam-gen-'));
+    let templateFound = false;
+
+    for (let sp of searchPaths) {
+        let zPath = path.join(sp, `${appId}.zip`);
+        let dPath = path.join(sp, String(appId));
+
+        if (fs.existsSync(zPath)) {
+            try {
+                await extract(zPath, { dir: tempDir });
+                templateFound = true;
+                break;
+            } catch (e) {
+                console.error(`[STEAM ENGINE] Unzip error for ${zPath}:`, e.message);
+            }
+        } else if (fs.existsSync(dPath)) {
+            try {
+                copyDirectorySync(dPath, tempDir);
+                templateFound = true;
+                break;
+            } catch (e) {
+                console.error(`[STEAM ENGINE] Copy error for ${dPath}:`, e.message);
+            }
+        }
+    }
+
+    if (!templateFound || countFilesRecursive(tempDir) === 0) {
+        try { fs.rmSync(tempDir, { recursive: true, force: true }); } catch (e) {}
+        console.log(`[STEAM ENGINE] ⚠️ Template payload for ${appId} is missing or empty.`);
+        let failFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}_failed.txt`);
+        fs.writeFileSync(failFile, 'template missing or empty', 'utf-8');
+        return true; // Mark as handled
+    }
+
+    let sPath = findSteamSettings(tempDir);
+    let success = false;
+
+    if (sPath) {
+        let oldFile = path.join(sPath, 'configs.user');
+        let oldIni = path.join(sPath, 'configs.user.ini');
+        if (fs.existsSync(oldFile)) {
+            try { fs.unlinkSync(oldFile); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user: ${e.message}`); }
+        }
+        if (fs.existsSync(oldIni)) {
+            try { fs.unlinkSync(oldIni); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user.ini: ${e.message}`); }
+        }
+
+        let content = `[user::general]\naccount_steamid=${steamId}\naccount_name=${accountName}\nticket=${ticket}\ntoken=${ticket}\n`;
+        fs.writeFileSync(oldFile, content, 'utf-8');
+        fs.writeFileSync(oldIni, content, 'utf-8');
+
+        let finalZip = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}.zip`);
+        try {
+            await zipDirectory(tempDir, finalZip);
+            console.log(`[STEAM ENGINE] Success! Archive secured for ${userTag}`);
+            success = true;
+        } catch (e) {
+            console.error(`[STEAM ENGINE] Zip packaging failed:`, e.message);
+        }
+    } else {
+        console.log(`[STEAM ENGINE] ⚠️ No steamsettings folder found for ${appId}. Not placing configs.user and failing the request.`);
+        let failFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}_failed.txt`);
+        fs.writeFileSync(failFile, 'steam_settings folder missing', 'utf-8');
+        success = true; // Mark as handled
+    }
+    try { fs.rmSync(tempDir, { recursive: true, force: true }); } catch (e) {}
+    return success;
+}
+
 let lastQueueLogTime = 0;
 
 async function processSteamQueue() {
@@ -294,6 +374,29 @@ async function processSteamQueue() {
     let currentReq = reqs[0];
     let appId = parseInt(currentReq.app_id, 10);
     let userTag = currentReq.user_tag || 'UnknownUser';
+
+    // Check for cached ticket within 20 minutes
+    let cachedTickets = readJson(CACHED_TICKETS_FILE, {});
+    let cached = cachedTickets[appId];
+    if (cached && (Date.now() - cached.timestamp < 20 * 60 * 1000)) {
+        console.log(`\n[STEAM ENGINE] ----------------------------------------`);
+        console.log(`[STEAM ENGINE] New generation payload received.`);
+        console.log(`[STEAM ENGINE] Target User: ${userTag}`);
+        console.log(`[STEAM ENGINE] Target AppID: ${appId}`);
+        console.log(`[STEAM ENGINE] Found cached ticket for AppID ${appId} (created ${Math.round((Date.now() - cached.timestamp)/1000)}s ago). Reusing cached token!`);
+        
+        let success = await compileAndZipTemplate(userTag, appId, cached.account_name, cached.steam_id, cached.ticket);
+        
+        reqs.shift();
+        writeJson(PENDING_FILE, reqs);
+        
+        if (!success) {
+            let failFile = path.join(COMPLETED_DIR, `configs_${getSafeUserTag(userTag)}_${appId}_failed.txt`);
+            console.log(`[STEAM ENGINE] Failure: Reusing cached ticket for AppID ${appId} failed during zipping.`);
+            fs.writeFileSync(failFile, 'ticket compilation failed', 'utf-8');
+        }
+        return;
+    }
 
     let cache = readJson(OWNERSHIP_CACHE_FILE, {});
     let accDict = {};
@@ -432,67 +535,18 @@ async function processSteamQueue() {
     let success = false;
 
     if (resp.ok) {
-        let safeUserTag = getSafeUserTag(userTag);
-        let searchPaths = [
-            path.join(BASE, 'template'),
-            path.join(BASE, 'templates'),
-            path.join(BASE, '..', 'template'),
-            path.join(BASE, '..', 'templates')
-        ];
+        // Cache the newly generated ticket details
+        let cachedTickets = readJson(CACHED_TICKETS_FILE, {});
+        cachedTickets[appId] = {
+            ticket: resp.ticket,
+            steam_id: c.steamID.getSteamID64(),
+            account_name: u,
+            timestamp: Date.now()
+        };
+        writeJson(CACHED_TICKETS_FILE, cachedTickets);
 
-        let tempDir = fs.mkdtempSync(path.join(require('os').tmpdir(), 'steam-gen-'));
-        let templateFound = false;
-
-        for (let sp of searchPaths) {
-            let zPath = path.join(sp, `${appId}.zip`);
-            let dPath = path.join(sp, String(appId));
-
-            if (fs.existsSync(zPath)) {
-                await extract(zPath, { dir: tempDir });
-                templateFound = true;
-                break;
-            } else if (fs.existsSync(dPath)) {
-                copyDirectorySync(dPath, tempDir);
-                templateFound = true;
-                break;
-            }
-        }
-
-        if (!templateFound || countFilesRecursive(tempDir) === 0) {
-            fs.rmSync(tempDir, { recursive: true, force: true });
-            console.log(`[STEAM ENGINE] ⚠️ Template payload for ${appId} is missing or empty.`);
-            let failFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}_failed.txt`);
-            fs.writeFileSync(failFile, 'template missing or empty', 'utf-8');
-            success = true;
-        } else {
-            let sPath = findSteamSettings(tempDir);
-
-            if (sPath) {
-                let oldFile = path.join(sPath, 'configs.user');
-                let oldIni = path.join(sPath, 'configs.user.ini');
-                if (fs.existsSync(oldFile)) {
-                    try { fs.unlinkSync(oldFile); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user: ${e.message}`); }
-                }
-                if (fs.existsSync(oldIni)) {
-                    try { fs.unlinkSync(oldIni); } catch (e) { console.log(`[STEAM ENGINE] Could not delete old configs.user.ini: ${e.message}`); }
-                }
-
-                let content = `[user::general]\naccount_steamid=${c.steamID.getSteamID64()}\naccount_name=${u}\nticket=${resp.ticket}\ntoken=${resp.ticket}\n`;
-                fs.writeFileSync(oldFile, content, 'utf-8');
-                fs.writeFileSync(oldIni, content, 'utf-8');
-
-                let finalZip = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}.zip`);
-                await zipDirectory(tempDir, finalZip);
-                console.log(`[STEAM ENGINE] Success! Archive secured for ${userTag}`);
-                success = true;
-            } else {
-                console.log(`[STEAM ENGINE] ⚠️ No steamsettings folder found for ${appId}. Not placing configs.user and failing the request.`);
-                let failFile = path.join(COMPLETED_DIR, `configs_${safeUserTag}_${appId}_failed.txt`);
-                fs.writeFileSync(failFile, 'steam_settings folder missing', 'utf-8');
-                success = true;
-            }
-            fs.rmSync(tempDir, { recursive: true, force: true });
-        }
+        // Compile and package the template zip
+        success = await compileAndZipTemplate(userTag, appId, u, c.steamID.getSteamID64(), resp.ticket);
     } else {
         console.log(`[STEAM ENGINE] -> ${u} owns AppID ${appId}, but ticket generation failed: ${resp.error}`);
     }
