@@ -92,8 +92,14 @@ function normalize_game_tiers(raw) {
 function format_tier_badges(tiers) { return tiers.filter(t => PANEL_META[t]).map(t => `${PANEL_META[t].emoji} \`${PANEL_META[t].name}\``).join(' '); }
 function game_allowed_in_tier(game, tier) { return normalize_game_tiers(game.tiers).includes(tier); }
 function get_member_access_tier(member) {
-    const role_ids = member.roles.cache.map(r => r.id);
-    for (let tier of ROLE_TIER_PRIORITY) if (ROLE_IDS[tier] && role_ids.includes(String(ROLE_IDS[tier]))) return tier;
+    if (!member || !member.roles || !member.roles.cache) return null;
+    const roles = member.roles.cache;
+    for (let tier of ROLE_TIER_PRIORITY) {
+        if (ROLE_IDS[tier] && roles.has(String(ROLE_IDS[tier]))) return tier;
+    }
+    for (let tier of ROLE_TIER_PRIORITY) {
+        if (roles.some(r => r.name.toLowerCase().includes(tier.toLowerCase()))) return tier;
+    }
     return null;
 }
 function can_access_panel(member, panel_tier) {
