@@ -808,11 +808,16 @@ client.on('interactionCreate', async interaction => {
             let accounts = load_accounts();
             let username = interaction.options.getString('username').trim();
             let password = interaction.options.getString('password');
+            let localIp = (interaction.options.getString('local_ip') || '').trim();
             if (accounts.some(a => a.username.toLowerCase() === username.toLowerCase())) return interaction.followUp({ content: '❌ Account already exists in Fleet.', ephemeral: true });
 
-            accounts.push({ username, password });
+            let newAcc = { username, password };
+            if (localIp) {
+                newAcc.local_ip = localIp;
+            }
+            accounts.push(newAcc);
             save_accounts(accounts);
-            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('⚙️ Fleet Updated').setDescription(`Steam Account \`${username}\` added to main pool. The bot will automatically test it and request a Steam Guard code if needed.`).setColor(CLR.GREEN)], ephemeral: true });
+            return interaction.followUp({ embeds: [new EmbedBuilder().setTitle('⚙️ Fleet Updated').setDescription(`Steam Account \`${username}\` added to main pool${localIp ? ` (bound to Elastic IP: \`${localIp}\`)` : ''}. The bot will automatically test it and request a Steam Guard code if needed.`).setColor(CLR.GREEN)], ephemeral: true });
         }
         else if (interaction.commandName === 'removesteamacc') {
             await interaction.deferReply({ ephemeral: true });
@@ -1333,7 +1338,8 @@ const commands = [
     { name: 'removegame', description: 'Remove a game from the menu', options: [{ name: 'appid', description: 'The AppID of the game to remove', type: 3, required: true }] },
     { name: 'addsteamacc', description: 'Add a Steam account', options: [
         { name: 'username', description: 'Steam username', type: 3, required: true },
-        { name: 'password', description: 'Steam password', type: 3, required: true }
+        { name: 'password', description: 'Steam password', type: 3, required: true },
+        { name: 'local_ip', description: 'Elastic IP / Local IP interface to bind to (Optional)', type: 3, required: false }
     ]},
     { name: 'removesteamacc', description: 'Remove a Steam account', options: [{ name: 'username', description: 'The exact Steam username to remove', type: 3, required: true }] },
     { name: 'addubiacc', description: 'Add a Ubisoft account', options: [

@@ -71,7 +71,21 @@ const LOGIN_DELAY_MS = 30000; // Stagger logins by 30 seconds to avoid Steam rat
 
 function doLogin(u, p, code = null) {
     if (!clients[u]) {
-        clients[u] = new SteamUser({ dataDirectory: MAUTH, enablePicsCache: true });
+        let options = { dataDirectory: MAUTH, enablePicsCache: true };
+        
+        // Find if this account has an Elastic IP configured
+        try {
+            let accs = readJson(ACCOUNTS_FILE, []);
+            let accRecord = accs.find(a => a.username.toLowerCase() === u.toLowerCase());
+            if (accRecord && accRecord.local_ip) {
+                options.localAddress = accRecord.local_ip;
+                console.log(`[STEAM FLEET] Binding connection for ${u} to local IP/Elastic IP: ${accRecord.local_ip}`);
+            }
+        } catch (e) {
+            console.error('[STEAM FLEET] Error reading Elastic IP config:', e.message);
+        }
+
+        clients[u] = new SteamUser(options);
 
         clients[u].on('loggedOn', details => {
             console.log(`[STEAM FLEET] -> Successfully logged in: ${u}`);
