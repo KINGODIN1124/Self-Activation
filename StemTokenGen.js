@@ -353,10 +353,17 @@ async function processSteamQueue() {
                 continue;
             }
             if (states[u] && states[u].error) {
-                if (shouldLog) {
-                    console.log(`[STEAM ENGINE] -> Account ${u} has no cache but has login error: ${states[u].error}. Skipping.`);
+                if (states[u].retry_after && Date.now() >= states[u].retry_after) {
+                    console.log(`[STEAM ENGINE] -> Cooldown expired for ${u}. Clearing error state for retry.`);
+                    delete states[u].error;
+                    delete states[u].retry_after;
+                    syncState();
+                } else {
+                    if (shouldLog) {
+                        console.log(`[STEAM ENGINE] -> Account ${u} has no cache but has login error: ${states[u].error}. Skipping.`);
+                    }
+                    continue;
                 }
-                continue;
             }
             missingCacheAccounts.push(u);
             if (shouldLog) {
